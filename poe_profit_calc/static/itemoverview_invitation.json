@@ -1,0 +1,104 @@
+{
+  "lines": [
+    {
+      "id": 93814,
+      "name": "Incandescent Invitation",
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVlc3RJdGVtcy9DbGVhbnNpbmdGaXJlT3JiUXVlc3Q1IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/e6f9234053/CleansingFireOrbQuest5.png",
+      "baseType": "Incandescent Invitation",
+      "itemClass": 0,
+      "sparkline": {
+        "data": [0, -4.49, -2.92, -3.93, -1.69, -8.24, -21.35],
+        "totalChange": -21.35
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -4.49, -2.92, -3.93, -1.69, -8.24, -21.35],
+        "totalChange": -21.35
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "From the corona of an ancient star,\nthe Searing Exarch seeks to master the Atlas.",
+      "chaosValue": 70,
+      "exaltedValue": 7.05,
+      "divineValue": 0.61,
+      "count": 399,
+      "detailsId": "incandescent-invitation",
+      "tradeInfo": [],
+      "listingCount": 8231
+    },
+    {
+      "id": 93816,
+      "name": "Screaming Invitation",
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVlc3RJdGVtcy9UYW5nbGVkT3JiUXVlc3Q1IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/75de691c2b/TangledOrbQuest5.png",
+      "baseType": "Screaming Invitation",
+      "itemClass": 0,
+      "sparkline": {
+        "data": [0, -2.27, -5.89, -9.09, -9.09, -9.09, -13.64],
+        "totalChange": -13.64
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -2.27, -5.89, -9.09, -9.09, -9.09, -13.64],
+        "totalChange": -13.64
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "From the heart of the Tangle, the Eater of Worlds\nreaches out for control of the Atlas.",
+      "chaosValue": 38,
+      "exaltedValue": 3.83,
+      "divineValue": 0.33,
+      "count": 399,
+      "detailsId": "screaming-invitation",
+      "tradeInfo": [],
+      "listingCount": 7048
+    },
+    {
+      "id": 93815,
+      "name": "Polaric Invitation",
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVlc3RJdGVtcy9DbGVhbnNpbmdGaXJlT3JiUXVlc3QwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/b2cc512e70/CleansingFireOrbQuest0.png",
+      "baseType": "Polaric Invitation",
+      "itemClass": 0,
+      "sparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "Once within the grasp of the Black Star,\nthere can be no escape.",
+      "chaosValue": 10,
+      "exaltedValue": 1.01,
+      "divineValue": 0.09,
+      "count": 399,
+      "detailsId": "polaric-invitation",
+      "tradeInfo": [],
+      "listingCount": 4845
+    },
+    {
+      "id": 93813,
+      "name": "Writhing Invitation",
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVlc3RJdGVtcy9UYW5nbGVkT3JiUXVlc3QwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/5dbc2f3ffc/TangledOrbQuest0.png",
+      "baseType": "Writhing Invitation",
+      "itemClass": 0,
+      "sparkline": {
+        "data": [0, 0, 0, 0, 0, 0, -4.6],
+        "totalChange": -4.6
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, -4.6],
+        "totalChange": -4.6
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "The Infinite Hunger awaits in a cosmic stomach where\nwhole civilisations are digested - but do not die.",
+      "chaosValue": 9.54,
+      "exaltedValue": 0.96,
+      "divineValue": 0.08,
+      "count": 399,
+      "detailsId": "writhing-invitation",
+      "tradeInfo": [],
+      "listingCount": 8157
+    }
+  ]
+}
