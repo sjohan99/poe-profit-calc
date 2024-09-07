@@ -9,7 +9,9 @@ readme = "README.md"
 python = "^3.10"
 black = "^24.4.2"
 pytest = "^8.2.2"
-fastapi = "^0.114.0"
+fastapi = {extras = ["standard"], version = "^0.114.0"}
+requests = "^2.32.3"
+cachetools = "^5.5.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -17,3 +19,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 100
+
+[tool.pytest.ini_options]
+pythonpath = "poe_profit_calc"
