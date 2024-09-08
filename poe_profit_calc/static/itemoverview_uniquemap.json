@@ -1,0 +1,3065 @@
+{
+  "lines": [
+    {
+      "id": 41117,
+      "name": "Doryani's Machinarium",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Eb3J5YW5pcyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/581444be53/Doryanis.png",
+      "mapTier": 14,
+      "baseType": "Maze Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -9.15, -11.9, -16.16, -19.94, -24.38, -26.7],
+        "totalChange": -26.7
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -9.15, -11.9, -16.16, -19.94, -24.38, -26.7],
+        "totalChange": -26.7
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(20-50)% increased Experience gain", "optional": false },
+        {
+          "text": "Unique Boss is augmented by Player choices",
+          "optional": false
+        },
+        {
+          "text": "Found Items have 10% chance to drop Corrupted in Area",
+          "optional": false
+        }
+      ],
+      "flavourText": "We are ever the makers of our own undoing.",
+      "chaosValue": 1114.89,
+      "exaltedValue": 117.98,
+      "divineValue": 10.5,
+      "count": 16,
+      "detailsId": "doryanis-machinarium-t14",
+      "tradeInfo": [],
+      "listingCount": 33
+    },
+    {
+      "id": 44339,
+      "name": "Doryani's Machinarium",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Eb3J5YW5pcyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/581444be53/Doryanis.png",
+      "mapTier": 16,
+      "baseType": "Maze Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -3.3, -6.22, -10.76, -14.78, -19.66, -25.69],
+        "totalChange": -25.69
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -3.3, -6.22, -10.76, -14.78, -19.66, -25.69],
+        "totalChange": -25.69
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(20-50)% increased Experience gain", "optional": false },
+        {
+          "text": "Unique Boss is augmented by Player choices",
+          "optional": false
+        },
+        {
+          "text": "Found Items have 10% chance to drop Corrupted in Area",
+          "optional": false
+        }
+      ],
+      "flavourText": "We are ever the makers of our own undoing.",
+      "chaosValue": 1061.8,
+      "exaltedValue": 112.36,
+      "divineValue": 10.0,
+      "count": 90,
+      "detailsId": "doryanis-machinarium-t16",
+      "tradeInfo": [],
+      "listingCount": 121
+    },
+    {
+      "id": 42559,
+      "name": "Infused Beachhead",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYXJiaW5nZXJVYmVyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/91398360e4/HarbingerUber.png",
+      "mapTier": 16,
+      "baseType": "Harbinger Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, 0, -0.58, -6.88, -11.52],
+        "totalChange": -11.52
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, -0.58, -6.88, -11.52],
+        "totalChange": -11.52
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
+      "chaosValue": 106.18,
+      "exaltedValue": 11.24,
+      "divineValue": 1.0,
+      "count": 54,
+      "detailsId": "infused-beachhead-t16",
+      "tradeInfo": [],
+      "listingCount": 91
+    },
+    {
+      "id": 44119,
+      "name": "The Putrid Cloister",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QdXRyaWRDbG9pc3RlciIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/4113992f12/PutridCloister.png",
+      "mapTier": 15,
+      "baseType": "Museum Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -2.61, -7.36, -12.11, -10.33, -7.6, -4.99],
+        "totalChange": -4.99
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -2.61, -7.36, -12.11, -10.33, -7.6, -4.99],
+        "totalChange": -4.99
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Players are Cursed with Vulnerability", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Players are Cursed with Conductivity", "optional": false },
+        { "text": "Players are Cursed with Despair", "optional": false },
+        { "text": "Unique Boss drops divination cards", "optional": false }
+      ],
+      "flavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
+      "chaosValue": 80.0,
+      "exaltedValue": 8.47,
+      "divineValue": 0.75,
+      "count": 39,
+      "detailsId": "the-putrid-cloister-t15",
+      "tradeInfo": [],
+      "listingCount": 308
+    },
+    {
+      "id": 68663,
+      "name": "Replica Cortex",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9TeW50aGVzaXNCb3NzR3VhcmRpYW5NYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/542f2635c7/SynthesisBossGuardianMap.png",
+      "mapTier": 11,
+      "baseType": "Synthesised Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, -0.89, -0.01, -0.41, 0],
+        "totalChange": 0
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, -0.89, -0.01, -0.41, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "\"Did nobody think to report that we had acquired some sort of free-floating\nMemory? Cease testing and lock this away immediately!\" \n- Administrator Qotra",
+      "chaosValue": 80.0,
+      "exaltedValue": 8.47,
+      "divineValue": 0.75,
+      "count": 254,
+      "detailsId": "replica-cortex-t11",
+      "tradeInfo": [],
+      "listingCount": 461
+    },
+    {
+      "id": 25181,
+      "name": "The Twilight Temple",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9DZWxlc3RpYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2b43e37784/Celestial.png",
+      "mapTier": 7,
+      "baseType": "Moon Temple Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 19.05, 19.05, 19.05, 19.05, 5, 16.67],
+        "totalChange": 16.67
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 19.05, 19.05, 19.05, 19.05, 5, 16.67],
+        "totalChange": 16.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has increased monster variety", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Area is inhabited by Lunaris fanatics", "optional": false },
+        { "text": "Area is inhabited by Solaris fanatics", "optional": false }
+      ],
+      "flavourText": "In the shadow of war,\nall are eclipsed.",
+      "chaosValue": 49.0,
+      "exaltedValue": 5.19,
+      "divineValue": 0.46,
+      "count": 42,
+      "detailsId": "the-twilight-temple-t7",
+      "tradeInfo": [],
+      "listingCount": 317
+    },
+    {
+      "id": 20593,
+      "name": "The Coward's Trial",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmRlYWRTaWVnZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/53f1dbdcb4/UndeadSiege.png",
+      "mapTier": 10,
+      "baseType": "Cursed Crypt Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -3.55, 0.25, 6.6, 1.52, 1.52, 18.02],
+        "totalChange": 18.02
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -3.55, 0.25, 6.6, 1.52, 1.52, 18.02],
+        "totalChange": 18.02
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Contains waves of Monsters", "optional": false },
+        {
+          "text": "Contains additional waves of Undead Monsters",
+          "optional": false
+        },
+        {
+          "text": "Area contains additional waves of Ghosts",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Oriathan Zombies",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Phantasms",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Raging Spirits",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Bone Rhoas",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Ravager Maws",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Zombies",
+          "optional": true
+        }
+      ],
+      "flavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
+      "chaosValue": 46.5,
+      "exaltedValue": 4.92,
+      "divineValue": 0.44,
+      "count": 25,
+      "detailsId": "the-cowards-trial-t10",
+      "tradeInfo": [],
+      "listingCount": 357
+    },
+    {
+      "id": 20779,
+      "name": "The Vinktar Square",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9UaGVWaW5rdGFyU3F1YXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d26b82ca56/TheVinktarSquare.png",
+      "mapTier": 8,
+      "baseType": "Courtyard Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "20% more Monster Life", "optional": false },
+        { "text": "Monsters are Unaffected by Shock", "optional": false },
+        { "text": "20% increased Monster Damage", "optional": false },
+        { "text": "+35% Monster Lightning Resistance", "optional": false },
+        {
+          "text": "Monsters deal 35% extra Physical Damage as Lightning",
+          "optional": false
+        }
+      ],
+      "flavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
+      "chaosValue": 40.0,
+      "exaltedValue": 4.23,
+      "divineValue": 0.38,
+      "count": 96,
+      "detailsId": "the-vinktar-square-t8",
+      "tradeInfo": [],
+      "listingCount": 151
+    },
+    {
+      "id": 20843,
+      "name": "The Vinktar Square",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9UaGVWaW5rdGFyU3F1YXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d26b82ca56/TheVinktarSquare.png",
+      "mapTier": 5,
+      "baseType": "Courtyard Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "20% more Monster Life", "optional": false },
+        { "text": "Monsters are Unaffected by Shock", "optional": false },
+        { "text": "20% increased Monster Damage", "optional": false },
+        { "text": "+35% Monster Lightning Resistance", "optional": false },
+        {
+          "text": "Monsters deal 35% extra Physical Damage as Lightning",
+          "optional": false
+        }
+      ],
+      "flavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
+      "chaosValue": 40.0,
+      "exaltedValue": 4.23,
+      "divineValue": 0.38,
+      "count": 156,
+      "detailsId": "the-vinktar-square-t5",
+      "tradeInfo": [],
+      "listingCount": 244
+    },
+    {
+      "id": 41134,
+      "name": "Cortex",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9TeW50aGVzaXNCb3NzR3VhcmRpYW5NYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/542f2635c7/SynthesisBossGuardianMap.png",
+      "mapTier": 11,
+      "baseType": "Synthesised Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -8.16, -8.16, -13.24, -18.37, -18.37, -18.37],
+        "totalChange": -18.37
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -8.16, -8.16, -13.24, -18.37, -18.37, -18.37],
+        "totalChange": -18.37
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "Though my life is gone, my purpose is not.\nMy will remains, emboldened and empowered\nby the righteousness of my cause.",
+      "chaosValue": 40.0,
+      "exaltedValue": 4.23,
+      "divineValue": 0.38,
+      "count": 399,
+      "detailsId": "cortex-t11",
+      "tradeInfo": [],
+      "listingCount": 8195
+    },
+    {
+      "id": 67795,
+      "name": "The Vinktar Square",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9UaGVWaW5rdGFyU3F1YXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d26b82ca56/TheVinktarSquare.png",
+      "mapTier": 16,
+      "baseType": "Courtyard Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "20% more Monster Life", "optional": false },
+        { "text": "Monsters are Unaffected by Shock", "optional": false },
+        { "text": "20% increased Monster Damage", "optional": false },
+        { "text": "+35% Monster Lightning Resistance", "optional": false },
+        {
+          "text": "Monsters deal 35% extra Physical Damage as Lightning",
+          "optional": false
+        }
+      ],
+      "flavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
+      "chaosValue": 40.0,
+      "exaltedValue": 4.23,
+      "divineValue": 0.38,
+      "count": 339,
+      "detailsId": "the-vinktar-square-t16",
+      "tradeInfo": [],
+      "listingCount": 461
+    },
+    {
+      "id": 93576,
+      "name": "The Vinktar Square",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9UaGVWaW5rdGFyU3F1YXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d26b82ca56/TheVinktarSquare.png",
+      "mapTier": 12,
+      "baseType": "Courtyard Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "20% more Monster Life", "optional": false },
+        { "text": "Monsters are Unaffected by Shock", "optional": false },
+        { "text": "20% increased Monster Damage", "optional": false },
+        { "text": "+35% Monster Lightning Resistance", "optional": false },
+        {
+          "text": "Monsters deal 35% extra Physical Damage as Lightning",
+          "optional": false
+        }
+      ],
+      "flavourText": "To the east, \nit cannot be seen.\nTo the west, \nit cannot be touched.\nTo the south, \nit cannot be remembered.\nAnd to the north, \nit cannot be contained.",
+      "chaosValue": 40.0,
+      "exaltedValue": 4.23,
+      "divineValue": 0.38,
+      "count": 305,
+      "detailsId": "the-vinktar-square-t12",
+      "tradeInfo": [],
+      "listingCount": 436
+    },
+    {
+      "id": 104059,
+      "name": "Replica Poorjoy's Asylum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Qb29yam95c0FzeWx1bSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d7e9aba922/PoorjoysAsylum.png",
+      "mapTier": 14,
+      "baseType": "Temple Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "200% increased Experience gain", "optional": false },
+        { "text": "(140-160)% more Monster Life", "optional": false },
+        {
+          "text": "Monsters have (501-1000)% increased Critical Strike Chance",
+          "optional": false
+        },
+        {
+          "text": "+(60-100)% to Monster Critical Strike Multiplier",
+          "optional": false
+        },
+        { "text": "(140-160)% increased Monster Damage", "optional": false },
+        { "text": "25% increased Monster Movement Speed", "optional": false },
+        { "text": "25% increased Monster Attack Speed", "optional": false },
+        { "text": "25% increased Monster Cast Speed", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Daggers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Staves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Maces",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Maces",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Thrusting One Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Axes",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Claws",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Bows",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Boots",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Helmets",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Quivers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Belts",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Shields",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Gloves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Rune Daggers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Warstaves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Axes",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Sceptres",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Rings",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Wands",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Amulets",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (11-15) additional Rare Body Armours",
+          "optional": true
+        }
+      ],
+      "flavourText": "\"Suppression troop two, the 'Martyrs for Science,' were able to seal\nthe portals before Outpost Four was overrun. Only three men survived.\"",
+      "chaosValue": 30.0,
+      "exaltedValue": 3.17,
+      "divineValue": 0.28,
+      "count": 78,
+      "detailsId": "replica-poorjoys-asylum-t14",
+      "tradeInfo": [],
+      "listingCount": 170
+    },
+    {
+      "id": 25447,
+      "name": "The Coward's Trial",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmRlYWRTaWVnZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/53f1dbdcb4/UndeadSiege.png",
+      "mapTier": 14,
+      "baseType": "Cursed Crypt Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Contains waves of Monsters", "optional": false },
+        {
+          "text": "Contains additional waves of Undead Monsters",
+          "optional": false
+        },
+        {
+          "text": "Area contains additional waves of Ghosts",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Oriathan Zombies",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Phantasms",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Raging Spirits",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Bone Rhoas",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Ravager Maws",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Zombies",
+          "optional": true
+        }
+      ],
+      "flavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
+      "chaosValue": 20.0,
+      "exaltedValue": 2.12,
+      "divineValue": 0.19,
+      "count": 136,
+      "detailsId": "the-cowards-trial-t14",
+      "tradeInfo": [],
+      "listingCount": 358
+    },
+    {
+      "id": 71219,
+      "name": "The Coward's Trial",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmRlYWRTaWVnZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/53f1dbdcb4/UndeadSiege.png",
+      "mapTier": 7,
+      "baseType": "Cursed Crypt Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Contains waves of Monsters", "optional": false },
+        {
+          "text": "Contains additional waves of Undead Monsters",
+          "optional": false
+        },
+        {
+          "text": "Area contains additional waves of Ghosts",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Oriathan Zombies",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Phantasms",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Raging Spirits",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Bone Rhoas",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Ravager Maws",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Zombies",
+          "optional": true
+        }
+      ],
+      "flavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
+      "chaosValue": 20.0,
+      "exaltedValue": 2.12,
+      "divineValue": 0.19,
+      "count": 399,
+      "detailsId": "the-cowards-trial-t7",
+      "tradeInfo": [],
+      "listingCount": 1418
+    },
+    {
+      "id": 44145,
+      "name": "The Coward's Trial",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmRlYWRTaWVnZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/53f1dbdcb4/UndeadSiege.png",
+      "mapTier": 16,
+      "baseType": "Cursed Crypt Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -20, -20, -20, -20, -20, -24],
+        "totalChange": -24
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -20, -20, -20, -20, -20, -24],
+        "totalChange": -24
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Contains waves of Monsters", "optional": false },
+        {
+          "text": "Contains additional waves of Undead Monsters",
+          "optional": false
+        },
+        {
+          "text": "Area contains additional waves of Ghosts",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Oriathan Zombies",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Phantasms",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Raging Spirits",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Bone Rhoas",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Ravager Maws",
+          "optional": true
+        },
+        {
+          "text": "Area contains additional waves of Zombies",
+          "optional": true
+        }
+      ],
+      "flavourText": "For his sins he was hunted in his sleep,\njudgement wrought of twisted nightmare.\nThe Coward bound his dreams to stone, awaiting\nanother to walk the path of true atonement.",
+      "chaosValue": 19.0,
+      "exaltedValue": 2.01,
+      "divineValue": 0.18,
+      "count": 399,
+      "detailsId": "the-cowards-trial-t16",
+      "tradeInfo": [],
+      "listingCount": 3332
+    },
+    {
+      "id": 24685,
+      "name": "Vaults of Atziri",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXAxIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7612528d07/UniqueMap1.png",
+      "mapTier": 7,
+      "baseType": "Vaal Pyramid Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -8.33, -18.75, -7.08, 25, -2.08, -25],
+        "totalChange": -25
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -8.33, -18.75, -7.08, 25, -2.08, -25],
+        "totalChange": -25
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Chests have (2501-3490)% increased Item Rarity",
+          "optional": false
+        },
+        { "text": "Area contains no monsters", "optional": false },
+        {
+          "text": "Found Items have (20-40)% chance to drop Corrupted in Area",
+          "optional": false
+        }
+      ],
+      "flavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
+      "chaosValue": 18.0,
+      "exaltedValue": 1.9,
+      "divineValue": 0.17,
+      "count": 19,
+      "detailsId": "vaults-of-atziri-t7",
+      "tradeInfo": [],
+      "listingCount": 132
+    },
+    {
+      "id": 22305,
+      "name": "Vaults of Atziri",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXAxIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7612528d07/UniqueMap1.png",
+      "mapTier": 11,
+      "baseType": "Vaal Pyramid Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, -5.56, -5.56, -11.11, -11.11, -16.67],
+        "totalChange": -16.67
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, -5.56, -5.56, -11.11, -11.11, -16.67],
+        "totalChange": -16.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Chests have (2501-3500)% increased Item Rarity",
+          "optional": false
+        },
+        { "text": "Area contains no monsters", "optional": false },
+        {
+          "text": "Found Items have (20-40)% chance to drop Corrupted in Area",
+          "optional": false
+        }
+      ],
+      "flavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
+      "chaosValue": 15.0,
+      "exaltedValue": 1.59,
+      "divineValue": 0.14,
+      "count": 311,
+      "detailsId": "vaults-of-atziri-t11",
+      "tradeInfo": [],
+      "listingCount": 476
+    },
+    {
+      "id": 41120,
+      "name": "Altered Distant Memory",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9TeW50aGVzaXNDb2xkR3VhcmRpYW5NYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/5800fc91db/SynthesisColdGuardianMap.png",
+      "mapTier": 11,
+      "baseType": "Synthesised Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "The winters of my youth were cold and harsh.\nWe had nothing, yet to my mother's credit, I wanted for so little.",
+      "chaosValue": 15.0,
+      "exaltedValue": 1.59,
+      "divineValue": 0.14,
+      "count": 399,
+      "detailsId": "altered-distant-memory-t11",
+      "tradeInfo": [],
+      "listingCount": 13942
+    },
+    {
+      "id": 41128,
+      "name": "Twisted Distant Memory",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9TeW50aGVzaXNMaWdodG5pbmdHdWFyZGlhbk1hcCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/30f4dc76de/SynthesisLightningGuardianMap.png",
+      "mapTier": 11,
+      "baseType": "Synthesised Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, -0.3, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, -0.3, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "Without our strict rule, man's destructive side would take hold.\nOur beautiful public spaces, our services for the ill and the needy,\nall of it would crumble.",
+      "chaosValue": 15.0,
+      "exaltedValue": 1.59,
+      "divineValue": 0.14,
+      "count": 399,
+      "detailsId": "twisted-distant-memory-t11",
+      "tradeInfo": [],
+      "listingCount": 14868
+    },
+    {
+      "id": 71299,
+      "name": "Vaults of Atziri",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXAxIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7612528d07/UniqueMap1.png",
+      "mapTier": 15,
+      "baseType": "Vaal Pyramid Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, -5.26, -10.53, -16.32, -21.05],
+        "totalChange": -21.05
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, -5.26, -10.53, -16.32, -21.05],
+        "totalChange": -21.05
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Chests have (2500-3488)% increased Item Rarity",
+          "optional": false
+        },
+        { "text": "Area contains no monsters", "optional": false },
+        {
+          "text": "Found Items have (20-40)% chance to drop Corrupted in Area",
+          "optional": false
+        }
+      ],
+      "flavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
+      "chaosValue": 15.0,
+      "exaltedValue": 1.59,
+      "divineValue": 0.14,
+      "count": 102,
+      "detailsId": "vaults-of-atziri-t15",
+      "tradeInfo": [],
+      "listingCount": 217
+    },
+    {
+      "id": 25564,
+      "name": "The Putrid Cloister",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QdXRyaWRDbG9pc3RlciIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/4113992f12/PutridCloister.png",
+      "mapTier": 12,
+      "baseType": "Museum Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, 0, 0, -6.67, -6.67],
+        "totalChange": -6.67
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, -6.67, -6.67],
+        "totalChange": -6.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Players are Cursed with Vulnerability", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Players are Cursed with Conductivity", "optional": false },
+        { "text": "Players are Cursed with Despair", "optional": false },
+        { "text": "Unique Boss drops divination cards", "optional": false }
+      ],
+      "flavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
+      "chaosValue": 14.0,
+      "exaltedValue": 1.48,
+      "divineValue": 0.13,
+      "count": 399,
+      "detailsId": "the-putrid-cloister-t12",
+      "tradeInfo": [],
+      "listingCount": 2799
+    },
+    {
+      "id": 44468,
+      "name": "The Twilight Temple",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9DZWxlc3RpYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2b43e37784/Celestial.png",
+      "mapTier": 11,
+      "baseType": "Moon Temple Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, -6.67], "totalChange": -6.67 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, -6.67],
+        "totalChange": -6.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has increased monster variety", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Area is inhabited by Lunaris fanatics", "optional": false },
+        { "text": "Area is inhabited by Solaris fanatics", "optional": false }
+      ],
+      "flavourText": "In the shadow of war,\nall are eclipsed.",
+      "chaosValue": 14.0,
+      "exaltedValue": 1.48,
+      "divineValue": 0.13,
+      "count": 188,
+      "detailsId": "the-twilight-temple-t11",
+      "tradeInfo": [],
+      "listingCount": 422
+    },
+    {
+      "id": 54702,
+      "name": "Augmented Distant Memory",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9TeW50aGVzaXNGaXJlR3VhcmRpYW5NYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/924cb164d0/SynthesisFireGuardianMap.png",
+      "mapTier": 11,
+      "baseType": "Synthesised Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, -6.67], "totalChange": -6.67 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, -6.67],
+        "totalChange": -6.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "What had seemed sacred and infallible\nso quickly became flawed out of necessity.\nCreated from compromises. Vulnerable to mortal whims.",
+      "chaosValue": 14.0,
+      "exaltedValue": 1.48,
+      "divineValue": 0.13,
+      "count": 399,
+      "detailsId": "augmented-distant-memory-t11",
+      "tradeInfo": [],
+      "listingCount": 23507
+    },
+    {
+      "id": 68434,
+      "name": "Rewritten Distant Memory",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9TeW50aGVzaXNHb2xlbUd1YXJkaWFuTWFwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f4fd693221/SynthesisGolemGuardianMap.png",
+      "mapTier": 11,
+      "baseType": "Synthesised Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, -6.67], "totalChange": -6.67 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, -6.67],
+        "totalChange": -6.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "It was in my oath that I found peace.\nIn echoing marble halls I found my voice.\nBefore the congregation I found purpose.",
+      "chaosValue": 14.0,
+      "exaltedValue": 1.48,
+      "divineValue": 0.13,
+      "count": 399,
+      "detailsId": "rewritten-distant-memory-t11",
+      "tradeInfo": [],
+      "listingCount": 15328
+    },
+    {
+      "id": 93857,
+      "name": "The Putrid Cloister",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QdXRyaWRDbG9pc3RlciIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/4113992f12/PutridCloister.png",
+      "mapTier": 16,
+      "baseType": "Museum Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, -6.67, -13.33, -6.67, -6.67],
+        "totalChange": -6.67
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, -6.67, -13.33, -6.67, -6.67],
+        "totalChange": -6.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Players are Cursed with Vulnerability", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Players are Cursed with Conductivity", "optional": false },
+        { "text": "Players are Cursed with Despair", "optional": false },
+        { "text": "Unique Boss drops divination cards", "optional": false }
+      ],
+      "flavourText": "Please take out your blades,\nyour whips, and your spikes.\nClass is now in session.",
+      "chaosValue": 14.0,
+      "exaltedValue": 1.48,
+      "divineValue": 0.13,
+      "count": 399,
+      "detailsId": "the-putrid-cloister-t16",
+      "tradeInfo": [],
+      "listingCount": 3539
+    },
+    {
+      "id": 104133,
+      "name": "The Twilight Temple",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9DZWxlc3RpYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2b43e37784/Celestial.png",
+      "mapTier": 15,
+      "baseType": "Moon Temple Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, -6.67, -6.67, -6.67, -6.67],
+        "totalChange": -6.67
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, -6.67, -6.67, -6.67, -6.67],
+        "totalChange": -6.67
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has increased monster variety", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Area is inhabited by Lunaris fanatics", "optional": false },
+        { "text": "Area is inhabited by Solaris fanatics", "optional": false }
+      ],
+      "flavourText": "In the shadow of war,\nall are eclipsed.",
+      "chaosValue": 14.0,
+      "exaltedValue": 1.48,
+      "divineValue": 0.13,
+      "count": 123,
+      "detailsId": "the-twilight-temple-t15",
+      "tradeInfo": [],
+      "listingCount": 257
+    },
+    {
+      "id": 70744,
+      "name": "Vaults of Atziri",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXAxIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7612528d07/UniqueMap1.png",
+      "mapTier": 4,
+      "baseType": "Vaal Pyramid Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, 0, 0, -6.67, -13.33],
+        "totalChange": -13.33
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, -6.67, -13.33],
+        "totalChange": -13.33
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Chests have (2501-3499)% increased Item Rarity",
+          "optional": false
+        },
+        { "text": "Area contains no monsters", "optional": false },
+        {
+          "text": "Found Items have (20-40)% chance to drop Corrupted in Area",
+          "optional": false
+        }
+      ],
+      "flavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
+      "chaosValue": 13.0,
+      "exaltedValue": 1.38,
+      "divineValue": 0.12,
+      "count": 399,
+      "detailsId": "vaults-of-atziri-t4",
+      "tradeInfo": [],
+      "listingCount": 3121
+    },
+    {
+      "id": 93337,
+      "name": "Vaults of Atziri",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXAxIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7612528d07/UniqueMap1.png",
+      "mapTier": 16,
+      "baseType": "Vaal Pyramid Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, 0, -6.67, -6.67, -13.33],
+        "totalChange": -13.33
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, -6.67, -6.67, -13.33],
+        "totalChange": -13.33
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Chests have (2500-3498)% increased Item Rarity",
+          "optional": false
+        },
+        { "text": "Area contains no monsters", "optional": false },
+        {
+          "text": "Found Items have (20-40)% chance to drop Corrupted in Area",
+          "optional": false
+        }
+      ],
+      "flavourText": "\"Should I depart this mortal coil,\nso shall all of my treasures.\"\n- Atziri, Queen of the Vaal",
+      "chaosValue": 13.0,
+      "exaltedValue": 1.38,
+      "divineValue": 0.12,
+      "count": 399,
+      "detailsId": "vaults-of-atziri-t16",
+      "tradeInfo": [],
+      "listingCount": 2778
+    },
+    {
+      "id": 103454,
+      "name": "The Twilight Temple",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9DZWxlc3RpYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2b43e37784/Celestial.png",
+      "mapTier": 4,
+      "baseType": "Moon Temple Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, 0, 0, -7.14, -14.29],
+        "totalChange": -14.29
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, -7.14, -14.29],
+        "totalChange": -14.29
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has increased monster variety", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Area is inhabited by Lunaris fanatics", "optional": false },
+        { "text": "Area is inhabited by Solaris fanatics", "optional": false }
+      ],
+      "flavourText": "In the shadow of war,\nall are eclipsed.",
+      "chaosValue": 12.0,
+      "exaltedValue": 1.27,
+      "divineValue": 0.11,
+      "count": 399,
+      "detailsId": "the-twilight-temple-t4",
+      "tradeInfo": [],
+      "listingCount": 2092
+    },
+    {
+      "id": 93655,
+      "name": "The Twilight Temple",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9DZWxlc3RpYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/2b43e37784/Celestial.png",
+      "mapTier": 16,
+      "baseType": "Moon Temple Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 7.69, 0, 0, -7.69, -7.69, -23.08],
+        "totalChange": -23.08
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 7.69, 0, 0, -7.69, -7.69, -23.08],
+        "totalChange": -23.08
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has increased monster variety", "optional": false },
+        { "text": "Players are Cursed with Flammability", "optional": false },
+        { "text": "Players are Cursed with Frostbite", "optional": false },
+        { "text": "Area is inhabited by Lunaris fanatics", "optional": false },
+        { "text": "Area is inhabited by Solaris fanatics", "optional": false }
+      ],
+      "flavourText": "In the shadow of war,\nall are eclipsed.",
+      "chaosValue": 10.0,
+      "exaltedValue": 1.06,
+      "divineValue": 0.09,
+      "count": 399,
+      "detailsId": "the-twilight-temple-t16",
+      "tradeInfo": [],
+      "listingCount": 2881
+    },
+    {
+      "id": 71225,
+      "name": "Replica Pillars of Arun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QaWxsYXJzT2ZWYXN0aXJpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f030aac473/PillarsOfVastiri.png",
+      "mapTier": 2,
+      "baseType": "Dunes Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -4.76, 1.59, 11.11, 1.59, 14.29, 12.7],
+        "totalChange": 12.7
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -4.76, 1.59, 11.11, 1.59, 14.29, 12.7],
+        "totalChange": 12.7
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        { "text": "Area contains unbridged gaps to cross", "optional": false },
+        {
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        { "text": "100% increased Monster Damage", "optional": false },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        { "text": "(20-25)% increased Monster Cast Speed", "optional": false },
+        { "text": "Players have Level 20 Dash Skill", "optional": true },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Rate for Movement Skills",
+          "optional": false
+        }
+      ],
+      "flavourText": "\"Whatever these maps are, it is clear they are dangerous. Send in only\ntest subjects, no guards or researchers.\" \n- Administrator Qotra",
+      "chaosValue": 7.1,
+      "exaltedValue": 0.75,
+      "divineValue": 0.07,
+      "count": 80,
+      "detailsId": "replica-pillars-of-arun-t2",
+      "tradeInfo": [],
+      "listingCount": 207
+    },
+    {
+      "id": 2245,
+      "name": "The Beachhead",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYXJiaW5nZXJSZWQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/1321ebcec0/HarbingerRed.png",
+      "mapTier": 15,
+      "baseType": "Harbinger Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -11.25, -4.94, -12.5, -12.5, -25.12, -12.62],
+        "totalChange": -12.62
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -11.25, -4.94, -12.5, -12.5, -25.12, -12.62],
+        "totalChange": -12.62
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
+      "chaosValue": 6.99,
+      "exaltedValue": 0.74,
+      "divineValue": 0.07,
+      "count": 399,
+      "detailsId": "the-beachhead-t15",
+      "tradeInfo": [],
+      "listingCount": 5949
+    },
+    {
+      "id": 2247,
+      "name": "The Beachhead",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYXJiaW5nZXJXaGl0ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/4a6302065c/HarbingerWhite.png",
+      "mapTier": 5,
+      "baseType": "Harbinger Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -2.44, 1.22, 9.76, -2.44, -8.54, -26.83],
+        "totalChange": -26.83
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -2.44, 1.22, 9.76, -2.44, -8.54, -26.83],
+        "totalChange": -26.83
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
+      "chaosValue": 6.0,
+      "exaltedValue": 0.63,
+      "divineValue": 0.06,
+      "count": 24,
+      "detailsId": "the-beachhead-t5",
+      "tradeInfo": [],
+      "listingCount": 127
+    },
+    {
+      "id": 2246,
+      "name": "The Beachhead",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYXJiaW5nZXJZZWxsb3ciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e98c7f846e/HarbingerYellow.png",
+      "mapTier": 10,
+      "baseType": "Harbinger Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, -1.25, 0, -5, -32.5, -37.5],
+        "totalChange": -37.5
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, -1.25, 0, -5, -32.5, -37.5],
+        "totalChange": -37.5
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [],
+      "flavourText": "<<HBGAa>><<HBG01>><<HBGAf>><<HBG02>><<HBGAm>><<HBG03>><<HBGAo>>\n<<HBG02>><<HBGAt>><<HBG03>><<HBGAy>>",
+      "chaosValue": 5.0,
+      "exaltedValue": 0.53,
+      "divineValue": 0.05,
+      "count": 398,
+      "detailsId": "the-beachhead-t10",
+      "tradeInfo": [],
+      "listingCount": 824
+    },
+    {
+      "id": 25432,
+      "name": "Poorjoy's Asylum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Qb29yam95c0FzeWx1bSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d7e9aba922/PoorjoysAsylum.png",
+      "mapTier": 14,
+      "baseType": "Temple Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -1.96, -1.96, -1.96, -1.96, -1.96, -1.96],
+        "totalChange": -1.96
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -1.96, -1.96, -1.96, -1.96, -1.96, -1.96],
+        "totalChange": -1.96
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "150% increased Experience gain", "optional": false },
+        { "text": "(140-160)% more Monster Life", "optional": false },
+        { "text": "(140-160)% increased Monster Damage", "optional": false },
+        { "text": "25% increased Monster Movement Speed", "optional": false },
+        { "text": "25% increased Monster Attack Speed", "optional": false },
+        { "text": "25% increased Monster Cast Speed", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Amulets",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Thrusting One Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (3-15) additional Rare Staves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (2-15) additional Rare Two Hand Maces",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Sceptres",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Shields",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Warstaves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Bows",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Axes",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Belts",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Gloves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Helmets",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (3-15) additional Rare Wands",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Daggers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Quivers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Rune Daggers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Body Armours",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Claws",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Rings",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Axes",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Maces",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Boots",
+          "optional": true
+        }
+      ],
+      "flavourText": "Laughs of all the twisted\nEcho through these halls of gold.\nIn this cold forgotten void\nThey wander, forever uncontrolled.",
+      "chaosValue": 5.0,
+      "exaltedValue": 0.53,
+      "divineValue": 0.05,
+      "count": 399,
+      "detailsId": "poorjoys-asylum-t14",
+      "tradeInfo": [],
+      "listingCount": 2993
+    },
+    {
+      "id": 93215,
+      "name": "Poorjoy's Asylum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Qb29yam95c0FzeWx1bSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d7e9aba922/PoorjoysAsylum.png",
+      "mapTier": 16,
+      "baseType": "Temple Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "150% increased Experience gain", "optional": false },
+        { "text": "(140-160)% more Monster Life", "optional": false },
+        { "text": "(140-160)% increased Monster Damage", "optional": false },
+        { "text": "25% increased Monster Movement Speed", "optional": false },
+        { "text": "25% increased Monster Attack Speed", "optional": false },
+        { "text": "25% increased Monster Cast Speed", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Staves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Wands",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Claws",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Rings",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Body Armours",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Bows",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Maces",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (2-15) additional Rare Helmets",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Shields",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Boots",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Warstaves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Two Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Gloves",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (3-15) additional Rare Two Hand Axes",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Maces",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Sceptres",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Thrusting One Hand Swords",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Belts",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Daggers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Rune Daggers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Quivers",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare Amulets",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Axes",
+          "optional": true
+        },
+        {
+          "text": "Unique Boss drops (10-15) additional Rare One Hand Swords",
+          "optional": true
+        }
+      ],
+      "flavourText": "Laughs of all the twisted\nEcho through these halls of gold.\nIn this cold forgotten void\nThey wander, forever uncontrolled.",
+      "chaosValue": 5.0,
+      "exaltedValue": 0.53,
+      "divineValue": 0.05,
+      "count": 399,
+      "detailsId": "poorjoys-asylum-t16",
+      "tradeInfo": [],
+      "listingCount": 8132
+    },
+    {
+      "id": 93486,
+      "name": "Caer Blaidd, Wolfpack's Den",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Xb2xmTWFwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/db94bff258/WolfMap.png",
+      "mapTier": 15,
+      "baseType": "Underground River Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, 0, 0, -11.6, -2.4],
+        "totalChange": -2.4
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, -11.6, -2.4],
+        "totalChange": -2.4
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Unique Boss drops 4 additional Maps", "optional": false },
+        { "text": "(20-50)% increased Magic Monsters", "optional": false },
+        {
+          "text": "(20-50)% increased number of Rare Monsters",
+          "optional": false
+        },
+        { "text": "25% more Monster Life", "optional": false },
+        { "text": "30% increased Monster Damage", "optional": false }
+      ],
+      "flavourText": "Howls and laughter\nThey hide in the day\nThey smell you, they watch you\nThey track their new prey",
+      "chaosValue": 4.88,
+      "exaltedValue": 0.52,
+      "divineValue": 0.05,
+      "count": 398,
+      "detailsId": "caer-blaidd-wolfpacks-den-t15",
+      "tradeInfo": [],
+      "listingCount": 2423
+    },
+    {
+      "id": 20494,
+      "name": "Mao Kun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9GYWlyZ3JhdmVzTWFwMDEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e1c1de7d51/FairgravesMap01.png",
+      "mapTier": 9,
+      "baseType": "Shore Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, -20], "totalChange": -20 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, -20],
+        "totalChange": -20
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        {
+          "text": "Monsters deal (175-190)% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters gain an Endurance Charge on Hit",
+          "optional": false
+        },
+        { "text": "Monsters gain a Power Charge on Hit", "optional": false }
+      ],
+      "flavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
+      "chaosValue": 4.0,
+      "exaltedValue": 0.42,
+      "divineValue": 0.04,
+      "count": 48,
+      "detailsId": "mao-kun-t9",
+      "tradeInfo": [],
+      "listingCount": 139
+    },
+    {
+      "id": 20550,
+      "name": "Death and Taxes",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9EZWF0aGFuZFRheGVzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/0cc72adc19/DeathandTaxes.png",
+      "mapTier": 12,
+      "baseType": "Necropolis Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -1.6, -1.6, -1.6, -1.6, -1.6, -1.6],
+        "totalChange": -1.6
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -1.6, -1.6, -1.6, -1.6, -1.6, -1.6],
+        "totalChange": -1.6
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Unique Boss deals (30-35)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss has (25-30)% increased Attack and Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss gives 20000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss drops (12-20) additional Currency Items",
+          "optional": false
+        }
+      ],
+      "flavourText": "So the raiders danced,\nleading their foe ever west,\ntowards certain death.",
+      "chaosValue": 4.0,
+      "exaltedValue": 0.42,
+      "divineValue": 0.04,
+      "count": 398,
+      "detailsId": "death-and-taxes-t12",
+      "tradeInfo": [],
+      "listingCount": 2156
+    },
+    {
+      "id": 23224,
+      "name": "Death and Taxes",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9EZWF0aGFuZFRheGVzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/0cc72adc19/DeathandTaxes.png",
+      "mapTier": 15,
+      "baseType": "Necropolis Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -20, -20, -20, 0, -20, -20],
+        "totalChange": -20
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -20, -20, -20, 0, -20, -20],
+        "totalChange": -20
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Unique Boss deals (30-35)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss has (25-30)% increased Attack and Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss gives 20000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss drops (12-20) additional Currency Items",
+          "optional": false
+        }
+      ],
+      "flavourText": "So the raiders danced,\nleading their foe ever west,\ntowards certain death.",
+      "chaosValue": 4.0,
+      "exaltedValue": 0.42,
+      "divineValue": 0.04,
+      "count": 54,
+      "detailsId": "death-and-taxes-t15",
+      "tradeInfo": [],
+      "listingCount": 202
+    },
+    {
+      "id": 25487,
+      "name": "Mao Kun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9GYWlyZ3JhdmVzTWFwMDEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e1c1de7d51/FairgravesMap01.png",
+      "mapTier": 13,
+      "baseType": "Shore Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, -18, -20, -20, -20, -20],
+        "totalChange": -20
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, -18, -20, -20, -20, -20],
+        "totalChange": -20
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        {
+          "text": "Monsters deal (175-190)% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters gain an Endurance Charge on Hit",
+          "optional": false
+        },
+        { "text": "Monsters gain a Power Charge on Hit", "optional": false }
+      ],
+      "flavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
+      "chaosValue": 4.0,
+      "exaltedValue": 0.42,
+      "divineValue": 0.04,
+      "count": 399,
+      "detailsId": "mao-kun-t13",
+      "tradeInfo": [],
+      "listingCount": 1272
+    },
+    {
+      "id": 25626,
+      "name": "Caer Blaidd, Wolfpack's Den",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Xb2xmTWFwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/db94bff258/WolfMap.png",
+      "mapTier": 16,
+      "baseType": "Underground River Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, 0, -20, -20, -20, -20],
+        "totalChange": -20
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, -20, -20, -20, -20],
+        "totalChange": -20
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Unique Boss drops 4 additional Maps", "optional": false },
+        { "text": "(20-50)% increased Magic Monsters", "optional": false },
+        {
+          "text": "(20-50)% increased number of Rare Monsters",
+          "optional": false
+        },
+        { "text": "25% more Monster Life", "optional": false },
+        { "text": "30% increased Monster Damage", "optional": false }
+      ],
+      "flavourText": "Howls and laughter\nThey hide in the day\nThey smell you, they watch you\nThey track their new prey",
+      "chaosValue": 4.0,
+      "exaltedValue": 0.42,
+      "divineValue": 0.04,
+      "count": 399,
+      "detailsId": "caer-blaidd-wolfpacks-den-t16",
+      "tradeInfo": [],
+      "listingCount": 4993
+    },
+    {
+      "id": 44718,
+      "name": "Mao Kun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9GYWlyZ3JhdmVzTWFwMDEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e1c1de7d51/FairgravesMap01.png",
+      "mapTier": 6,
+      "baseType": "Shore Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, -20, -20, -20, -20, -20, -20],
+        "totalChange": -20
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -20, -20, -20, -20, -20, -20],
+        "totalChange": -20
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        {
+          "text": "Monsters deal (175-190)% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters gain an Endurance Charge on Hit",
+          "optional": false
+        },
+        { "text": "Monsters gain a Power Charge on Hit", "optional": false }
+      ],
+      "flavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
+      "chaosValue": 4.0,
+      "exaltedValue": 0.42,
+      "divineValue": 0.04,
+      "count": 399,
+      "detailsId": "mao-kun-t6",
+      "tradeInfo": [],
+      "listingCount": 3474
+    },
+    {
+      "id": 68194,
+      "name": "Mao Kun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9GYWlyZ3JhdmVzTWFwMDEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/e1c1de7d51/FairgravesMap01.png",
+      "mapTier": 16,
+      "baseType": "Shore Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        {
+          "text": "Monsters deal (175-190)% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters gain an Endurance Charge on Hit",
+          "optional": false
+        },
+        { "text": "Monsters gain a Power Charge on Hit", "optional": false }
+      ],
+      "flavourText": "The Treasures of the Tides wait\nin agony at the End of the World.",
+      "chaosValue": 4.0,
+      "exaltedValue": 0.42,
+      "divineValue": 0.04,
+      "count": 399,
+      "detailsId": "mao-kun-t16",
+      "tradeInfo": [],
+      "listingCount": 5240
+    },
+    {
+      "id": 20481,
+      "name": "Whakawairua Tuahu",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXBFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7c20a66814/UniqueMapEye.png",
+      "mapTier": 6,
+      "baseType": "Strand Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area contains many Totems", "optional": false },
+        {
+          "text": "Curses have 50% reduced effect on Monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "We all began life in darkness, we shall all end it there.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 90,
+      "detailsId": "whakawairua-tuahu-t6",
+      "tradeInfo": [],
+      "listingCount": 290
+    },
+    {
+      "id": 20549,
+      "name": "Hallowed Ground",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsb3dlZEdyb3VuZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/0dfbdc7da9/HallowedGround.png",
+      "mapTier": 4,
+      "baseType": "Cemetery Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Unique Boss drops 3 additional Maps", "optional": false },
+        {
+          "text": "Unique Boss gives 2000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "0.5 Flask Charges recovered every 3 seconds",
+          "optional": false
+        },
+        { "text": "+(-2-2) to Monster Level of Area", "optional": true }
+      ],
+      "flavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "hallowed-ground-t4",
+      "tradeInfo": [],
+      "listingCount": 2843
+    },
+    {
+      "id": 20626,
+      "name": "Maelström of Chaos",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9NYWVsc3Ryb21vZkNoYW9zIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7772c4e971/MaelstromofChaos.png",
+      "mapTier": 8,
+      "baseType": "Atoll Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Chilled Ground", "optional": false },
+        {
+          "text": "Monsters deal 50% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters are Immune to randomly chosen Elemental Ailments or Stun",
+          "optional": false
+        },
+        {
+          "text": "Monsters' Melee Attacks apply random Hexes on Hit",
+          "optional": false
+        },
+        { "text": "Monsters Reflect Hexes", "optional": false }
+      ],
+      "flavourText": "Whispers from a world apart\nSpeak my name beyond the tomb;\nBound within the Maelström's heart,\nWill they grant me strength or doom?",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 89,
+      "detailsId": "maelstrom-of-chaos-t8",
+      "tradeInfo": [],
+      "listingCount": 272
+    },
+    {
+      "id": 20718,
+      "name": "Acton's Nightmare",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9tdXNpY2JveCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/765ebfd00f/musicbox.png",
+      "mapTier": 6,
+      "baseType": "Overgrown Shrine Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Burning Ground", "optional": false },
+        { "text": "Area is inhabited by Skeletons", "optional": false },
+        { "text": "Restless Dead", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        { "text": "Area contains a Large Chest", "optional": false }
+      ],
+      "flavourText": "Curious, she shook it then,\nAnd tiny screams emerged.\nCuriouser, she shook again,\nAnd an eerie silence purred.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 61,
+      "detailsId": "actons-nightmare-t6",
+      "tradeInfo": [],
+      "listingCount": 168
+    },
+    {
+      "id": 21387,
+      "name": "Olmec's Sanctum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vbG1lYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/844fea2e54/olmec.png",
+      "mapTier": 8,
+      "baseType": "Bone Crypt Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Final Boss drops higher Level Items", "optional": false }
+      ],
+      "flavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "olmecs-sanctum-t8",
+      "tradeInfo": [],
+      "listingCount": 1594
+    },
+    {
+      "id": 22074,
+      "name": "Whakawairua Tuahu",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXBFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7c20a66814/UniqueMapEye.png",
+      "mapTier": 3,
+      "baseType": "Strand Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area contains many Totems", "optional": false },
+        {
+          "text": "Curses have 50% reduced effect on Monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "We all began life in darkness, we shall all end it there.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "whakawairua-tuahu-t3",
+      "tradeInfo": [],
+      "listingCount": 3548
+    },
+    {
+      "id": 23220,
+      "name": "Olmec's Sanctum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vbG1lYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/844fea2e54/olmec.png",
+      "mapTier": 4,
+      "baseType": "Bone Crypt Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Final Boss drops higher Level Items", "optional": false }
+      ],
+      "flavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 71,
+      "detailsId": "olmecs-sanctum-t4",
+      "tradeInfo": [],
+      "listingCount": 229
+    },
+    {
+      "id": 23221,
+      "name": "Maelström of Chaos",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9NYWVsc3Ryb21vZkNoYW9zIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7772c4e971/MaelstromofChaos.png",
+      "mapTier": 5,
+      "baseType": "Atoll Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Chilled Ground", "optional": false },
+        {
+          "text": "Monsters deal 50% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters are Immune to randomly chosen Elemental Ailments or Stun",
+          "optional": false
+        },
+        {
+          "text": "Monsters' Melee Attacks apply random Hexes on Hit",
+          "optional": false
+        },
+        { "text": "Monsters Reflect Hexes", "optional": false }
+      ],
+      "flavourText": "Whispers from a world apart\nSpeak my name beyond the tomb;\nBound within the Maelström's heart,\nWill they grant me strength or doom?",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "maelstrom-of-chaos-t5",
+      "tradeInfo": [],
+      "listingCount": 3951
+    },
+    {
+      "id": 23230,
+      "name": "Hall of Grandmasters",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsT2ZHcmFuZG1hc3RlcnMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/73778c0f28/HallOfGrandmasters.png",
+      "mapTier": 16,
+      "baseType": "Promenade Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Contains the Immortalised Grandmasters\nPvP damage scaling in effect",
+          "optional": false
+        }
+      ],
+      "flavourText": "The grandest and greatest ever to fight,\nDivine the champions stand tall.\nBut match their power, best their might,\nAnd even the immortal may fall.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 163,
+      "detailsId": "hall-of-grandmasters-t16",
+      "tradeInfo": [],
+      "listingCount": 354
+    },
+    {
+      "id": 25364,
+      "name": "Hallowed Ground",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsb3dlZEdyb3VuZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/0dfbdc7da9/HallowedGround.png",
+      "mapTier": 7,
+      "baseType": "Cemetery Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, -10, -25, -25], "totalChange": -25 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, -10, -25, -25],
+        "totalChange": -25
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Unique Boss drops 3 additional Maps", "optional": false },
+        {
+          "text": "Unique Boss gives 2000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "0.5 Flask Charges recovered every 3 seconds",
+          "optional": false
+        },
+        { "text": "+(-2-2) to Monster Level of Area", "optional": true }
+      ],
+      "flavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 68,
+      "detailsId": "hallowed-ground-t7",
+      "tradeInfo": [],
+      "listingCount": 209
+    },
+    {
+      "id": 25477,
+      "name": "Olmec's Sanctum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vbG1lYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/844fea2e54/olmec.png",
+      "mapTier": 12,
+      "baseType": "Bone Crypt Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Final Boss drops higher Level Items", "optional": false }
+      ],
+      "flavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 156,
+      "detailsId": "olmecs-sanctum-t12",
+      "tradeInfo": [],
+      "listingCount": 466
+    },
+    {
+      "id": 25555,
+      "name": "Acton's Nightmare",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9tdXNpY2JveCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/765ebfd00f/musicbox.png",
+      "mapTier": 16,
+      "baseType": "Overgrown Shrine Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Burning Ground", "optional": false },
+        { "text": "Area is inhabited by Skeletons", "optional": false },
+        { "text": "Restless Dead", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        { "text": "Area contains a Large Chest", "optional": false }
+      ],
+      "flavourText": "Curious, she shook it then,\nAnd tiny screams emerged.\nCuriouser, she shook again,\nAnd an eerie silence purred.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "actons-nightmare-t16",
+      "tradeInfo": [],
+      "listingCount": 2720
+    },
+    {
+      "id": 25579,
+      "name": "Whakawairua Tuahu",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXBFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7c20a66814/UniqueMapEye.png",
+      "mapTier": 14,
+      "baseType": "Strand Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area contains many Totems", "optional": false },
+        {
+          "text": "Curses have 50% reduced effect on Monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "We all began life in darkness, we shall all end it there.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 245,
+      "detailsId": "whakawairua-tuahu-t14",
+      "tradeInfo": [],
+      "listingCount": 627
+    },
+    {
+      "id": 25616,
+      "name": "Hallowed Ground",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsb3dlZEdyb3VuZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/0dfbdc7da9/HallowedGround.png",
+      "mapTier": 11,
+      "baseType": "Cemetery Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Unique Boss drops 3 additional Maps", "optional": false },
+        {
+          "text": "Unique Boss gives 2000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "0.5 Flask Charges recovered every 3 seconds",
+          "optional": false
+        },
+        { "text": "+(-2-2) to Monster Level of Area", "optional": true }
+      ],
+      "flavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "hallowed-ground-t11",
+      "tradeInfo": [],
+      "listingCount": 1546
+    },
+    {
+      "id": 43639,
+      "name": "Death and Taxes",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9EZWF0aGFuZFRheGVzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/0cc72adc19/DeathandTaxes.png",
+      "mapTier": 16,
+      "baseType": "Necropolis Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, -25, -25], "totalChange": -25 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, -25, -25],
+        "totalChange": -25
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Unique Boss deals (30-35)% increased Damage",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss has (25-30)% increased Attack and Cast Speed",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss gives 20000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "Unique Boss drops (12-20) additional Currency Items",
+          "optional": false
+        }
+      ],
+      "flavourText": "So the raiders danced,\nleading their foe ever west,\ntowards certain death.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "death-and-taxes-t16",
+      "tradeInfo": [],
+      "listingCount": 6013
+    },
+    {
+      "id": 44498,
+      "name": "Maelström of Chaos",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9NYWVsc3Ryb21vZkNoYW9zIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7772c4e971/MaelstromofChaos.png",
+      "mapTier": 16,
+      "baseType": "Atoll Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Chilled Ground", "optional": false },
+        {
+          "text": "Monsters deal 50% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters are Immune to randomly chosen Elemental Ailments or Stun",
+          "optional": false
+        },
+        {
+          "text": "Monsters' Melee Attacks apply random Hexes on Hit",
+          "optional": false
+        },
+        { "text": "Monsters Reflect Hexes", "optional": false }
+      ],
+      "flavourText": "Whispers from a world apart\nSpeak my name beyond the tomb;\nBound within the Maelström's heart,\nWill they grant me strength or doom?",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "maelstrom-of-chaos-t16",
+      "tradeInfo": [],
+      "listingCount": 4696
+    },
+    {
+      "id": 44499,
+      "name": "Acton's Nightmare",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9tdXNpY2JveCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/765ebfd00f/musicbox.png",
+      "mapTier": 14,
+      "baseType": "Overgrown Shrine Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Burning Ground", "optional": false },
+        { "text": "Area is inhabited by Skeletons", "optional": false },
+        { "text": "Restless Dead", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        { "text": "Area contains a Large Chest", "optional": false }
+      ],
+      "flavourText": "Curious, she shook it then,\nAnd tiny screams emerged.\nCuriouser, she shook again,\nAnd an eerie silence purred.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 150,
+      "detailsId": "actons-nightmare-t14",
+      "tradeInfo": [],
+      "listingCount": 399
+    },
+    {
+      "id": 44999,
+      "name": "Maelström of Chaos",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9NYWVsc3Ryb21vZkNoYW9zIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/7772c4e971/MaelstromofChaos.png",
+      "mapTier": 12,
+      "baseType": "Atoll Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Chilled Ground", "optional": false },
+        {
+          "text": "Monsters deal 50% extra Physical Damage as Lightning",
+          "optional": false
+        },
+        {
+          "text": "Monsters are Immune to randomly chosen Elemental Ailments or Stun",
+          "optional": false
+        },
+        {
+          "text": "Monsters' Melee Attacks apply random Hexes on Hit",
+          "optional": false
+        },
+        { "text": "Monsters Reflect Hexes", "optional": false }
+      ],
+      "flavourText": "Whispers from a world apart\nSpeak my name beyond the tomb;\nBound within the Maelström's heart,\nWill they grant me strength or doom?",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "maelstrom-of-chaos-t12",
+      "tradeInfo": [],
+      "listingCount": 1916
+    },
+    {
+      "id": 45117,
+      "name": "Pillars of Arun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QaWxsYXJzT2ZWYXN0aXJpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f030aac473/PillarsOfVastiri.png",
+      "mapTier": 13,
+      "baseType": "Dunes Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        { "text": "Area contains unbridged gaps to cross", "optional": false },
+        {
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        { "text": "(20-25)% increased Monster Cast Speed", "optional": false },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Rate for Movement Skills",
+          "optional": false
+        }
+      ],
+      "flavourText": "Man creates where nature cannot.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 162,
+      "detailsId": "pillars-of-arun-t13",
+      "tradeInfo": [],
+      "listingCount": 542
+    },
+    {
+      "id": 45164,
+      "name": "Whakawairua Tuahu",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXBFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7c20a66814/UniqueMapEye.png",
+      "mapTier": 10,
+      "baseType": "Strand Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area contains many Totems", "optional": false },
+        {
+          "text": "Curses have 50% reduced effect on Monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "We all began life in darkness, we shall all end it there.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "whakawairua-tuahu-t10",
+      "tradeInfo": [],
+      "listingCount": 1730
+    },
+    {
+      "id": 67233,
+      "name": "Oba's Cursed Trove",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vYmEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c94e09c1a8/oba.png",
+      "mapTier": 16,
+      "baseType": "Underground Sea Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of desecrated ground", "optional": false },
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Area becomes fatal after some time", "optional": false }
+      ],
+      "flavourText": "\"Here the soil is more deadly than any swing of the axe.\"\n- Oba of the Karui, Conqueror of Corruption.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "obas-cursed-trove-t16",
+      "tradeInfo": [],
+      "listingCount": 6291
+    },
+    {
+      "id": 70661,
+      "name": "Pillars of Arun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QaWxsYXJzT2ZWYXN0aXJpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f030aac473/PillarsOfVastiri.png",
+      "mapTier": 2,
+      "baseType": "Dunes Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        { "text": "Area contains unbridged gaps to cross", "optional": false },
+        {
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        { "text": "(20-25)% increased Monster Cast Speed", "optional": false },
+        { "text": "Players have Level 20 Dash Skill", "optional": true },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Rate for Movement Skills",
+          "optional": false
+        }
+      ],
+      "flavourText": "Man creates where nature cannot.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "pillars-of-arun-t2",
+      "tradeInfo": [],
+      "listingCount": 3812
+    },
+    {
+      "id": 70854,
+      "name": "Oba's Cursed Trove",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vYmEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c94e09c1a8/oba.png",
+      "mapTier": 13,
+      "baseType": "Underground Sea Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, -20, -25, -25, -25, -25],
+        "totalChange": -25
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, -20, -25, -25, -25, -25],
+        "totalChange": -25
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of desecrated ground", "optional": false },
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Area becomes fatal after some time", "optional": false }
+      ],
+      "flavourText": "\"Here the soil is more deadly than any swing of the axe.\"\n- Oba of the Karui, Conqueror of Corruption.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 77,
+      "detailsId": "obas-cursed-trove-t13",
+      "tradeInfo": [],
+      "listingCount": 226
+    },
+    {
+      "id": 71251,
+      "name": "Pillars of Arun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QaWxsYXJzT2ZWYXN0aXJpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f030aac473/PillarsOfVastiri.png",
+      "mapTier": 5,
+      "baseType": "Dunes Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        { "text": "Area contains unbridged gaps to cross", "optional": false },
+        {
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        { "text": "(20-25)% increased Monster Cast Speed", "optional": false },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Rate for Movement Skills",
+          "optional": false
+        }
+      ],
+      "flavourText": "Man creates where nature cannot.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 71,
+      "detailsId": "pillars-of-arun-t5",
+      "tradeInfo": [],
+      "listingCount": 321
+    },
+    {
+      "id": 71253,
+      "name": "Pillars of Arun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QaWxsYXJzT2ZWYXN0aXJpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f030aac473/PillarsOfVastiri.png",
+      "mapTier": 9,
+      "baseType": "Dunes Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        { "text": "Area contains unbridged gaps to cross", "optional": false },
+        {
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        { "text": "(20-25)% increased Monster Cast Speed", "optional": false },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Rate for Movement Skills",
+          "optional": false
+        }
+      ],
+      "flavourText": "Man creates where nature cannot.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "pillars-of-arun-t9",
+      "tradeInfo": [],
+      "listingCount": 1965
+    },
+    {
+      "id": 71458,
+      "name": "Hallowed Ground",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsb3dlZEdyb3VuZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/0dfbdc7da9/HallowedGround.png",
+      "mapTier": 15,
+      "baseType": "Cemetery Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, -25, -25, -25], "totalChange": -25 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, -25, -25, -25],
+        "totalChange": -25
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Unique Boss drops 3 additional Maps", "optional": false },
+        {
+          "text": "Unique Boss gives 2000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "0.5 Flask Charges recovered every 3 seconds",
+          "optional": false
+        },
+        { "text": "+(-2-2) to Monster Level of Area", "optional": true }
+      ],
+      "flavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 174,
+      "detailsId": "hallowed-ground-t15",
+      "tradeInfo": [],
+      "listingCount": 551
+    },
+    {
+      "id": 93338,
+      "name": "Whakawairua Tuahu",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbmlxdWVNYXBFeWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7c20a66814/UniqueMapEye.png",
+      "mapTier": 16,
+      "baseType": "Strand Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area contains many Totems", "optional": false },
+        {
+          "text": "Curses have 50% reduced effect on Monsters",
+          "optional": false
+        }
+      ],
+      "flavourText": "We all began life in darkness, we shall all end it there.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "whakawairua-tuahu-t16",
+      "tradeInfo": [],
+      "listingCount": 3970
+    },
+    {
+      "id": 93572,
+      "name": "Pillars of Arun",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9QaWxsYXJzT2ZWYXN0aXJpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f030aac473/PillarsOfVastiri.png",
+      "mapTier": 16,
+      "baseType": "Dunes Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(60-100)% increased Experience gain", "optional": false },
+        { "text": "Area contains unbridged gaps to cross", "optional": false },
+        {
+          "text": "Monsters have 50% chance to Avoid Ailments",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Movement Speed",
+          "optional": false
+        },
+        {
+          "text": "(20-25)% increased Monster Attack Speed",
+          "optional": false
+        },
+        { "text": "(20-25)% increased Monster Cast Speed", "optional": false },
+        {
+          "text": "Players have 200% increased Cooldown Recovery Rate for Movement Skills",
+          "optional": false
+        }
+      ],
+      "flavourText": "Man creates where nature cannot.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "pillars-of-arun-t16",
+      "tradeInfo": [],
+      "listingCount": 4060
+    },
+    {
+      "id": 93586,
+      "name": "Olmec's Sanctum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vbG1lYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/844fea2e54/olmec.png",
+      "mapTier": 16,
+      "baseType": "Bone Crypt Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Final Boss drops higher Level Items", "optional": false }
+      ],
+      "flavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "olmecs-sanctum-t16",
+      "tradeInfo": [],
+      "listingCount": 2509
+    },
+    {
+      "id": 93666,
+      "name": "Hallowed Ground",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsb3dlZEdyb3VuZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/0dfbdc7da9/HallowedGround.png",
+      "mapTier": 16,
+      "baseType": "Cemetery Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Unique Boss drops 3 additional Maps", "optional": false },
+        {
+          "text": "Unique Boss gives 2000% increased Experience",
+          "optional": false
+        },
+        {
+          "text": "0.5 Flask Charges recovered every 3 seconds",
+          "optional": false
+        },
+        { "text": "+(-2-2) to Monster Level of Area", "optional": true }
+      ],
+      "flavourText": "Some dead have long envied the living.\nWhen given the chance, they take from us what they can.\nSo we offer our suffrage.\nIn return, they give only suffering.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "hallowed-ground-t16",
+      "tradeInfo": [],
+      "listingCount": 4218
+    },
+    {
+      "id": 103453,
+      "name": "Olmec's Sanctum",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vbG1lYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/844fea2e54/olmec.png",
+      "mapTier": 1,
+      "baseType": "Bone Crypt Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Final Boss drops higher Level Items", "optional": false }
+      ],
+      "flavourText": "They flew, and leapt, and clambered over,\nThey crawled, and swam, and slithered under.\nStill its ancient secrets await unclaimed\nAnd of this hidden temple, only legends remain.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "olmecs-sanctum-t1",
+      "tradeInfo": [],
+      "listingCount": 3697
+    },
+    {
+      "id": 103464,
+      "name": "Acton's Nightmare",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9tdXNpY2JveCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/765ebfd00f/musicbox.png",
+      "mapTier": 3,
+      "baseType": "Overgrown Shrine Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Burning Ground", "optional": false },
+        { "text": "Area is inhabited by Skeletons", "optional": false },
+        { "text": "Restless Dead", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        { "text": "Area contains a Large Chest", "optional": false }
+      ],
+      "flavourText": "Curious, she shook it then,\nAnd tiny screams emerged.\nCuriouser, she shook again,\nAnd an eerie silence purred.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "actons-nightmare-t3",
+      "tradeInfo": [],
+      "listingCount": 2785
+    },
+    {
+      "id": 103481,
+      "name": "Oba's Cursed Trove",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9vYmEiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c94e09c1a8/oba.png",
+      "mapTier": 10,
+      "baseType": "Underground Sea Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of desecrated ground", "optional": false },
+        { "text": "(40-50)% more Monster Life", "optional": false },
+        { "text": "(30-40)% increased Monster Damage", "optional": false },
+        { "text": "Area becomes fatal after some time", "optional": false }
+      ],
+      "flavourText": "\"Here the soil is more deadly than any swing of the axe.\"\n- Oba of the Karui, Conqueror of Corruption.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "obas-cursed-trove-t10",
+      "tradeInfo": [],
+      "listingCount": 2985
+    },
+    {
+      "id": 103920,
+      "name": "Acton's Nightmare",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9tdXNpY2JveCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/765ebfd00f/musicbox.png",
+      "mapTier": 10,
+      "baseType": "Overgrown Shrine Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        { "text": "Area has patches of Burning Ground", "optional": false },
+        { "text": "Area is inhabited by Skeletons", "optional": false },
+        { "text": "Restless Dead", "optional": false },
+        { "text": "Area is a large Maze", "optional": false },
+        { "text": "Area contains a Large Chest", "optional": false }
+      ],
+      "flavourText": "Curious, she shook it then,\nAnd tiny screams emerged.\nCuriouser, she shook again,\nAnd an eerie silence purred.",
+      "chaosValue": 3.0,
+      "exaltedValue": 0.32,
+      "divineValue": 0.03,
+      "count": 399,
+      "detailsId": "actons-nightmare-t10",
+      "tradeInfo": [],
+      "listingCount": 1359
+    },
+    {
+      "id": 20548,
+      "name": "Hall of Grandmasters",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsT2ZHcmFuZG1hc3RlcnMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/73778c0f28/HallOfGrandmasters.png",
+      "mapTier": 9,
+      "baseType": "Promenade Map",
+      "itemClass": 3,
+      "sparkline": {
+        "data": [0, 0, -26.67, -30, -26.67, -26.67, -33.33],
+        "totalChange": -33.33
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, -26.67, -30, -26.67, -26.67, -33.33],
+        "totalChange": -33.33
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Contains the Immortalised Grandmasters\nPvP damage scaling in effect",
+          "optional": false
+        }
+      ],
+      "flavourText": "The grandest and greatest ever to fight,\nDivine the champions stand tall.\nBut match their power, best their might,\nAnd even the immortal may fall.",
+      "chaosValue": 2.0,
+      "exaltedValue": 0.21,
+      "divineValue": 0.02,
+      "count": 14,
+      "detailsId": "hall-of-grandmasters-t9",
+      "tradeInfo": [],
+      "listingCount": 56
+    },
+    {
+      "id": 71481,
+      "name": "Hall of Grandmasters",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsT2ZHcmFuZG1hc3RlcnMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/73778c0f28/HallOfGrandmasters.png",
+      "mapTier": 13,
+      "baseType": "Promenade Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Contains the Immortalised Grandmasters\nPvP damage scaling in effect",
+          "optional": false
+        }
+      ],
+      "flavourText": "The grandest and greatest ever to fight,\nDivine the champions stand tall.\nBut match their power, best their might,\nAnd even the immortal may fall.",
+      "chaosValue": 2.0,
+      "exaltedValue": 0.21,
+      "divineValue": 0.02,
+      "count": 76,
+      "detailsId": "hall-of-grandmasters-t13",
+      "tradeInfo": [],
+      "listingCount": 211
+    },
+    {
+      "id": 20695,
+      "name": "Hall of Grandmasters",
+      "icon": "https://web.poecdn.com/gen/image/WzI4LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9IYWxsT2ZHcmFuZG1hc3RlcnMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/73778c0f28/HallOfGrandmasters.png",
+      "mapTier": 6,
+      "baseType": "Promenade Map",
+      "itemClass": 3,
+      "sparkline": { "data": [0, 0, 0, 0, 0, 0, 0], "totalChange": 0 },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, 0, 0, 0, 0, 0],
+        "totalChange": 0
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Contains the Immortalised Grandmasters\nPvP damage scaling in effect",
+          "optional": false
+        }
+      ],
+      "flavourText": "The grandest and greatest ever to fight,\nDivine the champions stand tall.\nBut match their power, best their might,\nAnd even the immortal may fall.",
+      "chaosValue": 1.0,
+      "exaltedValue": 0.11,
+      "divineValue": 0.01,
+      "count": 399,
+      "detailsId": "hall-of-grandmasters-t6",
+      "tradeInfo": [],
+      "listingCount": 3173
+    }
+  ]
+}

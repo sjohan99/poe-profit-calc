@@ -31,6 +31,56 @@ class TheSearingExarch(Boss):
     }
 
 
+class TheSearingExarchUber(Boss):
+    name = "The Searing Exarch (Uber)"
+    entrance_items = {BlazingFragment: 5}
+    drops = {
+        TheAnnihilatingLight,
+        AnnihilationsApproach,
+        TheCelestialBrace,
+        CrystallisedOmniscience,
+        ArchiveReliquaryKey,
+        CurioOfAbsorption,
+        ForbiddenFlameUber,
+        ExceptionalEldritchEmber,
+        EldritchOrbOfAnnulment,
+        EldritchChaosOrb,
+        EldritchExaltedOrb,
+    }
+
+
+class TheEaterOfWorlds(Boss):
+    name = "The Eater of Worlds"
+    entrance_items = {ScreamingInvitation: 1}
+    drops = {
+        TheGluttonousTide,
+        InextricableFate,
+        MeldingOfTheFlesh,
+        ForbiddenFlesh,
+        ExceptionalEldritchIchor,
+        EldritchOrbOfAnnulment,
+        EldritchChaosOrb,
+        EldritchExaltedOrb,
+    }
+
+
+class TheEaterOfWorldsUber(Boss):
+    name = "The Eater of Worlds (Uber)"
+    entrance_items = {DevouringFragment: 5}
+    drops = {
+        Nimis,
+        RavenousPassion,
+        AshesOfTheStars,
+        VisceralReliquaryKey,
+        CurioOfConsumption,
+        ForbiddenFleshUber,
+        ExceptionalEldritchIchor,
+        EldritchOrbOfAnnulment,
+        EldritchChaosOrb,
+        EldritchExaltedOrb,
+    }
+
+
 class TheShaper(Boss):
     name = "The Shaper"
     entrance_items = {
@@ -108,6 +158,58 @@ class TheElderUber(Boss):
         OrbOfDominanceElder,
         TheGulf,
         VoidOfTheElements,
+    }
+
+
+class TheElderUberUber(Boss):
+    name = "The Elder (Uber Uber)"
+    entrance_items = {
+        DecayingFragment: 5,
+    }
+    drops = {
+        CallOfTheVoid,
+        TheDevourerOfMinds,
+        SoulAscension,
+        TheEternityShroud,
+        Voidforge,
+        SublimeVision,
+        Impresence,
+        DecayingReliquaryKey,
+        CurioOfDecay,
+        ThreeModWatcherEye,
+        OrbOfDominanceElder,
+        TheGulf,
+        VoidOfTheElements,
+    }
+
+
+class Venarius(Boss):
+    name = "Venarius"
+    entrance_items = {
+        Cortex: 1,
+    }
+    drops = {
+        OfferingToTheSerpent,
+        Perepiteia,
+        GarbOfTheEphemeral,
+        BottledFaith,
+        TheHook,
+    }
+
+
+class VenariusUber(Boss):
+    name = "Venarius (Uber)"
+    entrance_items = {
+        SynthesisingFragment: 5,
+    }
+    drops = {
+        MaskOfTheTribunal,
+        Nebulis,
+        CircleOfAmbition,
+        TheApostate,
+        RationalDoctrine,
+        ForgottenReliquaryKey,
+        TheHook,
     }
 
 
@@ -194,4 +296,58 @@ class TheMaven(Boss):
         AwakenedMeleePhysicalDamageSupport,
         AwakenedMeleeSplashSupport,
         AwakenedMultistrikeSupport,
+    }
+
+
+class TheMavenUber(Boss):
+    name = "The Maven (Uber)"
+    entrance_items = {
+        RealityFragment: 5,
+    }
+    drops = {
+        ViridisVeil,
+        ImpossibleEscape,
+        Progenesis,
+        GraceOfTheGoddess,
+        ShinyReliquaryKey,
+        CurioOfPotential,
+        OrbOfConflict,
+        AwakenedAddedColdDamageSupport,
+        AwakenedArrowNovaSupport,
+        AwakenedCastOnCriticalStrikeSupport,
+        AwakenedChainSupport,
+        AwakenedColdPenetrationSupport,
+        AwakenedDeadlyAilmentsSupport,
+        AwakenedForkSupport,
+        AwakenedGreaterMultipleProjectilesSupport,
+        AwakenedSwiftAfflictionSupport,
+        AwakenedViciousProjectilesSupport,
+        AwakenedVoidManipulationSupport,
+        AwakenedAddedChaosDamageSupport,
+        AwakenedAddedLightningDamageSupport,
+        AwakenedBlasphemySupport,
+        AwakenedCastWhileChannellingSupport,
+        AwakenedControlledDestructionSupport,
+        AwakenedElementalFocusSupport,
+        AwakenedHextouchSupport,
+        AwakenedIncreasedAreaOfEffectSupport,
+        AwakenedLightningPenetrationSupport,
+        AwakenedMinionDamageSupport,
+        AwakenedSpellCascadeSupport,
+        AwakenedSpellEchoSupport,
+        AwakenedUnboundAilmentsSupport,
+        AwakenedUnleashSupport,
+        AwakenedAddedFireDamageSupport,
+        AwakenedAncestralCallSupport,
+        AwakenedBruitalitySupport,
+        AwakenedBurningDamageSupport,
+        AwakenedElementalDamageWithAttacksSupport,
+        AwakenedFirePenetrationSupport,
+        AwakenedGenerositySupport,
+        AwakenedMeleePhysicalDamageSupport,
+        AwakenedMeleeSplashSupport,
+        AwakenedMultistrikeSupport,
+        AwakenedEnlightenSupport,
+        AwakenedEnhanceSupport,
+        AwakenedEmpowerSupport,
     }

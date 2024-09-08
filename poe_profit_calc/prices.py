@@ -103,4 +103,5 @@ PROCESSOR_MAPPING = {
     PoeNinjaSource.UNIQUE_WEAPON: process_itemoverview,
     PoeNinjaSource.DIVINATION_CARD: process_itemoverview,
     PoeNinjaSource.SKILL_GEM: process_gem,
+    PoeNinjaSource.UNIQUE_MAP: process_itemoverview,
 }

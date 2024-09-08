@@ -16,28 +16,24 @@ else:
 
 BOSSES = {
     "the_searing_exarch": TheSearingExarch,
+    "the_searing_exarch_uber": TheSearingExarchUber,
+    "the_eater_of_worlds": TheEaterOfWorlds,
+    "the_eater_of_worlds_uber": TheEaterOfWorldsUber,
     "the_shaper": TheShaper,
     "the_shaper_uber": TheShaperUber,
     "the_elder": TheElder,
     "the_elder_uber": TheElderUber,
+    "the_elder_uber_uber": TheElderUberUber,
     "sirus": Sirus,
     "sirus_uber": SirusUber,
     "the_maven": TheMaven,
+    "the_maven_uber": TheMavenUber,
+    "venarius": Venarius,
+    "venarius_uber": VenariusUber,
 }
 
 
 def format_drop_prices(item_prices: dict[Item, float], drop_items: set[Item]):
-    return [
-        {
-            "name": item.name,
-            "price": item_prices.get(item, 0),
-            "droprate": item.droprate,
-        }
-        for item in drop_items
-    ]
-
-
-def format_maven_drop_prices(item_prices: dict[Item, float], drop_items: set[Item]):
     n_awakened_gems = len([item for item in drop_items if "Awakened" in item.name])
     return [
         {
@@ -66,10 +62,9 @@ def get_boss_drops(boss: str):
     boss_data = BOSSES.get(boss, None)
     items = boss_data.drops.union(set(boss_data.entrance_items))
     item_prices = prices.get_prices(items)
-    format = format_drop_prices if boss_data != TheMaven else format_maven_drop_prices
     return {
         "boss": boss_data.name,
-        "drops": format(item_prices, boss_data.drops),
+        "drops": format_drop_prices(item_prices, boss_data.drops),
         "entrance_items": format_entrance_prices(item_prices, boss_data.entrance_items),
     }
 

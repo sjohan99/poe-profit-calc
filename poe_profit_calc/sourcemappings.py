@@ -15,6 +15,7 @@ ENDPOINT_MAPPING = {
     PoeNinjaSource.UNIQUE_WEAPON: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=UniqueWeapon",
     PoeNinjaSource.DIVINATION_CARD: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=DivinationCard",
     PoeNinjaSource.SKILL_GEM: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=SkillGem",
+    PoeNinjaSource.UNIQUE_MAP: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=UniqueMap",
 }
 
 FILE_PATH_MAPPING = {
@@ -28,4 +29,5 @@ FILE_PATH_MAPPING = {
     PoeNinjaSource.UNIQUE_WEAPON: "static/itemoverview_uniqueweapon.json",
     PoeNinjaSource.DIVINATION_CARD: "static/itemoverview_divinationcard.json",
     PoeNinjaSource.SKILL_GEM: "static/itemoverview_skillgem.json",
+    PoeNinjaSource.UNIQUE_MAP: "static/itemoverview_uniquemap.json",
 }

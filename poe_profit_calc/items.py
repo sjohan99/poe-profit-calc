@@ -13,6 +13,7 @@ class PoeNinjaSource(Enum):
     UNIQUE_WEAPON = "UniqueWeapon"
     DIVINATION_CARD = "DivinationCard"
     SKILL_GEM = "SkillGem"
+    UNIQUE_MAP = "UniqueMap"
 
 
 @dataclass
@@ -740,3 +741,261 @@ class OrbOfConflict(Item):
     name = "Orb of Conflict"
     droprate = 0.35
     source = PoeNinjaSource.CURRENCY
+
+
+class ViridisVeil(Item):
+    name = "Viridi's Veil"
+    droprate = 0.55
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class ImpossibleEscape(Item):
+    name = "Impossible Escape"
+    droprate = 0.33
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class Progenesis(Item):
+    name = "Progenesis"
+    droprate = 0.11
+    source = PoeNinjaSource.UNIQUE_FLASK
+
+
+class GraceOfTheGoddess(Item):
+    name = "Grace of the Goddess"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class CurioOfPotential(Item):
+    name = "Curio of Potential"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class ShinyReliquaryKey(Item):
+    name = "Shiny Reliquary Key"
+    droprate = 0.015
+    source = PoeNinjaSource.FRAGMENT
+
+
+class TheGluttonousTide(Item):
+    name = "The Gluttonous Tide"
+    droprate = 0.5
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class InextricableFate(Item):
+    name = "Inextricable Fate"
+    droprate = 0.5
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class MeldingOfTheFlesh(Item):
+    name = "Melding of the Flesh"
+    droprate = 0.02
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class ForbiddenFlesh(Item):
+    name = "Forbidden Flesh"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class ExceptionalEldritchIchor(Item):
+    name = "Exceptional Eldritch Ichor"
+    droprate = 0.15
+    source = PoeNinjaSource.CURRENCY
+
+
+class Nimis(Item):
+    name = "Nimis"
+    droprate = 0.01
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class RavenousPassion(Item):
+    name = "Ravenous Passion"
+    droprate = 0.66
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class AshesOfTheStars(Item):
+    name = "Ashes of the Stars"
+    droprate = 0.33
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class ForbiddenFleshUber(Item):
+    name = "Forbidden Flesh"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class VisceralReliquaryKey(Item):
+    name = "Visceral Reliquary Key"
+    droprate = 0.01
+    source = PoeNinjaSource.FRAGMENT
+
+
+class CurioOfConsumption(Item):
+    name = "Curio of Consumption"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class TheAnnihilatingLight(Item):
+    name = "The Annihilating Light"
+    droprate = 0.475
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class AnnihilationsApproach(Item):
+    name = "Annihilation's Approach"
+    droprate = 0.25
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class TheCelestialBrace(Item):
+    name = "The Celestial Brace"
+    droprate = 0.25
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class CrystallisedOmniscience(Item):
+    name = "Crystallised Omniscience"
+    droprate = 0.025
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class ForbiddenFlameUber(Item):
+    name = "Forbidden Flame"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class ArchiveReliquaryKey(Item):
+    name = "Archive Reliquary Key"
+    droprate = 0.015
+    source = PoeNinjaSource.FRAGMENT
+
+
+class CurioOfAbsorption(Item):
+    name = "Curio of Absorption"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class CallOfTheVoid(Item):
+    name = "Call of the Void"
+    droprate = 0.5
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class TheDevourerOfMinds(Item):
+    name = "The Devourer of Minds"
+    droprate = 0.3
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class SoulAscension(Item):
+    name = "Soul Ascension"
+    droprate = 0.1
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class TheEternityShroud(Item):
+    name = "The Eternity Shroud"
+    droprate = 0.09
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class Voidforge(Item):
+    name = "Voidforge"
+    droprate = 0.01
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class CurioOfDecay(Item):
+    name = "Curio of Decay"
+    droprate = 0.05
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class DecayingReliquaryKey(Item):
+    name = "Decaying Reliquary Key"
+    droprate = 0.015
+    source = PoeNinjaSource.FRAGMENT
+
+
+class OfferingToTheSerpent(Item):
+    name = "Offering to the Serpent"
+    droprate = 0.45
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class Perepiteia(Item):
+    name = "Perepiteia"
+    droprate = 0.45
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class GarbOfTheEphemeral(Item):
+    name = "Garb of the Ephemeral"
+    droprate = 0.08
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class BottledFaith(Item):
+    name = "Bottled Faith"
+    droprate = 0.02
+    source = PoeNinjaSource.UNIQUE_FLASK
+
+
+class TheHook(Item):
+    name = "The Hook"
+    droprate = 0.05
+    source = PoeNinjaSource.DIVINATION_CARD
+
+
+class MaskOfTheTribunal(Item):
+    name = "Mask of the Tribunal"
+    droprate = 0.4
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class Nebulis(Item):
+    name = "Nebulis"
+    droprate = 0.33
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class CircleOfAmbition(Item):
+    name = "Circle of Ambition"
+    droprate = 0.17
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class TheApostate(Item):
+    name = "The Apostate"
+    droprate = 0.08
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class RationalDoctrine(Item):
+    name = "Rational Doctrine"
+    droprate = 0.02
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class ForgottenReliquaryKey(Item):
+    name = "Forgotten Reliquary Key"
+    droprate = 0.015
+    source = PoeNinjaSource.FRAGMENT
+
+
+class Cortex(Item):
+    name = "Cortex"
+    droprate = 0.01
+    source = PoeNinjaSource.UNIQUE_MAP
