@@ -25,6 +25,7 @@ class Prices:
             elif abs(self.item_prices[item].get("time") - t) > self.cache_time_seconds:
                 items_to_fetch.add(item)
         res = fetch_prices(items_to_fetch, self.fetcher, self.source_mapping)
+        # TODO: check if res[item] actually exists. It doesn't if the item is not in the response.
         self.item_prices.update({item: {"price": res[item], "time": t} for item in items_to_fetch})
         return {item: self.item_prices[item]["price"] for item in items}
 

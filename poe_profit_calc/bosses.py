@@ -109,3 +109,38 @@ class TheElderUber(Boss):
         TheGulf,
         VoidOfTheElements,
     }
+
+
+class Sirus(Boss):
+    name = "Sirus, Awakener of Worlds"
+    entrance_items = {
+        DroxsCrest: 1,
+        VeritaniasCrest: 1,
+        BaransCrest: 1,
+        AlHezminsCrest: 1,
+    }
+    drops = {
+        HandsOfTheHighTemplar,
+        CrownOfTheInwardEye,
+        TheBurdenOfTruth,
+        ThreadOfHope,
+        OrbOfDominanceSirus,
+        AwakenersOrb,
+        AFateWorseThanDeath,
+    }
+
+
+class SirusUber(Boss):
+    name = "Sirus, Awakener of Worlds (Uber)"
+    entrance_items = {
+        AwakeningFragment: 5,
+    }
+    drops = {
+        ThreadOfHopeMassive,
+        TheTempestRising,
+        OriathsEnd,
+        TheSaviour,
+        OrbOfDominanceSirus,
+        AwakenersOrb,
+        AFateWorseThanDeath,
+    }

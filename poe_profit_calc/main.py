@@ -20,6 +20,8 @@ BOSSES = {
     "the_shaper_uber": TheShaperUber,
     "the_elder": TheElder,
     "the_elder_uber": TheElderUber,
+    "sirus": Sirus,
+    "sirus_uber": SirusUber,
 }
 
 

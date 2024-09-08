@@ -159,6 +159,30 @@ class FragmentOfTheChimera(Item):
     source = PoeNinjaSource.FRAGMENT
 
 
+class BaransCrest(Item):
+    name = "Baran's Crest"
+    droprate = 0
+    source = PoeNinjaSource.FRAGMENT
+
+
+class DroxsCrest(Item):
+    name = "Drox's Crest"
+    droprate = 0
+    source = PoeNinjaSource.FRAGMENT
+
+
+class VeritaniasCrest(Item):
+    name = "Veritania's Crest"
+    droprate = 0
+    source = PoeNinjaSource.FRAGMENT
+
+
+class AlHezminsCrest(Item):
+    name = "Al-Hezmin's Crest"
+    droprate = 0
+    source = PoeNinjaSource.FRAGMENT
+
+
 class Dawnbreaker(Item):
     name = "Dawnbreaker"
     droprate = 0.33
@@ -238,6 +262,12 @@ class OrbOfDominanceShaper(Item):
 
 
 class OrbOfDominanceElder(Item):
+    name = "Orb of Dominance"
+    droprate = 0.05
+    source = PoeNinjaSource.CURRENCY
+
+
+class OrbOfDominanceSirus(Item):
     name = "Orb of Dominance"
     droprate = 0.05
     source = PoeNinjaSource.CURRENCY
@@ -367,3 +397,69 @@ class VoidOfTheElements(Item):
     name = "Void of the Elements"
     droprate = 0.04
     source = PoeNinjaSource.DIVINATION_CARD
+
+
+class HandsOfTheHighTemplar(Item):
+    name = "Hands of the High Templar"
+    droprate = 0.45
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class CrownOfTheInwardEye(Item):
+    name = "Crown of the Inward Eye"
+    droprate = 0.38
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class TheBurdenOfTruth(Item):
+    name = "The Burden of Truth"
+    droprate = 0.15
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class ThreadOfHope(Item):
+    name = "Thread of Hope"
+    droprate = 0.2
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class ThreadOfHopeMassive(Item):
+    name = "Thread of Hope"
+    droprate = 0.55
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class AwakenersOrb(Item):
+    name = "Awakener's Orb"
+    droprate = 0.15
+    source = PoeNinjaSource.CURRENCY
+
+
+class AFateWorseThanDeath(Item):
+    name = "A Fate Worse Than Death"
+    droprate = 0.05
+    source = PoeNinjaSource.DIVINATION_CARD
+
+
+class TheTempestRising(Item):
+    name = "The Tempest Rising"
+    droprate = 0.35
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class OriathsEnd(Item):
+    name = "Oriath's End"
+    droprate = 0.09
+    source = PoeNinjaSource.UNIQUE_FLASK
+
+
+class TheSaviour(Item):
+    name = "The Saviour"
+    droprate = 0.01
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class OublietteReliquaryKey(Item):
+    name = "Oubliette Reliquary Key"
+    droprate = 0.015
+    source = PoeNinjaSource.FRAGMENT
