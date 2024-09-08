@@ -58,6 +58,7 @@ def process_currencyoverview(data, items: set[Item]):
             if item.name == currency.get("currencyTypeName", ""):
                 price = currency.get("chaosEquivalent", -1)
                 item_prices[item] = price
+                break
     return item_prices
 
 
@@ -72,6 +73,22 @@ def process_itemoverview(data, items: set[Item]):
             ):
                 price = item_data.get("chaosValue", -1)
                 item_prices[item] = price
+                break
+    return item_prices
+
+
+def process_gem(data, items: set[Item]):
+    unprocessed_items = items.copy()
+    item_prices = {}
+    for gem_data in data.get("lines", {}):
+        if len(item_prices) == len(items):
+            break
+        for item in unprocessed_items:
+            if item.name == gem_data.get("name", "") and gem_data.get("variant", "") == "1":
+                price = gem_data.get("chaosValue", -1)
+                item_prices[item] = price
+                unprocessed_items.remove(item)
+                break
     return item_prices
 
 
@@ -85,4 +102,5 @@ PROCESSOR_MAPPING = {
     PoeNinjaSource.UNIQUE_FLASK: process_itemoverview,
     PoeNinjaSource.UNIQUE_WEAPON: process_itemoverview,
     PoeNinjaSource.DIVINATION_CARD: process_itemoverview,
+    PoeNinjaSource.SKILL_GEM: process_gem,
 }

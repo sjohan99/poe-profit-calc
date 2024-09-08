@@ -12,6 +12,7 @@ class PoeNinjaSource(Enum):
     UNIQUE_FLASK = "UniqueFlask"
     UNIQUE_WEAPON = "UniqueWeapon"
     DIVINATION_CARD = "DivinationCard"
+    SKILL_GEM = "SkillGem"
 
 
 @dataclass
@@ -463,3 +464,279 @@ class OublietteReliquaryKey(Item):
     name = "Oubliette Reliquary Key"
     droprate = 0.015
     source = PoeNinjaSource.FRAGMENT
+
+
+class AwakenedAddedColdDamageSupport(Item):
+    name = "Awakened Added Cold Damage Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedAddedFireDamageSupport(Item):
+    name = "Awakened Added Fire Damage Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedAddedLightningDamageSupport(Item):
+    name = "Awakened Added Lightning Damage Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedAncestralCallSupport(Item):
+    name = "Awakened Ancestral Call Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedArrowNovaSupport(Item):
+    name = "Awakened Arrow Nova Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedChainSupport(Item):
+    name = "Awakened Chain Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedBlasphemySupport(Item):
+    name = "Awakened Blasphemy Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedBurningDamageSupport(Item):
+    name = "Awakened Burning Damage Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedCastOnCriticalStrikeSupport(Item):
+    name = "Awakened Cast On Critical Strike Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedCastWhileChannellingSupport(Item):
+    name = "Awakened Cast While Channelling Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedColdPenetrationSupport(Item):
+    name = "Awakened Cold Penetration Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedDeadlyAilmentsSupport(Item):
+    name = "Awakened Deadly Ailments Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedEnhanceSupport(Item):
+    name = "Awakened Enhance Support"
+    droprate = 0.005
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedForkSupport(Item):
+    name = "Awakened Fork Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedGreaterMultipleProjectilesSupport(Item):
+    name = "Awakened Greater Multiple Projectiles Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedSwiftAfflictionSupport(Item):
+    name = "Awakened Swift Affliction Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedViciousProjectilesSupport(Item):
+    name = "Awakened Vicious Projectiles Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedVoidManipulationSupport(Item):
+    name = "Awakened Void Manipulation Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedAddedChaosDamageSupport(Item):
+    name = "Awakened Added Chaos Damage Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedControlledDestructionSupport(Item):
+    name = "Awakened Controlled Destruction Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedElementalFocusSupport(Item):
+    name = "Awakened Elemental Focus Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedEnlightenSupport(Item):
+    name = "Awakened Enlighten Support"
+    droprate = 0.005
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedHextouchSupport(Item):
+    name = "Awakened Hextouch Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedIncreasedAreaOfEffectSupport(Item):
+    name = "Awakened Increased Area of Effect Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedLightningPenetrationSupport(Item):
+    name = "Awakened Lightning Penetration Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedMinionDamageSupport(Item):
+    name = "Awakened Minion Damage Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedSpellCascadeSupport(Item):
+    name = "Awakened Spell Cascade Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedSpellEchoSupport(Item):
+    name = "Awakened Spell Echo Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedUnboundAilmentsSupport(Item):
+    name = "Awakened Unbound Ailments Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedUnleashSupport(Item):
+    name = "Awakened Unleash Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedBruitalitySupport(Item):
+    name = "Awakened Brutality Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedElementalDamageWithAttacksSupport(Item):
+    name = "Awakened Elemental Damage with Attacks Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedEmpowerSupport(Item):
+    name = "Awakened Empower Support"
+    droprate = 0.005
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedFirePenetrationSupport(Item):
+    name = "Awakened Fire Penetration Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedGenerositySupport(Item):
+    name = "Awakened Generosity Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedMeleePhysicalDamageSupport(Item):
+    name = "Awakened Melee Physical Damage Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedMeleeSplashSupport(Item):
+    name = "Awakened Melee Splash Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class AwakenedMultistrikeSupport(Item):
+    name = "Awakened Multistrike Support"
+    droprate = 0.25
+    source = PoeNinjaSource.SKILL_GEM
+
+
+class TheMavensWrit(Item):
+    name = "The Maven's Writ"
+    droprate = 0
+    source = PoeNinjaSource.FRAGMENT
+
+
+class LegacyOfFury(Item):
+    name = "Legacy of Fury"
+    droprate = 0.45
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class GravensSecret(Item):
+    name = "Graven's Secret"
+    droprate = 0.16
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class ArnsAnguish(Item):
+    name = "Arn's Anguish"
+    droprate = 0.16
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class OlesyasDelight(Item):
+    name = "Olesya's Delight"
+    droprate = 0.16
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class DoppelgangerGuise(Item):
+    name = "Doppelgänger Guise"
+    droprate = 0.06
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class Echoforge(Item):
+    name = "Echoforge"
+    droprate = 0.01
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class OrbOfConflict(Item):
+    name = "Orb of Conflict"
+    droprate = 0.35
+    source = PoeNinjaSource.CURRENCY
