@@ -12,8 +12,8 @@ class Boss:
     """
 
     name: str
-    entrance_items: dict[Item, int]
-    drops: set[Item]
+    entrance_items: dict[type[Item], int]
+    drops: set[type[Item]]
 
 
 class TheSearingExarch(Boss):
@@ -46,12 +46,12 @@ class TheShaper(Boss):
         DyingSun,
         FragmentOfKnowledge,
         FragmentOfShape,
-        OrbOfDominance,
+        OrbOfDominanceShaper,
     }
 
 
 class TheShaperUber(Boss):
-    name = "The Shaper Uber"
+    name = "The Shaper (Uber)"
     entrance_items = {
         CosmicFragment: 5,
     }
@@ -64,5 +64,48 @@ class TheShaperUber(Boss):
         CosmicReliquaryKey,
         FragmentOfKnowledge,
         FragmentOfShape,
-        OrbOfDominance,
+        OrbOfDominanceShaper,
+    }
+
+
+class TheElder(Boss):
+    name = "The Elder"
+    entrance_items = {
+        FragmentOfConstriction: 1,
+        FragmentOfEnslavement: 1,
+        FragmentOfEradication: 1,
+        FragmentOfPurification: 1,
+    }
+    drops = {
+        FragmentOfTerror,
+        FragmentOfEmptiness,
+        BlashphemersGrasp,
+        CyclopeanCoil,
+        Nebuloch,
+        Hopeshredder,
+        Shimmeron,
+        Impresence,
+        OrbOfDominanceElder,
+        TwoModWatcherEye,
+    }
+
+
+class TheElderUber(Boss):
+    name = "The Elder (Uber)"
+    entrance_items = {
+        FragmentOfTerror: 1,
+        FragmentOfEmptiness: 1,
+        FragmentOfKnowledge: 1,
+        FragmentOfShape: 1,
+    }
+    drops = {
+        MarkOfTheShaper,
+        MarkOfTheElder,
+        Voidfletcher,
+        Indigon,
+        Disintegrator,
+        ThreeModWatcherEye,
+        OrbOfDominanceElder,
+        TheGulf,
+        VoidOfTheElements,
     }

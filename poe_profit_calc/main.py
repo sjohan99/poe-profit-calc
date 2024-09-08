@@ -6,7 +6,7 @@ from poe_profit_calc.sourcemappings import FILE_PATH_MAPPING
 from fastapi import FastAPI
 import os
 
-prices = None
+
 if os.getenv("POE_RUN_MODE") == "local":
     prices = Prices(fetcher=FileFetcher(), source_mapping=FILE_PATH_MAPPING)
 else:
@@ -18,6 +18,8 @@ BOSSES = {
     "the_searing_exarch": TheSearingExarch,
     "the_shaper": TheShaper,
     "the_shaper_uber": TheShaperUber,
+    "the_elder": TheElder,
+    "the_elder_uber": TheElderUber,
 }
 
 

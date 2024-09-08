@@ -13,6 +13,7 @@ ENDPOINT_MAPPING = {
     PoeNinjaSource.UNIQUE_ACCESSORY: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=UniqueAccessory",
     PoeNinjaSource.UNIQUE_FLASK: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=UniqueFlask",
     PoeNinjaSource.UNIQUE_WEAPON: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=UniqueWeapon",
+    PoeNinjaSource.DIVINATION_CARD: f"{BASE_NINJA_URL}itemoverview?league={LEAGUE}&type=DivinationCard",
 }
 
 FILE_PATH_MAPPING = {
@@ -24,4 +25,5 @@ FILE_PATH_MAPPING = {
     PoeNinjaSource.UNIQUE_ACCESSORY: "static/itemoverview_uniqueaccessory.json",
     PoeNinjaSource.UNIQUE_FLASK: "static/itemoverview_uniqueflask.json",
     PoeNinjaSource.UNIQUE_WEAPON: "static/itemoverview_uniqueweapon.json",
+    PoeNinjaSource.DIVINATION_CARD: "static/itemoverview_divinationcard.json",
 }

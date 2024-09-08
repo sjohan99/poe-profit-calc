@@ -83,4 +83,5 @@ PROCESSOR_MAPPING = {
     PoeNinjaSource.UNIQUE_ACCESSORY: process_itemoverview,
     PoeNinjaSource.UNIQUE_FLASK: process_itemoverview,
     PoeNinjaSource.UNIQUE_WEAPON: process_itemoverview,
+    PoeNinjaSource.DIVINATION_CARD: process_itemoverview,
 }

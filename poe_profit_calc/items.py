@@ -11,6 +11,7 @@ class PoeNinjaSource(Enum):
     UNIQUE_ACCESSORY = "UniqueAccessory"
     UNIQUE_FLASK = "UniqueFlask"
     UNIQUE_WEAPON = "UniqueWeapon"
+    DIVINATION_CARD = "DivinationCard"
 
 
 @dataclass
@@ -230,9 +231,15 @@ class DyingSun(Item):
     source = PoeNinjaSource.UNIQUE_FLASK
 
 
-class OrbOfDominance(Item):
+class OrbOfDominanceShaper(Item):
     name = "Orb of Dominance"
     droprate = 0.01
+    source = PoeNinjaSource.CURRENCY
+
+
+class OrbOfDominanceElder(Item):
+    name = "Orb of Dominance"
+    droprate = 0.05
     source = PoeNinjaSource.CURRENCY
 
 
@@ -270,3 +277,93 @@ class CosmicReliquaryKey(Item):
     name = "Cosmic Reliquary Key"
     droprate = 0.01
     source = PoeNinjaSource.FRAGMENT
+
+
+class BlashphemersGrasp(Item):
+    name = "Blasphemer's Grasp"
+    droprate = 0.25
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class CyclopeanCoil(Item):
+    name = "Cyclopean Coil"
+    droprate = 0.25
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class Nebuloch(Item):
+    name = "Nebuloch"
+    droprate = 0.1
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class Hopeshredder(Item):
+    name = "Hopeshredder"
+    droprate = 0.1
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class Shimmeron(Item):
+    name = "Shimmeron"
+    droprate = 0.1
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class Impresence(Item):
+    name = "Impresence"
+    droprate = 0.2
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class TwoModWatcherEye(Item):
+    name = "Watcher's Eye"
+    droprate = 0.35
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class ThreeModWatcherEye(Item):
+    name = "Watcher's Eye"
+    droprate = 0.35
+    source = PoeNinjaSource.UNIQUE_JEWEL
+
+
+class MarkOfTheShaper(Item):
+    name = "Mark of the Shaper"
+    droprate = 0.35
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class MarkOfTheElder(Item):
+    name = "Mark of the Elder"
+    droprate = 0.35
+    source = PoeNinjaSource.UNIQUE_ACCESSORY
+
+
+class Voidfletcher(Item):
+    name = "Voidfletcher"
+    droprate = 0.25
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class Indigon(Item):
+    name = "Indigon"
+    droprate = 0.4
+    source = PoeNinjaSource.UNIQUE_ARMOUR
+
+
+class Disintegrator(Item):
+    name = "Disintegrator"
+    droprate = 0.01
+    source = PoeNinjaSource.UNIQUE_WEAPON
+
+
+class TheGulf(Item):
+    name = "The Gulf"
+    droprate = 0.04
+    source = PoeNinjaSource.DIVINATION_CARD
+
+
+class VoidOfTheElements(Item):
+    name = "Void of the Elements"
+    droprate = 0.04
+    source = PoeNinjaSource.DIVINATION_CARD
