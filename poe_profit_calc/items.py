@@ -37,32 +37,38 @@ SOURCE_TO_NAME_FIELD = {
 class PoeNinjaMatcher:
     """
     Attributes:
-        source (PoeNinjaSource): Source for the item, indicates in which data-set the item is found in.
-        name (str): Name of the item to match.
-        match_fields (dict): Dict of key-value pairs to match against the item. Must match all key-value pairs.
-        exclude_fields (dict): Dict of key-value pairs to exclude from the item. Must not match any key-value pairs.
-        name_field_key (str): Key to match the name of the item against.
-        price_field_key (str): Key to get the price of the item from.
+        source: Source for the item, indicates in which data-set the item is found in.
+        name: Name of the item to match.
+        match_fields: Key-value pairs to match against the item. Must match all key-value pairs.
+        exclude_fields: Key-value pairs to exclude from the item.
+                        Must not match any key-value pairs.
+                        If the value is an empty set, the key must not exist in the item.
+        name_field_key: Key to match the name of the item against.
+        price_field_key: Key to get the price of the item from.
     """
 
     source: PoeNinjaSource
     name: str
     match_fields: dict = field(default_factory=dict)
-    exclude_fields: dict = field(default_factory=dict)
+    exclude_fields: dict[str, set] = field(default_factory=dict)
     name_field_key: str = ""
     price_field_key: str = ""
 
     def price_if_match(self, item: dict) -> Union[float, None]:
-        if item.get("detailsId", "").endswith("-relic"):
-            return None
         if item.get(self.name_field_key) != self.name:
+            return None
+        if "relic" not in self.name and "relic" in item.get("detailsId", ""):
             return None
         for key, value in self.match_fields.items():
             if item.get(key) != value:
                 return None
-        for key, value in self.exclude_fields.items():
-            if item.get(key) == value:
+        for key, exclude_values in self.exclude_fields.items():
+            if key in item and not exclude_values:
                 return None
+            field_value = item.get(key)
+            for exclude_value in exclude_values:
+                if field_value == exclude_value:
+                    return None
         return item.get(self.price_field_key, -1)
 
     def __post_init__(self):
@@ -74,6 +80,12 @@ class PoeNinjaMatcher:
 
         if self.source == PoeNinjaSource.SKILL_GEM:
             self.match_fields["variant"] = "1"
+
+        if (
+            self.source == PoeNinjaSource.UNIQUE_ARMOUR
+            or self.source == PoeNinjaSource.UNIQUE_WEAPON
+        ):
+            self.exclude_fields["links"] = set()
 
 
 @dataclass(frozen=True)

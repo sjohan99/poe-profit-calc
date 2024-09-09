@@ -11,7 +11,7 @@ import os
 if os.getenv("POE_RUN_MODE") == "local":
     price_fetcher = Prices(fetcher=FileFetcher(), source_mapping=FILE_PATH_MAPPING)
 else:
-    prices_fetcher = Prices(
+    price_fetcher = Prices(
         fetcher=HttpFetcher(),
     )
 
