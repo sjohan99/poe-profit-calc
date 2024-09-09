@@ -2,6 +2,7 @@ from time import time
 from poe_profit_calc.items import Item, PoeNinjaSource
 from poe_profit_calc.fetcher import Fetcher, FetchError
 from poe_profit_calc.sourcemappings import ENDPOINT_MAPPING
+from itertools import groupby
 
 
 class Prices:
@@ -33,75 +34,41 @@ class Prices:
 def fetch_prices(
     items: set[Item], fetcher: Fetcher, source_mapping=ENDPOINT_MAPPING
 ) -> dict[Item, float]:
-    item_sources = {item: source_mapping[item.source] for item in items}
-    item_data = {}
-    for item, item_source in item_sources.items():
+    groups = group_by_source(items, source_mapping)
+    item_prices = {}
+
+    for data_source, item_group in groups.items():
         try:
-            data = fetcher.fetch_data(item_source)
+            data = fetcher.fetch_data(data_source)
         except FetchError as e:
             print(e)
             data = {}
-        item_data[item] = data
-    item_prices = {}
-    for item, data in item_data.items():
-        process_function = PROCESSOR_MAPPING[item.source]
-        item_prices.update(process_function(data, items))
+        item_prices.update(extract_prices(data, item_group))
     return item_prices
 
 
-def process_currencyoverview(data, items: set[Item]):
-    item_prices = {}
-    for currency in data.get("lines", {}):
-        if len(item_prices) == len(items):
-            break
-        for item in items:
-            if item.name == currency.get("currencyTypeName", ""):
-                price = currency.get("chaosEquivalent", -1)
-                item_prices[item] = price
-                break
-    return item_prices
+def group_by_source(
+    items: set[Item], source_mapping: dict[PoeNinjaSource, str]
+) -> dict[str, set[Item]]:
+    groups = {}
+    for item in items:
+        source = source_mapping[item.matcher.source]
+        if source not in groups:
+            groups[source] = {item}
+        else:
+            groups[source].add(item)
+    return groups
 
 
-def process_itemoverview(data, items: set[Item]):
+def extract_prices(data, items: set[Item]) -> dict[Item, float]:
     item_prices = {}
+    unprocessed_items = items.copy()
     for item_data in data.get("lines", {}):
         if len(item_prices) == len(items):
             break
-        for item in items:
-            if item.name == item_data.get("name", "") and "-relic" not in item_data.get(
-                "detailsId", ""
-            ):
-                price = item_data.get("chaosValue", -1)
-                item_prices[item] = price
-                break
-    return item_prices
-
-
-def process_gem(data, items: set[Item]):
-    unprocessed_items = items.copy()
-    item_prices = {}
-    for gem_data in data.get("lines", {}):
-        if len(item_prices) == len(items):
-            break
         for item in unprocessed_items:
-            if item.name == gem_data.get("name", "") and gem_data.get("variant", "") == "1":
-                price = gem_data.get("chaosValue", -1)
+            if price := item.matcher.price_if_match(item_data):
                 item_prices[item] = price
                 unprocessed_items.remove(item)
                 break
     return item_prices
-
-
-PROCESSOR_MAPPING = {
-    PoeNinjaSource.CURRENCY: process_currencyoverview,
-    PoeNinjaSource.UNIQUE_ARMOUR: process_itemoverview,
-    PoeNinjaSource.UNIQUE_JEWEL: process_itemoverview,
-    PoeNinjaSource.INVITATION: process_itemoverview,
-    PoeNinjaSource.FRAGMENT: process_currencyoverview,
-    PoeNinjaSource.UNIQUE_ACCESSORY: process_itemoverview,
-    PoeNinjaSource.UNIQUE_FLASK: process_itemoverview,
-    PoeNinjaSource.UNIQUE_WEAPON: process_itemoverview,
-    PoeNinjaSource.DIVINATION_CARD: process_itemoverview,
-    PoeNinjaSource.SKILL_GEM: process_gem,
-    PoeNinjaSource.UNIQUE_MAP: process_itemoverview,
-}

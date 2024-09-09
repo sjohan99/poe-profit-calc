@@ -12,8 +12,8 @@ class Boss:
     """
 
     name: str
-    entrance_items: dict[type[Item], int]
-    drops: set[type[Item]]
+    entrance_items: dict[Item, int]
+    drops: set[Item]
 
 
 class TheSearingExarch(Boss):
