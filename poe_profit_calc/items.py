@@ -105,21 +105,21 @@ CurioOfPotential = Item(
 AwakenedHextouchSupport = Item(
     "Awakened Hextouch Support",
     "AwakenedHextouchSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Hextouch Support"),
 )
 
 AwakenedViciousProjectilesSupport = Item(
     "Awakened Vicious Projectiles Support",
     "AwakenedViciousProjectilesSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Vicious Projectiles Support"),
 )
 
 AwakenedCastWhileChannellingSupport = Item(
     "Awakened Cast While Channelling Support",
     "AwakenedCastWhileChannellingSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Cast While Channelling Support"),
 )
 
@@ -175,14 +175,14 @@ GravensSecret = Item(
 AwakenedMeleeSplashSupport = Item(
     "Awakened Melee Splash Support",
     "AwakenedMeleeSplashSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Melee Splash Support"),
 )
 
 AwakenedAncestralCallSupport = Item(
     "Awakened Ancestral Call Support",
     "AwakenedAncestralCallSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Ancestral Call Support"),
 )
 
@@ -238,21 +238,21 @@ ForbiddenFlesh = Item(
 AwakenedLightningPenetrationSupport = Item(
     "Awakened Lightning Penetration Support",
     "AwakenedLightningPenetrationSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Lightning Penetration Support"),
 )
 
 AwakenedColdPenetrationSupport = Item(
     "Awakened Cold Penetration Support",
     "AwakenedColdPenetrationSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Cold Penetration Support"),
 )
 
 AwakenedIncreasedAreaOfEffectSupport = Item(
     "Awakened Increased Area of Effect Support",
     "AwakenedIncreasedAreaofEffectSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Increased Area of Effect Support"),
 )
 
@@ -310,14 +310,14 @@ ForbiddenFleshUber = Item(
 AwakenedMultistrikeSupport = Item(
     "Awakened Multistrike Support",
     "AwakenedMultistrikeSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Multistrike Support"),
 )
 
 AwakenedUnleashSupport = Item(
     "Awakened Unleash Support",
     "AwakenedUnleashSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Unleash Support"),
 )
 
@@ -366,21 +366,21 @@ ShinyReliquaryKey = Item(
 AwakenedBruitalitySupport = Item(
     "Awakened Brutality Support",
     "AwakenedBrutalitySupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Brutality Support"),
 )
 
 AwakenedDeadlyAilmentsSupport = Item(
     "Awakened Deadly Ailments Support",
     "AwakenedDeadlyAilmentsSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Deadly Ailments Support"),
 )
 
 AwakenedSpellCascadeSupport = Item(
     "Awakened Spell Cascade Support",
     "AwakenedSpellCascadeSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Spell Cascade Support"),
 )
 
@@ -436,14 +436,14 @@ TheMavensWrit = Item(
 AwakenedEnlightenSupport = Item(
     "Awakened Enlighten Support",
     "AwakenedEnlightenSupport",
-    0.005,
+    0.00166,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Enlighten Support"),
 )
 
 AwakenedArrowNovaSupport = Item(
     "Awakened Arrow Nova Support",
     "AwakenedArrowNovaSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Arrow Nova Support"),
 )
 
@@ -499,21 +499,21 @@ AshesOfTheStars = Item(
 AwakenedFirePenetrationSupport = Item(
     "Awakened Fire Penetration Support",
     "AwakenedFirePenetrationSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Fire Penetration Support"),
 )
 
 AwakenedVoidManipulationSupport = Item(
     "Awakened Void Manipulation Support",
     "AwakenedVoidManipulationSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Void Manipulation Support"),
 )
 
 AwakenedEnhanceSupport = Item(
     "Awakened Enhance Support",
     "AwakenedEnhanceSupport",
-    0.005,
+    0.00166,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Enhance Support"),
 )
 
@@ -583,7 +583,7 @@ ArnsAnguish = Item(
 AwakenedChainSupport = Item(
     "Awakened Chain Support",
     "AwakenedChainSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Chain Support"),
 )
 
@@ -639,14 +639,14 @@ CurioOfConsumption = Item(
 AwakenedGenerositySupport = Item(
     "Awakened Generosity Support",
     "AwakenedGenerositySupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Generosity Support"),
 )
 
 AwakenedGreaterMultipleProjectilesSupport = Item(
     "Awakened Greater Multiple Projectiles Support",
     "AwakenedGreaterMultipleProjectilesSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Greater Multiple Projectiles Support"),
 )
 
@@ -716,7 +716,7 @@ LegacyOfFury = Item(
 AwakenedBlasphemySupport = Item(
     "Awakened Blasphemy Support",
     "AwakenedBlasphemySupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Blasphemy Support"),
 )
 
@@ -772,14 +772,14 @@ AnnihilationsApproach = Item(
 AwakenedSpellEchoSupport = Item(
     "Awakened Spell Echo Support",
     "AwakenedSpellEchoSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Spell Echo Support"),
 )
 
 AwakenedControlledDestructionSupport = Item(
     "Awakened Controlled Destruction Support",
     "AwakenedControlledDestructionSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Controlled Destruction Support"),
 )
 
@@ -849,14 +849,14 @@ Echoforge = Item(
 AwakenedAddedChaosDamageSupport = Item(
     "Awakened Added Chaos Damage Support",
     "AwakenedAddedChaosDamageSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Added Chaos Damage Support"),
 )
 
 AwakenedBurningDamageSupport = Item(
     "Awakened Burning Damage Support",
     "AwakenedBurningDamageSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Burning Damage Support"),
 )
 
@@ -914,14 +914,14 @@ ForbiddenFlameUber = Item(
 AwakenedUnboundAilmentsSupport = Item(
     "Awakened Unbound Ailments Support",
     "AwakenedUnboundAilmentsSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Unbound Ailments Support"),
 )
 
 AwakenedElementalFocusSupport = Item(
     "Awakened Elemental Focus Support",
     "AwakenedElementalFocusSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Elemental Focus Support"),
 )
 
@@ -991,14 +991,14 @@ Progenesis = Item(
 AwakenedForkSupport = Item(
     "Awakened Fork Support",
     "AwakenedForkSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Fork Support"),
 )
 
 AwakenedCastOnCriticalStrikeSupport = Item(
     "Awakened Cast On Critical Strike Support",
     "AwakenedCastOnCriticalStrikeSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Cast On Critical Strike Support"),
 )
 
@@ -1047,21 +1047,21 @@ TheCelestialBrace = Item(
 AwakenedEmpowerSupport = Item(
     "Awakened Empower Support",
     "AwakenedEmpowerSupport",
-    0.005,
+    0.00166,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Empower Support"),
 )
 
 AwakenedMinionDamageSupport = Item(
     "Awakened Minion Damage Support",
     "AwakenedMinionDamageSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Minion Damage Support"),
 )
 
 AwakenedAddedColdDamageSupport = Item(
     "Awakened Added Cold Damage Support",
     "AwakenedAddedColdDamageSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Added Cold Damage Support"),
 )
 
@@ -1117,14 +1117,14 @@ InextricableFate = Item(
 AwakenedSwiftAfflictionSupport = Item(
     "Awakened Swift Affliction Support",
     "AwakenedSwiftAfflictionSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Swift Affliction Support"),
 )
 
 AwakenedAddedFireDamageSupport = Item(
     "Awakened Added Fire Damage Support",
     "AwakenedAddedFireDamageSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Added Fire Damage Support"),
 )
 
@@ -1173,21 +1173,21 @@ ArchiveReliquaryKey = Item(
 AwakenedMeleePhysicalDamageSupport = Item(
     "Awakened Melee Physical Damage Support",
     "AwakenedMeleePhysicalDamageSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Melee Physical Damage Support"),
 )
 
 AwakenedElementalDamageWithAttacksSupport = Item(
     "Awakened Elemental Damage with Attacks Support",
     "AwakenedElementalDamagewithAttacksSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Elemental Damage with Attacks Support"),
 )
 
 AwakenedAddedLightningDamageSupport = Item(
     "Awakened Added Lightning Damage Support",
     "AwakenedAddedLightningDamageSupport",
-    0.25,
+    0.00735,
     PoeNinjaMatcher(PoeNinjaSource.SKILL_GEM, "Awakened Added Lightning Damage Support"),
 )
 
