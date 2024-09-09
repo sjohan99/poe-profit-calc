@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Union
+from poe_profit_calc.tradelink import create_trade_link
 
 
 class PoeNinjaSource(Enum):
@@ -82,7 +83,7 @@ class Item:
     droprate: float
     matcher: PoeNinjaMatcher
     reliable: bool = True
-    search_query: str = ""
+    trade_link: str | None = None
     metadata: dict = field(default_factory=dict)
 
     def __eq__(self, value: object) -> bool:
@@ -270,10 +271,12 @@ OrbOfDominanceElder = Item(
 )
 
 ForbiddenFlame = Item(
-    "Forbidden Flame",
+    "Forbidden Flame (i86)",
     "ForbiddenFlame",
     0.05,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Forbidden Flame"),
+    reliable=False,
+    trade_link=create_trade_link("Forbidden Flame", "Crimson Jewel", identified=False, max_ilvl=86),
 )
 
 Cortex = Item(
@@ -900,10 +903,12 @@ DevouringFragment = Item(
 )
 
 ForbiddenFlameUber = Item(
-    "Forbidden Flame",
+    "Forbidden Flame (i87)",
     "ForbiddenFlameUber",
     0.05,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Forbidden Flame"),
+    reliable=False,
+    trade_link=create_trade_link("Forbidden Flame", "Crimson Jewel", identified=False, min_ilvl=87),
 )
 
 AwakenedUnboundAilmentsSupport = Item(

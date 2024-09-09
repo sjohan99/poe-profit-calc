@@ -1,8 +1,5 @@
 from poe_profit_calc.items import PoeNinjaSource
-
-
-BASE_NINJA_URL = "https://poe.ninja/api/data/"
-LEAGUE = "Settlers"
+from poe_profit_calc.globals import BASE_NINJA_URL, LEAGUE
 
 ENDPOINT_MAPPING = {
     PoeNinjaSource.CURRENCY: f"{BASE_NINJA_URL}currencyoverview?league={LEAGUE}&type=Currency",

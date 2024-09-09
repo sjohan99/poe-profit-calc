@@ -64,6 +64,8 @@ def format_drop_prices(item_prices: dict[Item, float], drop_items: set[Item]):
             "droprate": (
                 item.droprate / n_awakened_gems if "Awakened" in item.name else item.droprate
             ),
+            "reliable": item.reliable,
+            "trade_link": item.trade_link,
         }
         for item in drop_items
     ]
