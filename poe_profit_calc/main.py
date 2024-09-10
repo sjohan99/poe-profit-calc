@@ -37,6 +37,7 @@ BOSSES = {
 @cached(cache=TTLCache(maxsize=128, ttl=3600))
 def summary():
     summaries = []
+    unreliable = False
     for boss in BOSSES.values():
         prices = price_fetcher.get_prices(boss.drops.union(set(boss.entrance_items)))
         value = 0
@@ -44,7 +45,15 @@ def summary():
         value -= sum(
             prices.get(item, 0) * quantity for item, quantity in boss.entrance_items.items()
         )
-        summaries.append({"boss_name": boss.name, "value": value})
+        summaries.append(
+            {
+                "boss_name": boss.name,
+                "value": value,
+                "reliable": all(
+                    item.reliable for item in boss.drops.union(set(boss.entrance_items))
+                ),
+            }
+        )
     summaries.sort(key=lambda x: x["value"], reverse=True)
     return {"bosses": summaries}
 

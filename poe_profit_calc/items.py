@@ -203,6 +203,8 @@ TwoModWatcherEye = Item(
     "WatchersEye",
     0.35,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Watcher's Eye"),
+    reliable=False,
+    trade_link=create_trade_link("Watcher's Eye", "Prismatic Jewel", identified=False, max_ilvl=85),
 )
 
 EchoesOfCreation = Item(
@@ -245,6 +247,8 @@ ForbiddenFlesh = Item(
     "ForbiddenFlesh",
     0.05,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Forbidden Flesh"),
+    reliable=False,
+    trade_link=create_trade_link("Forbidden Flesh", "Cobalt Jewel", identified=False, max_ilvl=86),
 )
 
 AwakenedLightningPenetrationSupport = Item(
@@ -317,6 +321,8 @@ ForbiddenFleshUber = Item(
     "ForbiddenFleshUber",
     0.05,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Forbidden Flesh"),
+    reliable=False,
+    trade_link=create_trade_link("Forbidden Flesh", "Cobalt Jewel", identified=False, min_ilvl=87),
 )
 
 AwakenedMultistrikeSupport = Item(
@@ -343,7 +349,7 @@ MarkOfTheElder = Item(
 StarForge = Item(
     "Starforge",
     "Starforge",
-    0.05,
+    0.005,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_WEAPON, "Starforge"),
 )
 
@@ -604,6 +610,8 @@ ThreeModWatcherEye = Item(
     "WatchersEyeUber",
     0.35,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Watcher's Eye"),
+    reliable=False,
+    trade_link=create_trade_link("Watcher's Eye", "Prismatic Jewel", identified=False, min_ilvl=86),
 )
 
 OrbOfDominanceShaper = Item(
@@ -674,6 +682,8 @@ ThreadOfHope = Item(
     "ThreadofHope",
     0.2,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Thread of Hope"),
+    reliable=False,
+    trade_link=create_trade_link("Thread of Hope", "Crimson Jewel", identified=False, max_ilvl=86),
 )
 
 EldritchExaltedOrb = Item(
@@ -1117,6 +1127,8 @@ MeldingOfTheFlesh = Item(
     "MeldingoftheFlesh",
     0.02,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Melding of the Flesh"),
+    reliable=False,
+    trade_link=create_trade_link("Melding of the Flesh", "Cobalt Jewel", identified=False),
 )
 
 InextricableFate = Item(
@@ -1215,6 +1227,8 @@ SublimeVision = Item(
     "SublimeVision",
     0.025,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Sublime Vision"),
+    reliable=False,
+    trade_link=create_trade_link("Sublime Vision", "Prismatic Jewel", identified=False),
 )
 
 FragmentOfTheHydra = Item(
