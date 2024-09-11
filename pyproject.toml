@@ -12,6 +12,7 @@ pytest = "^8.2.2"
 fastapi = {extras = ["standard"], version = "^0.114.0"}
 requests = "^2.32.3"
 cachetools = "^5.5.0"
+msgspec = "^0.18.6"
 
 [build-system]
 requires = ["poetry-core"]
@@ -21,4 +22,4 @@ build-backend = "poetry.core.masonry.api"
 line-length = 100
 
 [tool.pytest.ini_options]
-pythonpath = "poe_profit_calc"
+pythonpath = "."

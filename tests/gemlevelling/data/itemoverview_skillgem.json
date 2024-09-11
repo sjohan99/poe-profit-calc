@@ -1,0 +1,152 @@
+{
+  "lines": [
+    {
+      "id": 2616,
+      "name": "Enlighten Support",
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0VubGlnaHRlbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/05a949e270/Enlighten.png",
+      "levelRequired": 60,
+      "baseType": "Enlighten Support",
+      "variant": "4c",
+      "itemClass": 4,
+      "sparkline": {
+        "data": [0, -3.1, -6.3, -9.11, -13.48, -17.38, -22.34],
+        "totalChange": -22.34
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -3.1, -6.3, -9.11, -13.48, -17.38, -22.34],
+        "totalChange": -22.34
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "This Gem gains (5-115)% increased Experience",
+          "optional": true
+        }
+      ],
+      "flavourText": "",
+      "corrupted": true,
+      "gemLevel": 4,
+      "chaosValue": 2290.4,
+      "exaltedValue": 230.65,
+      "divineValue": 20,
+      "count": 294,
+      "detailsId": "enlighten-support-4c",
+      "tradeInfo": [],
+      "listingCount": 384
+    },
+    {
+      "id": 3023,
+      "name": "Enlighten Support",
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L0VubGlnaHRlbiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/05a949e270/Enlighten.png",
+      "levelRequired": 45,
+      "baseType": "Enlighten Support",
+      "variant": "3",
+      "itemClass": 4,
+      "sparkline": {
+        "data": [0, 1.33, -1.57, -4.56, -9.16, -13.32, -22.99],
+        "totalChange": -22.99
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 1.33, -1.57, -4.56, -9.16, -13.32, -22.99],
+        "totalChange": -22.99
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "This Gem gains (5-100)% increased Experience",
+          "optional": true
+        }
+      ],
+      "flavourText": "",
+      "gemLevel": 3,
+      "chaosValue": 400,
+      "exaltedValue": 40.28,
+      "divineValue": 3.49,
+      "count": 399,
+      "detailsId": "enlighten-support-3",
+      "tradeInfo": [],
+      "listingCount": 1297
+    },
+    {
+      "id": 108088,
+      "name": "Volatility Support",
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9TdXBwb3J0L1ZvbGF0aWxpdHkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/89efd990e3/Volatility.png",
+      "levelRequired": 72,
+      "baseType": "Volatility Support",
+      "variant": "21/23c",
+      "itemClass": 4,
+      "sparkline": {
+        "data": [],
+        "totalChange": 0
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, -98.61, -98.65, -99.45, -98.75, -91.02, -91.31],
+        "totalChange": -91.31
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "Supported Skills deal 60% more Maximum Attack Damage",
+          "optional": false
+        },
+        {
+          "text": "Supported Skills deal 70% less Minimum Attack Damage",
+          "optional": false
+        },
+        {
+          "text": "Supported Skills deal 11% increased Damage",
+          "optional": false
+        }
+      ],
+      "flavourText": "",
+      "corrupted": true,
+      "gemLevel": 21,
+      "gemQuality": 23,
+      "chaosValue": 88808.09,
+      "exaltedValue": 8943.41,
+      "divineValue": 775.48,
+      "count": 2,
+      "detailsId": "volatility-support-21-23c",
+      "tradeInfo": [],
+      "listingCount": 2
+    },
+    {
+      "id": 4726,
+      "name": "Double Strike",
+      "icon": "https://web.poecdn.com/gen/image/WzMwLDE0LHsiZiI6IjJESXRlbXMvR2Vtcy9Eb3VibGVTdHJpa2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/d2864a8617/DoubleStrike.png",
+      "levelRequired": 70,
+      "baseType": "Double Strike",
+      "variant": "20c",
+      "itemClass": 4,
+      "sparkline": {
+        "data": [0, 0, -7, -7, -7, -60, -68],
+        "totalChange": -68
+      },
+      "lowConfidenceSparkline": {
+        "data": [0, 0, -7, -7, -7, -60, -68],
+        "totalChange": -68
+      },
+      "implicitModifiers": [],
+      "explicitModifiers": [
+        {
+          "text": "25% chance to cause Bleeding",
+          "optional": false
+        },
+        {
+          "text": "(2-18)% chance to deal Double Damage to Bleeding Enemies",
+          "optional": true
+        }
+      ],
+      "flavourText": "",
+      "corrupted": true,
+      "gemLevel": 20,
+      "chaosValue": 0.96,
+      "exaltedValue": 0.1,
+      "divineValue": 0.01,
+      "count": 9,
+      "detailsId": "double-strike-20c",
+      "tradeInfo": [],
+      "listingCount": 42
+    }
+  ]
+}

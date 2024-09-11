@@ -1,6 +1,7 @@
+import logging
 from time import time
 from poe_profit_calc.items import Item, PoeNinjaSource
-from poe_profit_calc.fetcher import Fetcher, FetchError
+from poe_profit_calc.fetcher import Fetcher, FetchError, Format
 from poe_profit_calc.sourcemappings import ENDPOINT_MAPPING
 from itertools import groupby
 
@@ -18,6 +19,7 @@ class Prices:
         self.item_prices = {}
 
     def get_prices(self, items: set[Item]) -> dict[Item, float]:
+        logging.info(f"Fetching prices for {len(items)} items")
         t = time()
         items_to_fetch = set()
         for item in items:
@@ -26,9 +28,22 @@ class Prices:
             elif abs(self.item_prices[item].get("time") - t) > self.cache_time_seconds:
                 items_to_fetch.add(item)
         res = fetch_prices(items_to_fetch, self.fetcher, self.source_mapping)
-        # TODO: check if res[item] actually exists. It doesn't if the item is not in the response.
-        self.item_prices.update({item: {"price": res[item], "time": t} for item in items_to_fetch})
+        try:
+            self.item_prices.update(
+                {item: {"price": res[item], "time": t} for item in items_to_fetch}
+            )
+        except KeyError as e:
+            logging.warning(
+                f"All items to fetch was not found in response. Setting non-found item prices to 0 found items: {e}"
+            )
+            self.item_prices.update(
+                {item: {"price": res.get(item, 0), "time": t} for item in items_to_fetch}
+            )
+
         return {item: self.item_prices[item]["price"] for item in items}
+
+    def get_raw_endpoint(self, source: PoeNinjaSource, format: Format = Format.JSON) -> bytes:
+        return self.fetcher.fetch_data(self.source_mapping[source], Format.BYTES)
 
 
 def fetch_prices(

@@ -1,19 +1,39 @@
+import logging
+import sys
+import time
 from cachetools import cached, TTLCache
 from poe_profit_calc.fetcher import FileFetcher, HttpFetcher
+from poe_profit_calc.logger import LoggingFormatter
 from poe_profit_calc.prices import Prices, fetch_prices
 from poe_profit_calc.items import Item
 from poe_profit_calc.bosses import *
 from poe_profit_calc.sourcemappings import FILE_PATH_MAPPING
+from poe_profit_calc.gemlevelling.gems import GemProfit, create_profitability_report, parse
 from fastapi import FastAPI
 import os
 
 
+def initialize_logging():
+    logFormatter = LoggingFormatter()
+    logging_handlers = [
+        logging.StreamHandler(sys.stdout),
+    ]
+    for handler in logging_handlers:
+        handler.setFormatter(logFormatter)
+    logging.basicConfig(level=logging.INFO, handlers=logging_handlers)
+
+
+initialize_logging()
+
+
 if os.getenv("POE_RUN_MODE") == "local":
     price_fetcher = Prices(fetcher=FileFetcher(), source_mapping=FILE_PATH_MAPPING)
+    logging.info("Running in local mode")
 else:
     price_fetcher = Prices(
         fetcher=HttpFetcher(),
     )
+    logging.info("Running in production mode")
 
 BOSSES = {
     "the_searing_exarch": TheSearingExarch,
@@ -109,3 +129,29 @@ def get_boss_data(boss: str):
 @app.get("/data/summary")
 def get_summary():
     return summary()
+
+
+@app.get("/data/gems/summary")
+def get_gem_summary():
+    raw_data = price_fetcher.get_raw_endpoint(PoeNinjaSource.SKILL_GEM)
+    parsed_data = parse(raw_data)
+    pr = create_profitability_report(parsed_data)
+    response = {
+        "gems": [
+            {
+                "name": k,
+                "level_profit": v.level_profit,
+                "level_c_profit": v.level_c_profit,
+                "level_q_c_profit": v.level_q_c_profit,
+                "xp_adjusted_level_profit": v.xp_adjusted_level_profit,
+                "xp_adjusted_c_profit": v.xp_adjusted_c_profit,
+                "xp_adjusted_q_c_profit": v.xp_adjusted_q_c_profit,
+                "vaal_orb_profit": v.vaal_orb_profit,
+                "vaal_orb_20q_profit": v.vaal_orb_20q_profit,
+                "vaal_level_profit": v.vaal_level_profit,
+            }
+            for k, v in pr.items()
+        ]
+    }
+    response["gems"].sort(key=lambda x: x["level_profit"], reverse=True)
+    return response
