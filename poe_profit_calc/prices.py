@@ -16,50 +16,35 @@ class Prices:
         self.fetcher = fetcher
         self.source_mapping = source_mapping
         self.cache_time_seconds = cache_time_seconds
-        self.item_prices = {}
+        self.item_last_fetch: dict[Item, float] = {}
 
-    def get_prices(self, items: set[Item]) -> dict[Item, float]:
+    def price_items(self, items: set[Item]) -> None:
         logging.info(f"Fetching prices for {len(items)} items")
         t = time()
         items_to_fetch = set()
         for item in items:
-            if item not in self.item_prices:
+            if item not in self.item_last_fetch:
                 items_to_fetch.add(item)
-            elif abs(self.item_prices[item].get("time") - t) > self.cache_time_seconds:
+                self.item_last_fetch[item] = t
+            elif abs(self.item_last_fetch[item] - t) > self.cache_time_seconds:
                 items_to_fetch.add(item)
-        res = fetch_prices(items_to_fetch, self.fetcher, self.source_mapping)
-        try:
-            self.item_prices.update(
-                {item: {"price": res[item], "time": t} for item in items_to_fetch}
-            )
-        except KeyError as e:
-            logging.warning(
-                f"All items to fetch was not found in response. Setting non-found item prices to 0 found items: {e}"
-            )
-            self.item_prices.update(
-                {item: {"price": res.get(item, 0), "time": t} for item in items_to_fetch}
-            )
-
-        return {item: self.item_prices[item]["price"] for item in items}
+                self.item_last_fetch[item] = t
+        fetch_and_price(items_to_fetch, self.fetcher, self.source_mapping)
 
     def get_raw_endpoint(self, source: PoeNinjaSource, format: Format = Format.JSON) -> bytes:
         return self.fetcher.fetch_data(self.source_mapping[source], Format.BYTES)
 
 
-def fetch_prices(
-    items: set[Item], fetcher: Fetcher, source_mapping=ENDPOINT_MAPPING
-) -> dict[Item, float]:
+def fetch_and_price(items: set[Item], fetcher: Fetcher, source_mapping=ENDPOINT_MAPPING) -> None:
     groups = group_by_source(items, source_mapping)
-    item_prices = {}
 
     for data_source, item_group in groups.items():
         try:
             data = fetcher.fetch_data(data_source)
         except FetchError as e:
-            print(e)
+            logging.warning(f"Failed to fetch data from {data_source} with message: {str(e)}")
             data = {}
-        item_prices.update(extract_prices(data, item_group))
-    return item_prices
+        extract_prices(data, item_group)
 
 
 def group_by_source(
@@ -75,15 +60,26 @@ def group_by_source(
     return groups
 
 
-def extract_prices(data, items: set[Item]) -> dict[Item, float]:
-    item_prices = {}
+def extract_prices(data, items: set[Item]) -> None:
     unprocessed_items = items.copy()
     for item_data in data.get("lines", {}):
-        if len(item_prices) == len(items):
+        if not unprocessed_items:
             break
         for item in unprocessed_items:
-            if price := item.matcher.price_if_match(item_data):
-                item_prices[item] = price
+            if item.match(item_data):
                 unprocessed_items.remove(item)
                 break
-    return item_prices
+    currency_details = data.get("currencyDetails", {})
+    if currency_details:
+        extract_currency_imgs(items, currency_details)
+
+
+def extract_currency_imgs(items: set[Item], currency_details: dict) -> None:
+    unprocessed_items = items.copy()
+    for currency_detail in currency_details:
+        if not unprocessed_items:
+            break
+        for item in items:
+            if item.match_currency_details(currency_detail):
+                unprocessed_items.remove(item)
+                break

@@ -4,12 +4,12 @@ import time
 from cachetools import cached, TTLCache
 from poe_profit_calc.fetcher import FileFetcher, HttpFetcher
 from poe_profit_calc.logger import LoggingFormatter
-from poe_profit_calc.prices import Prices, fetch_prices
+from poe_profit_calc.prices import Prices
 from poe_profit_calc.items import Item
 from poe_profit_calc.bosses import *
 from poe_profit_calc.sourcemappings import FILE_PATH_MAPPING
 from poe_profit_calc.gemlevelling.gems import GemProfit, create_profitability_report, parse
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 import os
 
 
@@ -35,7 +35,7 @@ else:
     )
     logging.info("Running in production mode")
 
-BOSSES = {
+BOSSES: dict[str, Boss] = {
     "the_searing_exarch": TheSearingExarch,
     "the_searing_exarch_uber": TheSearingExarchUber,
     "the_eater_of_worlds": TheEaterOfWorlds,
@@ -57,14 +57,11 @@ BOSSES = {
 @cached(cache=TTLCache(maxsize=128, ttl=3600))
 def summary():
     summaries = []
-    unreliable = False
     for boss in BOSSES.values():
-        prices = price_fetcher.get_prices(boss.drops.union(set(boss.entrance_items)))
+        price_fetcher.price_items(boss.drops.union(set(boss.entrance_items)))
         value = 0
-        value += sum(prices.get(item, 0) * item.droprate for item in boss.drops)
-        value -= sum(
-            prices.get(item, 0) * quantity for item, quantity in boss.entrance_items.items()
-        )
+        value += sum(item.price * item.droprate for item in boss.drops)
+        value -= sum(item.price * quantity for item, quantity in boss.entrance_items.items())
         summaries.append(
             {
                 "boss_name": boss.name,
@@ -72,31 +69,34 @@ def summary():
                 "reliable": all(
                     item.reliable for item in boss.drops.union(set(boss.entrance_items))
                 ),
+                "img": boss.get_img(),
             }
         )
     summaries.sort(key=lambda x: x["value"], reverse=True)
     return {"bosses": summaries}
 
 
-def format_drop_prices(item_prices: dict[Item, float], drop_items: set[Item]):
+def format_drop_prices(items: set[Item]):
     return [
         {
             "name": item.name,
-            "price": item_prices.get(item, 0),
+            "price": item.price,
             "droprate": item.droprate,
             "reliable": item.reliable,
             "trade_link": item.trade_link,
+            "img": item.img,
         }
-        for item in drop_items
+        for item in items
     ]
 
 
-def format_entrance_prices(item_prices: dict[Item, float], entrance_items: dict[Item, int]):
+def format_entrance_prices(entrance_items: dict[Item, int]):
     return [
         {
             "name": item.name,
-            "price": item_prices.get(item, 0),
+            "price": item.price,
             "quantity": quantity,
+            "img": item.img,
         }
         for item, quantity in entrance_items.items()
     ]
@@ -104,12 +104,15 @@ def format_entrance_prices(item_prices: dict[Item, float], entrance_items: dict[
 
 def get_boss_drops(boss: str):
     boss_data = BOSSES.get(boss, None)
+    if not boss_data:
+        logging.info(f"User requested non-existing boss: {boss}")
+        raise HTTPException(status_code=404, detail="Boss not found")
     items = boss_data.drops.union(set(boss_data.entrance_items))
-    item_prices = price_fetcher.get_prices(items)
+    item_prices = price_fetcher.price_items(items)
     return {
         "boss": boss_data.name,
-        "drops": format_drop_prices(item_prices, boss_data.drops),
-        "entrance_items": format_entrance_prices(item_prices, boss_data.entrance_items),
+        "drops": format_drop_prices(boss_data.drops),
+        "entrance_items": format_entrance_prices(boss_data.entrance_items),
     }
 
 

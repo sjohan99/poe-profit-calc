@@ -34,6 +34,12 @@ SOURCE_TO_NAME_FIELD = {
 
 
 @dataclass
+class MatchResult:
+    price: float
+    img: str
+
+
+@dataclass
 class PoeNinjaMatcher:
     """
     Attributes:
@@ -54,7 +60,7 @@ class PoeNinjaMatcher:
     name_field_key: str = ""
     price_field_key: str = ""
 
-    def price_if_match(self, item: dict) -> Union[float, None]:
+    def try_match(self, item: dict) -> Union[MatchResult, None]:
         if item.get(self.name_field_key) != self.name:
             return None
         if "relic" not in self.name and "relic" in item.get("detailsId", ""):
@@ -69,7 +75,12 @@ class PoeNinjaMatcher:
             for exclude_value in exclude_values:
                 if field_value == exclude_value:
                     return None
-        return item.get(self.price_field_key, -1)
+        return MatchResult(item.get(self.price_field_key, -1), item.get("icon", ""))
+
+    def try_match_currency_details(self, item: dict) -> Union[str, None]:
+        if item.get("name") == self.name:
+            return item.get("icon", "")
+        return None
 
     def __post_init__(self):
         if not self.name_field_key:
@@ -88,12 +99,14 @@ class PoeNinjaMatcher:
             self.exclude_fields["links"] = set()
 
 
-@dataclass(frozen=True)
+@dataclass
 class Item:
     name: str
     unique_name: str
     droprate: float
     matcher: PoeNinjaMatcher
+    price: float = 0
+    img: str | None = None
     reliable: bool = True
     trade_link: str | None = None
     metadata: dict = field(default_factory=dict)
@@ -105,6 +118,20 @@ class Item:
 
     def __hash__(self) -> int:
         return hash(self.unique_name)
+
+    def match(self, item: dict) -> bool:
+        res = self.matcher.try_match(item)
+        if res is not None:
+            self.img = res.img
+            self.price = res.price
+            return True
+        return False
+
+    def match_currency_details(self, item: dict) -> bool:
+        if (img := self.matcher.try_match_currency_details(item)) is not None:
+            self.img = img
+            return True
+        return False
 
 
 CurioOfPotential = Item(
@@ -672,7 +699,7 @@ AwakenedGreaterMultipleProjectilesSupport = Item(
 
 ThreadOfHopeMassive = Item(
     "Thread of Hope",
-    "ThreadofHope",
+    "ThreadofHopeMassive",
     0.55,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_JEWEL, "Thread of Hope"),
 )

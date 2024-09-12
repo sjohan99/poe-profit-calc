@@ -15,11 +15,14 @@ class Boss:
     entrance_items: dict[Item, int]
     drops: set[Item]
 
+    def get_img(self):
+        return next(iter(self.entrance_items)).img
 
-class TheSearingExarch(Boss):
-    name = "The Searing Exarch"
-    entrance_items = {IncandescentInvitation: 1}
-    drops = {
+
+TheSearingExarch = Boss(
+    name="The Searing Exarch",
+    entrance_items={IncandescentInvitation: 1},
+    drops={
         Dawnbreaker,
         Dawnstrider,
         DissolutionOfTheFlesh,
@@ -28,13 +31,14 @@ class TheSearingExarch(Boss):
         EldritchOrbOfAnnulment,
         EldritchChaosOrb,
         EldritchExaltedOrb,
-    }
+    },
+)
 
 
-class TheSearingExarchUber(Boss):
-    name = "The Searing Exarch (Uber)"
-    entrance_items = {BlazingFragment: 5}
-    drops = {
+TheSearingExarchUber = Boss(
+    name="The Searing Exarch (Uber)",
+    entrance_items={BlazingFragment: 5},
+    drops={
         TheAnnihilatingLight,
         AnnihilationsApproach,
         TheCelestialBrace,
@@ -46,13 +50,14 @@ class TheSearingExarchUber(Boss):
         EldritchOrbOfAnnulment,
         EldritchChaosOrb,
         EldritchExaltedOrb,
-    }
+    },
+)
 
 
-class TheEaterOfWorlds(Boss):
-    name = "The Eater of Worlds"
-    entrance_items = {ScreamingInvitation: 1}
-    drops = {
+TheEaterOfWorlds = Boss(
+    name="The Eater of Worlds",
+    entrance_items={ScreamingInvitation: 1},
+    drops={
         TheGluttonousTide,
         InextricableFate,
         MeldingOfTheFlesh,
@@ -61,13 +66,14 @@ class TheEaterOfWorlds(Boss):
         EldritchOrbOfAnnulment,
         EldritchChaosOrb,
         EldritchExaltedOrb,
-    }
+    },
+)
 
 
-class TheEaterOfWorldsUber(Boss):
-    name = "The Eater of Worlds (Uber)"
-    entrance_items = {DevouringFragment: 5}
-    drops = {
+TheEaterOfWorldsUber = Boss(
+    name="The Eater of Worlds (Uber)",
+    entrance_items={DevouringFragment: 5},
+    drops={
         Nimis,
         RavenousPassion,
         AshesOfTheStars,
@@ -78,18 +84,19 @@ class TheEaterOfWorldsUber(Boss):
         EldritchOrbOfAnnulment,
         EldritchChaosOrb,
         EldritchExaltedOrb,
-    }
+    },
+)
 
 
-class TheShaper(Boss):
-    name = "The Shaper"
-    entrance_items = {
+TheShaper = Boss(
+    name="The Shaper",
+    entrance_items={
         FragmentOfTheHydra: 1,
         FragmentOfTheMinotaur: 1,
         FragmentOfThePhoenix: 1,
         FragmentOfTheChimera: 1,
-    }
-    drops = {
+    },
+    drops={
         ShapersTouch,
         VoidWalker,
         SolsticeVigil,
@@ -97,15 +104,16 @@ class TheShaper(Boss):
         FragmentOfKnowledge,
         FragmentOfShape,
         OrbOfDominanceShaper,
-    }
+    },
+)
 
 
-class TheShaperUber(Boss):
-    name = "The Shaper (Uber)"
-    entrance_items = {
+TheShaperUber = Boss(
+    name="The Shaper (Uber)",
+    entrance_items={
         CosmicFragment: 5,
-    }
-    drops = {
+    },
+    drops={
         EchoesOfCreation,
         TheTidesOfTime,
         EntropicDevastation,
@@ -115,18 +123,19 @@ class TheShaperUber(Boss):
         FragmentOfKnowledge,
         FragmentOfShape,
         OrbOfDominanceShaper,
-    }
+    },
+)
 
 
-class TheElder(Boss):
-    name = "The Elder"
-    entrance_items = {
+TheElder = Boss(
+    name="The Elder",
+    entrance_items={
+        FragmentOfPurification: 1,
         FragmentOfConstriction: 1,
         FragmentOfEnslavement: 1,
         FragmentOfEradication: 1,
-        FragmentOfPurification: 1,
-    }
-    drops = {
+    },
+    drops={
         FragmentOfTerror,
         FragmentOfEmptiness,
         BlashphemersGrasp,
@@ -137,18 +146,19 @@ class TheElder(Boss):
         Impresence,
         OrbOfDominanceElder,
         TwoModWatcherEye,
-    }
+    },
+)
 
 
-class TheElderUber(Boss):
-    name = "The Elder (Uber)"
-    entrance_items = {
+TheElderUber = Boss(
+    name="The Elder (Uber)",
+    entrance_items={
+        FragmentOfKnowledge: 1,
         FragmentOfTerror: 1,
         FragmentOfEmptiness: 1,
-        FragmentOfKnowledge: 1,
         FragmentOfShape: 1,
-    }
-    drops = {
+    },
+    drops={
         MarkOfTheShaper,
         MarkOfTheElder,
         Voidfletcher,
@@ -158,15 +168,16 @@ class TheElderUber(Boss):
         OrbOfDominanceElder,
         TheGulf,
         VoidOfTheElements,
-    }
+    },
+)
 
 
-class TheElderUberUber(Boss):
-    name = "The Elder (Uber Uber)"
-    entrance_items = {
+TheElderUberUber = Boss(
+    name="The Elder (Uber Uber)",
+    entrance_items={
         DecayingFragment: 5,
-    }
-    drops = {
+    },
+    drops={
         CallOfTheVoid,
         TheDevourerOfMinds,
         SoulAscension,
@@ -180,29 +191,31 @@ class TheElderUberUber(Boss):
         OrbOfDominanceElder,
         TheGulf,
         VoidOfTheElements,
-    }
+    },
+)
 
 
-class Venarius(Boss):
-    name = "Venarius"
-    entrance_items = {
+Venarius = Boss(
+    name="Venarius",
+    entrance_items={
         Cortex: 1,
-    }
-    drops = {
+    },
+    drops={
         OfferingToTheSerpent,
         Perepiteia,
         GarbOfTheEphemeral,
         BottledFaith,
         TheHook,
-    }
+    },
+)
 
 
-class VenariusUber(Boss):
-    name = "Venarius (Uber)"
-    entrance_items = {
+VenariusUber = Boss(
+    name="Venarius (Uber)",
+    entrance_items={
         SynthesisingFragment: 5,
-    }
-    drops = {
+    },
+    drops={
         MaskOfTheTribunal,
         Nebulis,
         CircleOfAmbition,
@@ -210,18 +223,19 @@ class VenariusUber(Boss):
         RationalDoctrine,
         ForgottenReliquaryKey,
         TheHook,
-    }
+    },
+)
 
 
-class Sirus(Boss):
-    name = "Sirus, Awakener of Worlds"
-    entrance_items = {
+Sirus = Boss(
+    name="Sirus, Awakener of Worlds",
+    entrance_items={
         DroxsCrest: 1,
         VeritaniasCrest: 1,
         BaransCrest: 1,
         AlHezminsCrest: 1,
-    }
-    drops = {
+    },
+    drops={
         HandsOfTheHighTemplar,
         CrownOfTheInwardEye,
         TheBurdenOfTruth,
@@ -229,15 +243,16 @@ class Sirus(Boss):
         OrbOfDominanceSirus,
         AwakenersOrb,
         AFateWorseThanDeath,
-    }
+    },
+)
 
 
-class SirusUber(Boss):
-    name = "Sirus, Awakener of Worlds (Uber)"
-    entrance_items = {
+SirusUber = Boss(
+    name="Sirus, Awakener of Worlds (Uber)",
+    entrance_items={
         AwakeningFragment: 5,
-    }
-    drops = {
+    },
+    drops={
         ThreadOfHopeMassive,
         TheTempestRising,
         OriathsEnd,
@@ -245,15 +260,16 @@ class SirusUber(Boss):
         OrbOfDominanceSirus,
         AwakenersOrb,
         AFateWorseThanDeath,
-    }
+    },
+)
 
 
-class TheMaven(Boss):
-    name = "The Maven"
-    entrance_items = {
+TheMaven = Boss(
+    name="The Maven",
+    entrance_items={
         TheMavensWrit: 1,
-    }
-    drops = {
+    },
+    drops={
         LegacyOfFury,
         GravensSecret,
         ArnsAnguish,
@@ -296,15 +312,16 @@ class TheMaven(Boss):
         AwakenedMeleePhysicalDamageSupport,
         AwakenedMeleeSplashSupport,
         AwakenedMultistrikeSupport,
-    }
+    },
+)
 
 
-class TheMavenUber(Boss):
-    name = "The Maven (Uber)"
-    entrance_items = {
+TheMavenUber = Boss(
+    name="The Maven (Uber)",
+    entrance_items={
         RealityFragment: 5,
-    }
-    drops = {
+    },
+    drops={
         ViridisVeil,
         ImpossibleEscape,
         Progenesis,
@@ -350,4 +367,5 @@ class TheMavenUber(Boss):
         AwakenedEnlightenSupport,
         AwakenedEnhanceSupport,
         AwakenedEmpowerSupport,
-    }
+    },
+)
