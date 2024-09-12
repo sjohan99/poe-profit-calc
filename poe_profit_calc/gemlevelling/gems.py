@@ -121,20 +121,22 @@ def group_gems(gems: set[Gem]) -> dict[str, set[Gem]]:
 class GemProfit:
     gem: Gem
     level_profit: float
-    level_c_profit: float
-    level_q_c_profit: float
-    vaal_orb_profit: float
-    vaal_orb_20q_profit: float
+    level_c_profit: float | None
+    level_q_c_profit: float | None
+    vaal_orb_profit: float | None
+    vaal_orb_20q_profit: float | None
     vaal_level_profit: float | None = None
     xp_adjusted_level_profit: float = field(init=False)
-    xp_adjusted_c_profit: float = field(init=False)
-    xp_adjusted_q_c_profit: float = field(init=False)
+    xp_adjusted_c_profit: float | None = field(init=False)
+    xp_adjusted_q_c_profit: float | None = field(init=False)
 
     def __post_init__(self):
         ratio = EXPERIENCE_RATIOS[self.gem.type]
         self.xp_adjusted_level_profit = self.level_profit * ratio
-        self.xp_adjusted_c_profit = self.level_c_profit * ratio
-        self.xp_adjusted_q_c_profit = self.level_q_c_profit * ratio
+        self.xp_adjusted_c_profit = self.level_c_profit * ratio if self.level_c_profit else None
+        self.xp_adjusted_q_c_profit = (
+            self.level_q_c_profit * ratio if self.level_q_c_profit else None
+        )
 
 
 def create_profitability_report(gems: set[Gem]) -> dict[str, GemProfit]:
@@ -214,8 +216,12 @@ def calculate_profitability(gem_name: str, gem_group: set[Gem]) -> Union[GemProf
             return None
 
     level_profit = g_max_0q.chaosValue - g_1_0q.chaosValue
-    level_corrupt_profit = level_profit + vaal_orb_0q_profit
-    level_quality_corrupt_profit = level_profit + vaal_orb_20q_profit
+    level_corrupt_profit = (
+        level_profit + vaal_orb_0q_profit if vaal_orb_0q_profit is not None else None
+    )
+    level_quality_corrupt_profit = (
+        level_profit + vaal_orb_20q_profit if vaal_orb_20q_profit is not None else None
+    )
     if g_max_0q_v and g_1_0q_v:
         vaal_level_profit = g_max_0q_v.chaosValue - g_1_0q_v.chaosValue
     else:
@@ -234,7 +240,7 @@ def calculate_profitability(gem_name: str, gem_group: set[Gem]) -> Union[GemProf
 
 def calculate_vaal_orb_profit_0q(g_max_0q, g_max_0q_c, g_max_plus_0q_c, g_max_0q_v=None):
     if not all([g_max_0q, g_max_0q_c, g_max_plus_0q_c]):
-        return 0
+        return None
     if g_max_0q_v:
         expected_value_after_vaal = (
             VAAL_CHANGE_CHANCE * g_max_0q_v.chaosValue
@@ -253,7 +259,7 @@ def calculate_vaal_orb_profit_20q(
     g_max_20q, g_max_20q_c, g_max_plus_20q_c, g_max_23q_c, g_max_20q_v=None
 ):
     if not all([g_max_20q, g_max_20q_c, g_max_plus_20q_c, g_max_23q_c]):
-        return 0
+        return None
     if g_max_20q_v:
         expected_value_after_vaal = (
             VAAL_CHANGE_CHANCE * g_max_20q_v.chaosValue
