@@ -1,39 +1,12 @@
 import logging
-import sys
-import time
 from cachetools import cached, TTLCache
-from poe_profit_calc.fetcher import FileFetcher, HttpFetcher
-from poe_profit_calc.logger import LoggingFormatter
-from poe_profit_calc.prices import Prices
 from poe_profit_calc.items import Item
 from poe_profit_calc.bosses import *
-from poe_profit_calc.sourcemappings import FILE_PATH_MAPPING
-from poe_profit_calc.gemlevelling.gems import GemProfit, create_profitability_report, parse
-from fastapi import FastAPI, HTTPException
-import os
+from poe_profit_calc.gemlevelling.gems import create_profitability_report, parse
+from fastapi import HTTPException
 
+from poe_profit_calc.setup.setup import App
 
-def initialize_logging():
-    logFormatter = LoggingFormatter()
-    logging_handlers = [
-        logging.StreamHandler(sys.stdout),
-    ]
-    for handler in logging_handlers:
-        handler.setFormatter(logFormatter)
-    logging.basicConfig(level=logging.INFO, handlers=logging_handlers)
-
-
-initialize_logging()
-
-
-if os.getenv("POE_RUN_MODE") == "local":
-    price_fetcher = Prices(fetcher=FileFetcher(), source_mapping=FILE_PATH_MAPPING)
-    logging.info("Running in local mode")
-else:
-    price_fetcher = Prices(
-        fetcher=HttpFetcher(),
-    )
-    logging.info("Running in production mode")
 
 BOSSES: dict[str, Boss] = {
     "the_searing_exarch": TheSearingExarch,
@@ -108,7 +81,7 @@ def get_boss_drops(boss: str):
         logging.info(f"User requested non-existing boss: {boss}")
         raise HTTPException(status_code=404, detail="Boss not found")
     items = boss_data.drops.union(set(boss_data.entrance_items))
-    item_prices = price_fetcher.price_items(items)
+    price_fetcher.price_items(items)
     return {
         "boss": boss_data.name,
         "drops": format_drop_prices(boss_data.drops),
@@ -116,7 +89,8 @@ def get_boss_drops(boss: str):
     }
 
 
-app = FastAPI()
+app = App()
+app, price_fetcher, settings = app.app, app.price_fetcher, app.settings
 
 
 @app.get("/")
@@ -124,7 +98,9 @@ async def main_route():
     return "Hello, world!"
 
 
-@app.get("/data/boss/{boss}")
+@app.get(
+    "/data/boss/{boss}",
+)
 def get_boss_data(boss: str):
     return get_boss_drops(boss)
 
@@ -152,6 +128,8 @@ def get_gem_summary():
                 "vaal_orb_profit": v.vaal_orb_profit,
                 "vaal_orb_20q_profit": v.vaal_orb_20q_profit,
                 "vaal_level_profit": v.vaal_level_profit,
+                "gem_type": v.gem.type,
+                "img": v.gem.icon,
             }
             for k, v in pr.items()
         ]

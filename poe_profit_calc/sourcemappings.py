@@ -1,5 +1,34 @@
-from poe_profit_calc.items import PoeNinjaSource
+from enum import Enum
 from poe_profit_calc.globals import BASE_NINJA_URL, LEAGUE
+
+
+class PoeNinjaSource(Enum):
+    CURRENCY = "Currency"
+    FRAGMENT = "Fragment"
+    UNIQUE_ARMOUR = "UniqueArmour"
+    UNIQUE_JEWEL = "UniqueJewel"
+    INVITATION = "Invitation"
+    UNIQUE_ACCESSORY = "UniqueAccessory"
+    UNIQUE_FLASK = "UniqueFlask"
+    UNIQUE_WEAPON = "UniqueWeapon"
+    DIVINATION_CARD = "DivinationCard"
+    SKILL_GEM = "SkillGem"
+    UNIQUE_MAP = "UniqueMap"
+
+
+SOURCE_TO_FIELDS = {
+    PoeNinjaSource.CURRENCY: {"name": "currencyTypeName", "price": "chaosEquivalent"},
+    PoeNinjaSource.FRAGMENT: {"name": "currencyTypeName", "price": "chaosEquivalent"},
+    PoeNinjaSource.UNIQUE_ARMOUR: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.UNIQUE_JEWEL: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.INVITATION: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.UNIQUE_ACCESSORY: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.UNIQUE_FLASK: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.UNIQUE_WEAPON: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.DIVINATION_CARD: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.SKILL_GEM: {"name": "name", "price": "chaosValue"},
+    PoeNinjaSource.UNIQUE_MAP: {"name": "name", "price": "chaosValue"},
+}
 
 ENDPOINT_MAPPING = {
     PoeNinjaSource.CURRENCY: f"{BASE_NINJA_URL}currencyoverview?league={LEAGUE}&type=Currency",

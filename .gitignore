@@ -18,3 +18,8 @@
 .venv
 /poetry.toml
 *.log
+
+.env
+.env*.local
+.env.dev
+.env.prod

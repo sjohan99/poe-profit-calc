@@ -6,11 +6,11 @@ from poe_profit_calc.sourcemappings import ENDPOINT_MAPPING
 from itertools import groupby
 
 
-class Prices:
+class Pricer:
     def __init__(
         self,
         fetcher: Fetcher,
-        source_mapping: dict[PoeNinjaSource, str] = ENDPOINT_MAPPING,
+        source_mapping: dict[PoeNinjaSource, str],
         cache_time_seconds=1800,
     ):
         self.fetcher = fetcher
@@ -35,7 +35,7 @@ class Prices:
         return self.fetcher.fetch_data(self.source_mapping[source], Format.BYTES)
 
 
-def fetch_and_price(items: set[Item], fetcher: Fetcher, source_mapping=ENDPOINT_MAPPING) -> None:
+def fetch_and_price(items: set[Item], fetcher: Fetcher, source_mapping) -> None:
     groups = group_by_source(items, source_mapping)
 
     for data_source, item_group in groups.items():

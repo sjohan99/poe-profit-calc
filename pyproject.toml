@@ -13,6 +13,7 @@ fastapi = {extras = ["standard"], version = "^0.114.0"}
 requests = "^2.32.3"
 cachetools = "^5.5.0"
 msgspec = "^0.18.6"
+pydantic-settings = "^2.5.2"
 
 [build-system]
 requires = ["poetry-core"]

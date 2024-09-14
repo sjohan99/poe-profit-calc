@@ -21,6 +21,31 @@ IGNORE_GEMS = {
     "Awakened Enlighten Support",
 }
 
+"""
+Non-transfigured gems which include "of" in their name.
+"""
+NORMAL_OF_GEMS = {
+    "Vaal Impurity of Fire",
+    "Vaal Impurity of Ice",
+    "Vaal Impurity of Lightning",
+    "Vaal Rain of Arrows" "Wave of Conviction",
+    "Sigil of Power",
+    "Purity of Fire",
+    "Purity of Ice",
+    "Purity of Lightning",
+    "Purity of Elements",
+    "Orb of Storms",
+    "Rain of Arrows",
+    "Herald of Purity",
+    "Herald of Agony",
+    "Herald of Ash",
+    "Herald of Ice",
+    "Herald of Thunder",
+    "Eye of Winter",
+    "Fist of War Support",
+    "Increased Area of Effect Support",
+}
+
 EXCEPTIONAL_GEMS = {
     "Empower Support",
     "Enhance Support",
@@ -34,10 +59,11 @@ VAAL_OTHER = VAAL_LEVEL_UP_CHANCE + VAAL_23_QUALITY_CHANCE + VAAL_CHANGE_CHANCE
 
 
 class GemType(Enum):
-    NORMAL = 1
-    VAAL = 2
-    AWAKENED = 3
-    EXCEPTIONAL = 4
+    NORMAL = "normal"
+    VAAL = "vaal"
+    AWAKENED = "awakened"
+    EXCEPTIONAL = "exceptional"
+    TRANSFIGURED = "transfigured"
 
 
 EXPERIENCE_RATIOS = {
@@ -45,6 +71,7 @@ EXPERIENCE_RATIOS = {
     GemType.VAAL: 1,
     GemType.AWAKENED: 342_004_647 / 1_889_340_172,
     GemType.EXCEPTIONAL: 342_004_647 / 1_666_045_137,
+    GemType.TRANSFIGURED: 1,
 }
 
 
@@ -54,6 +81,7 @@ class Gem(msgspec.Struct, frozen=True, cache_hash=True):
     gemLevel: int = 1
     gemQuality: int = 0
     corrupted: bool = False
+    icon: str | None = None
     max_experience: int = msgspec.field(default=0)
     max_level: int = msgspec.field(default=0)
     value_per_xp: float = msgspec.field(default=0)
@@ -71,6 +99,8 @@ class Gem(msgspec.Struct, frozen=True, cache_hash=True):
             gem_type = GemType.VAAL
         elif self.name.startswith("Awakened"):
             gem_type = GemType.AWAKENED
+        elif "of" in self.name and self.name not in NORMAL_OF_GEMS:
+            gem_type = GemType.TRANSFIGURED
         msgspec.structs.force_setattr(self, "type", gem_type)
 
     def __hash__(self) -> int:

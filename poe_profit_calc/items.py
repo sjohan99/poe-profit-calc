@@ -1,36 +1,7 @@
 from dataclasses import dataclass, field
-from enum import Enum
 from typing import Union
+from poe_profit_calc.sourcemappings import SOURCE_TO_FIELDS, PoeNinjaSource
 from poe_profit_calc.tradelink import create_trade_link
-
-
-class PoeNinjaSource(Enum):
-    CURRENCY = "Currency"
-    FRAGMENT = "Fragment"
-    UNIQUE_ARMOUR = "UniqueArmour"
-    UNIQUE_JEWEL = "UniqueJewel"
-    INVITATION = "Invitation"
-    UNIQUE_ACCESSORY = "UniqueAccessory"
-    UNIQUE_FLASK = "UniqueFlask"
-    UNIQUE_WEAPON = "UniqueWeapon"
-    DIVINATION_CARD = "DivinationCard"
-    SKILL_GEM = "SkillGem"
-    UNIQUE_MAP = "UniqueMap"
-
-
-SOURCE_TO_NAME_FIELD = {
-    PoeNinjaSource.CURRENCY: {"name": "currencyTypeName", "price": "chaosEquivalent"},
-    PoeNinjaSource.FRAGMENT: {"name": "currencyTypeName", "price": "chaosEquivalent"},
-    PoeNinjaSource.UNIQUE_ARMOUR: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.UNIQUE_JEWEL: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.INVITATION: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.UNIQUE_ACCESSORY: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.UNIQUE_FLASK: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.UNIQUE_WEAPON: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.DIVINATION_CARD: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.SKILL_GEM: {"name": "name", "price": "chaosValue"},
-    PoeNinjaSource.UNIQUE_MAP: {"name": "name", "price": "chaosValue"},
-}
 
 
 @dataclass
@@ -84,10 +55,10 @@ class PoeNinjaMatcher:
 
     def __post_init__(self):
         if not self.name_field_key:
-            self.name_field_key = SOURCE_TO_NAME_FIELD[self.source]["name"]
+            self.name_field_key = SOURCE_TO_FIELDS[self.source]["name"]
 
         if not self.price_field_key:
-            self.price_field_key = SOURCE_TO_NAME_FIELD[self.source]["price"]
+            self.price_field_key = SOURCE_TO_FIELDS[self.source]["price"]
 
         if self.source == PoeNinjaSource.SKILL_GEM:
             self.match_fields["variant"] = "1"
