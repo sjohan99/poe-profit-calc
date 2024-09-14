@@ -1,0 +1,26 @@
+# fly.toml app configuration file generated for poe-profit-calc on 2024-09-14T20:17:49+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'poe-profit-calc'
+primary_region = 'ams'
+
+[build]
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1
+
+[env]
+  POE_PROFIT_CALC_ENV = "prod"
+  POE_PROFIT_CALC_REQUEST_LIMIT_PER_MINUTE = "30"
