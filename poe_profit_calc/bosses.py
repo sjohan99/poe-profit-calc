@@ -18,6 +18,9 @@ class Boss:
     def get_img(self):
         return next(iter(self.entrance_items)).img
 
+    def items(self):
+        return self.drops.union(set(self.entrance_items))
+
 
 TheSearingExarch = Boss(
     name="The Searing Exarch",

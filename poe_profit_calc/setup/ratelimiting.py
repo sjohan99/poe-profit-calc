@@ -12,6 +12,9 @@ class RateLimiter:
         self.requests_limit = requests_limit
         self.time_window = time_window
         self.limit_globally = limit_globally
+        logging.info(
+            f"Rate limiting initialized with {requests_limit} requests per {time_window} seconds"
+        )
 
     async def __call__(self, request: Request):
         if not request.client:
@@ -38,7 +41,7 @@ class RateLimiter:
                 # Check if the client has exceeded the request limit
                 if request_counters[key]["count"] >= self.requests_limit:
                     logging.warning(
-                        f"Rate limit exceeded for {client_ip}. Made {request_counters[key]['count']} in {current_time - request_counters[key]['timestamp']} seconds"
+                        f"Rate limit exceeded for {client_ip}. Made {request_counters[key]['count']} requests in {current_time - request_counters[key]['timestamp']} seconds"
                     )
                     raise HTTPException(status_code=429, detail="Too Many Requests")
                 else:

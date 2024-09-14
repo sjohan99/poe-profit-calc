@@ -16,11 +16,13 @@ class App:
         settings = get_settings()
 
         if settings.ENV == "prod":
+            logging.info("Using HTTP fetcher")
             price_fetcher = Pricer(
                 fetcher=HttpFetcher(),
                 source_mapping=ENDPOINT_MAPPING,
             )
         else:
+            logging.info("Using file fetcher")
             price_fetcher = Pricer(fetcher=FileFetcher(), source_mapping=FILE_PATH_MAPPING)
 
         rate_limiter = RateLimiter(

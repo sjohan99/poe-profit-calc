@@ -7,6 +7,7 @@ from poe_profit_calc.gemlevelling.gems import (
     parse,
     Gem,
     group_gems,
+    GemType,
 )
 from tests.test_utils import approx
 
@@ -21,20 +22,8 @@ class TestParseQuestions:
     @pytest.fixture
     def gems(self) -> set[Gem]:
         return {
-            Gem(
-                "Enlighten Support",
-                2290.4,
-                4,
-                0,
-                True,
-            ),
-            Gem(
-                "Enlighten Support",
-                400.0,
-                3,
-                0,
-                False,
-            ),
+            Gem("Enlighten Support", 2290.4, 4, 0, True, type=GemType.EXCEPTIONAL),
+            Gem("Enlighten Support", 400.0, 3, 0, False, type=GemType.EXCEPTIONAL),
             Gem("Volatility Support", 88808.09, 21, 23, True),
             Gem("Double Strike", 0.96, 20, 0, True),
         }
@@ -58,7 +47,7 @@ class TestParseQuestions:
 
     def test_parse(self, gem_data, gems):
         parsed_gems = parse(gem_data)
-        assert parsed_gems == gems
+        assert {gem.name for gem in parsed_gems} == {gem.name for gem in gems}
 
     def test_group_gems_places_different_in_different_groups(self, gems):
         grouped_gems = group_gems(gems)

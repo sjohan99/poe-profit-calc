@@ -19,6 +19,12 @@ class TestParseQuestions:
             return json.loads(f.read())
 
     @pytest.fixture(scope="session")
+    def uniquejewel_data(self):
+        file = pathlib.Path("tests/poe_ninja_data/itemoverview_uniquejewel.json")
+        with open(file, "r") as f:
+            return json.loads(f.read())
+
+    @pytest.fixture(scope="session")
     def gem_data(self):
         file = pathlib.Path("tests/poe_ninja_data/itemoverview_skillgem.json")
         with open(file, "r") as f:
@@ -26,27 +32,21 @@ class TestParseQuestions:
 
     def test_process_currency(self, currency_data):
         items = {EldritchChaosOrb, EldritchExaltedOrb}
-        parsed_data = extract_prices(currency_data, items)
-        assert parsed_data == {
-            EldritchChaosOrb: 47.56,
-            EldritchExaltedOrb: 10,
-        }
+        extract_prices(currency_data, items)
+        assert EldritchChaosOrb.price == 47.56
+        assert EldritchExaltedOrb.price == 10
 
     def test_process_armour(self, uniquearmour_data):
         items = {Dawnbreaker, Dawnstrider}
-        parsed_data = extract_prices(uniquearmour_data, items)
-        assert parsed_data == {
-            Dawnbreaker: 5,
-            Dawnstrider: 2,
-        }
+        extract_prices(uniquearmour_data, items)
+        assert Dawnbreaker.price == 5
+        assert Dawnstrider.price == 2
 
     def test_process_gem(self, gem_data):
         items = {AwakenedAddedChaosDamageSupport, AwakenedEnlightenSupport}
-        parsed_data = extract_prices(gem_data, items)
-        assert parsed_data == {
-            AwakenedAddedChaosDamageSupport: 15,
-            AwakenedEnlightenSupport: 51476.74,
-        }
+        extract_prices(gem_data, items)
+        assert AwakenedAddedChaosDamageSupport.price == 15
+        assert AwakenedEnlightenSupport.price == 51476.74
 
     def test_group_by_source(self):
         items = {
@@ -67,3 +67,8 @@ class TestParseQuestions:
             "2": {Dawnbreaker},
             "3": {AwakenedAddedChaosDamageSupport, AwakenedEnlightenSupport},
         }
+
+    def test_not_same(self, uniquejewel_data):
+        items = {TwoModWatcherEye, ThreeModWatcherEye}
+        extract_prices(uniquejewel_data, items)
+        assert TwoModWatcherEye.price != 0 and TwoModWatcherEye.price == ThreeModWatcherEye.price

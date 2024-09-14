@@ -1,6 +1,6 @@
 import logging
 from time import time
-from poe_profit_calc.items import Item, PoeNinjaSource
+from poe_profit_calc.items import ITEM_NAMES, Item, PoeNinjaSource
 from poe_profit_calc.fetcher import Fetcher, FetchError, Format
 from poe_profit_calc.sourcemappings import ENDPOINT_MAPPING
 from itertools import groupby
@@ -19,7 +19,6 @@ class Pricer:
         self.item_last_fetch: dict[Item, float] = {}
 
     def price_items(self, items: set[Item]) -> None:
-        logging.info(f"Fetching prices for {len(items)} items")
         t = time()
         items_to_fetch = set()
         for item in items:
@@ -65,10 +64,13 @@ def extract_prices(data, items: set[Item]) -> None:
     for item_data in data.get("lines", {}):
         if not unprocessed_items:
             break
+        if item_data.get("name", item_data.get("currencyTypeName")) not in ITEM_NAMES:
+            continue
+        to_remove = set()
         for item in unprocessed_items:
             if item.match(item_data):
-                unprocessed_items.remove(item)
-                break
+                to_remove.add(item)
+        unprocessed_items.difference_update(to_remove)
     currency_details = data.get("currencyDetails", {})
     if currency_details:
         extract_currency_imgs(items, currency_details)
@@ -79,7 +81,8 @@ def extract_currency_imgs(items: set[Item], currency_details: dict) -> None:
     for currency_detail in currency_details:
         if not unprocessed_items:
             break
+        to_remove = set()
         for item in items:
             if item.match_currency_details(currency_detail):
-                unprocessed_items.remove(item)
-                break
+                to_remove.add(item)
+        unprocessed_items.difference_update(to_remove)
