@@ -715,7 +715,7 @@ OfferingToTheSerpent = Item(
 GraceOfTheGoddess = Item(
     "Grace of the Goddess",
     "GraceoftheGoddess",
-    0.05,
+    0.005,
     PoeNinjaMatcher(PoeNinjaSource.UNIQUE_WEAPON, "Grace of the Goddess"),
 )
 
