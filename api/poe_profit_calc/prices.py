@@ -2,8 +2,6 @@ import logging
 from time import time
 from poe_profit_calc.items import ITEM_NAMES, Item, PoeNinjaSource
 from poe_profit_calc.fetcher import Fetcher, FetchError, Format
-from poe_profit_calc.sourcemappings import ENDPOINT_MAPPING
-from itertools import groupby
 
 
 class Pricer:
