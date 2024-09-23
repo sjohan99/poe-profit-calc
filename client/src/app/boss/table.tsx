@@ -148,7 +148,7 @@ export default function Table(props: BossInfo) {
           title=""
           type="text"
           pattern=""
-          value={data.price.toFixed(0) + "c"}
+          value={data.price.toFixed(0)}
           className=" bg-transparent"
           onChange={(event) => handlePriceChange(event, index)}
         />
