@@ -12,7 +12,7 @@ const routeTitles: Record<string, string> = {
 
 export default function PageTitle() {
   const pathName = usePathname();
-  const title = routeTitles[pathName] ?? "Summary"; // Default to 'Summary' if route is not found
+  const title = routeTitles[pathName] ?? ""; // Default to 'Summary' if route is not found
 
   return (
     <CenterContent no_pad_children={true}>

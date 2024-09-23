@@ -41,7 +41,7 @@ export default function HomePage() {
           </p>
         </p>
       </Question>
-      <Question question='What is "Experience Adjusted Profits?'>
+      <Question question='What is "Experience Adjusted Profits?"'>
         <p>
           This makes the profit normalized with respect to the required
           experience to level a gem to max level. Awakened and exceptional gems

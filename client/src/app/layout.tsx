@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CenterContent } from "~/components/center-content";
 import PageTitle from "@components/page-title";
+import Footer from "./footer";
 
 const robotoSlab = Roboto_Slab({
   weight: "400",
@@ -60,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${robotoSlab.className}`}>
-      <body className="flex min-h-screen flex-col justify-between gap-5">
+      <body className="flex min-h-screen flex-col justify-between">
         <div className="min-h-screen">
           <TopNav />
           <PageTitle />
@@ -69,8 +70,9 @@ export default function RootLayout({
           </CenterContent>
         </div>
         <div>
-          <CenterContent className="border-t">
-            <p className="">placeholder</p>
+          <CenterContent no_pad_children={true}>
+            <div className="border-t border-accent-1 pb-3"></div>
+            <Footer></Footer>
           </CenterContent>
         </div>
         <Analytics></Analytics>
