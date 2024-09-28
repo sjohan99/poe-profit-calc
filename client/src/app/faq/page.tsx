@@ -7,8 +7,13 @@ function Question({
   question: string;
   children: ReactNode;
 }) {
+  function createId() {
+    const q = question.replace(/[^a-zA-Z ]/g, "");
+    return q.toLowerCase().replace(/ /g, "-");
+  }
+
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2" id={createId()}>
       <h2>{question}</h2>
       {children}
     </div>
@@ -20,14 +25,14 @@ export default function HomePage() {
     <main className="flex max-w-3xl flex-col gap-5">
       <Question question="How are boss profits calculated?">
         <p>
-          The &quot;Value&quot; of a boss is the average expected profit per
-          kill.
+          The &quot;value&quot; of a boss is the average profit per kill. It is
+          calculated as follows:
         </p>
         <p>Item Value = Price * Droprate</p>
         <p>Boss Value = Sum of all Item Values - Entry Cost</p>
       </Question>
       <Question question="How are gem profits calculated?">
-        <p>
+        <span>
           The &quot;Level profit&quot; is the price-difference between the game
           at level 1 and its max (uncorrupted) level.
           <p>
@@ -39,7 +44,7 @@ export default function HomePage() {
             levelling a gem from level 1, making it 20% quality, and then
             corrupting it.
           </p>
-        </p>
+        </span>
       </Question>
       <Question question='What is "Experience Adjusted Profits?"'>
         <p>

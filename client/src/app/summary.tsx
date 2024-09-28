@@ -1,7 +1,7 @@
 import { fetchData } from "@services/fetcher";
 import Link from "next/link";
 import Image from "next/image";
-import Tooltip from "@components/tooltip";
+import { Tooltip } from "@components/tooltip";
 import ChaosOrb from "@components/currency";
 
 type Boss = {

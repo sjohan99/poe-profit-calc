@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import { type GemData, type Gem } from "./types";
 import Image from "next/image";
 import ChaosOrb from "@components/currency";
+import { QuestionTooltip } from "@components/tooltip";
+import BlueLink from "@components/link";
 
 type Sorting = {
   field: keyof Omit<Gem, "name" | "gem_type" | "img">;
@@ -193,12 +195,23 @@ export default function Table({ gems }: GemData) {
     <div className="flex flex-col gap-y-2">
       <p className="text-lg text-secondary-2">Options:</p>
       <div className="flex flex-col items-start gap-y-2">
-        <CheckBox
-          id="useExperienceAdjustedProfits"
-          checked={sorting.showAdjusted}
-          onChange={() => toggleAdjusted()}
-          label="Use Experience Adjusted Profits"
-        />
+        <div className="flex flex-row gap-2">
+          <CheckBox
+            id="useExperienceAdjustedProfits"
+            checked={sorting.showAdjusted}
+            onChange={() => toggleAdjusted()}
+            label="Use Experience Adjusted Profits"
+          />
+          <QuestionTooltip>
+            <p>
+              Divides profit of Awakened Gems by ~5.{" "}
+              <BlueLink
+                href="/faq#what-is-experience-adjusted-profits"
+                text="FAQ"
+              ></BlueLink>
+            </p>
+          </QuestionTooltip>
+        </div>
         <CheckBox
           id="showAwakenedGems"
           checked={sorting.showAwakened}

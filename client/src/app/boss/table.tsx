@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { type BossInfo } from "./types";
-import Tooltip from "@components/tooltip";
+import { QuestionTooltip, Tooltip } from "@components/tooltip";
 import Link from "next/link";
 import Image from "next/image";
 import ChaosOrb from "@components/currency";
@@ -150,13 +150,13 @@ export default function Table(props: BossInfo) {
           type="text"
           pattern=""
           value={data.price.toFixed(0)}
-          className=" bg-transparent"
+          className="rounded border border-accent-2 border-opacity-10 bg-transparent pl-1"
           onChange={(event) => handlePriceChange(event, index)}
         />
         <div>
           {data.droprate ? `${(data.droprate * 100).toFixed(2)}%` : "N/A"}
         </div>
-        <div>{data.value.toFixed(2)}c</div>
+        <div>{data.value.toFixed(2)}</div>
         <div>
           {data.type == "drop"
             ? `${((100 * data.value) / itemData.profit).toFixed(1)}%`
@@ -172,7 +172,10 @@ export default function Table(props: BossInfo) {
         <div className="grid grid-cols-6 gap-x-3">
           <div className="col-span-2 text-xl font-bold">Item</div>
           <div className="flex flex-row gap-2 truncate text-xl font-bold">
-            Price <ChaosOrb />
+            Price <ChaosOrb />{" "}
+            <QuestionTooltip>
+              <p>This field is editable!</p>
+            </QuestionTooltip>
           </div>
           <div className="truncate text-xl font-bold">Drop Rate</div>
           <div className="flex flex-row gap-2 truncate text-xl font-bold">
