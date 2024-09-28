@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { type GemData, type Gem } from "./types";
 import Image from "next/image";
+import ChaosOrb from "@components/currency";
 
 type Sorting = {
   field: keyof Omit<Gem, "name" | "gem_type" | "img">;
@@ -16,7 +17,7 @@ function renderField(f: number | null): string {
   if (f === null) {
     return "N/A";
   }
-  return f.toFixed(1) + "c";
+  return f.toFixed(1);
 }
 
 function sortGems(gems: Gem[], sorting: Sorting): Gem[] {
@@ -225,9 +226,10 @@ export default function Table({ gems }: GemData) {
                   : "level_profit",
               )
             }
-            className="cursor-pointer text-xl font-bold"
+            className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
           >
             Level profit
+            <ChaosOrb />
           </div>
           <div
             onClick={() =>
@@ -237,9 +239,10 @@ export default function Table({ gems }: GemData) {
                   : "level_c_profit",
               )
             }
-            className="cursor-pointer text-xl font-bold"
+            className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
           >
             Level + Corrupt
+            <ChaosOrb />
           </div>
           <div
             onClick={() =>
@@ -249,9 +252,10 @@ export default function Table({ gems }: GemData) {
                   : "level_q_c_profit",
               )
             }
-            className="cursor-pointer text-xl font-bold"
+            className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
           >
             Level + Quality + Corrupt
+            <ChaosOrb />
           </div>
         </div>
         {sortedGems.slice(0, pageSize).map((gem) => (

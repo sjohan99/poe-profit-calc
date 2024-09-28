@@ -5,6 +5,7 @@ import { type BossInfo } from "./types";
 import Tooltip from "@components/tooltip";
 import Link from "next/link";
 import Image from "next/image";
+import ChaosOrb from "@components/currency";
 
 type SingularItemData = {
   name: string;
@@ -170,9 +171,13 @@ export default function Table(props: BossInfo) {
       <div className="grid grid-cols-1 gap-2">
         <div className="grid grid-cols-6 gap-x-3">
           <div className="col-span-2 text-xl font-bold">Item</div>
-          <div className="truncate text-xl font-bold">Price</div>
+          <div className="flex flex-row gap-2 truncate text-xl font-bold">
+            Price <ChaosOrb />
+          </div>
           <div className="truncate text-xl font-bold">Drop Rate</div>
-          <div className="truncate text-xl font-bold">Value</div>
+          <div className="flex flex-row gap-2 truncate text-xl font-bold">
+            Value <ChaosOrb />
+          </div>
           <div className="truncate text-xl font-bold">Profit share</div>
         </div>
         {itemData.items.map((item, i) => itemRow(item, i))}
@@ -181,7 +186,7 @@ export default function Table(props: BossInfo) {
       <div className="mb-2 border-b pt-2"></div>
       <div className="grid grid-cols-6 gap-x-3">
         <div className="col-span-4 font-bold">Total per kill</div>
-        <div className="font-bold">{itemData.total.toFixed(2)}c</div>
+        <div className="font-bold">{itemData.total.toFixed(2)}</div>
       </div>
     </>
   );
