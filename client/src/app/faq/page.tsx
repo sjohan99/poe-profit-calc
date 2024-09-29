@@ -50,7 +50,7 @@ export default function HomePage() {
         <p>
           This makes the profit normalized with respect to the required
           experience to level a gem to max level. Awakened and exceptional gems
-          generally are more profitable to level at a per gem basis, however
+          are generally more profitable to level at a per gem basis. However
           they also require around 5x more experience to reach max level
           compared to a normal / transfigured gem.
         </p>
