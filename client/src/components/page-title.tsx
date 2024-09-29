@@ -8,6 +8,7 @@ const routeTitles: Record<string, string> = {
   "/bosses": "Bosses",
   "/gems": "Gem Levelling",
   "/faq": "Frequency Asked Questions",
+  "/about": "About",
 };
 
 export default function PageTitle() {
