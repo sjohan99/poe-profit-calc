@@ -1,6 +1,6 @@
 import BlueLink from "~/components/link";
 
-export default function HomePage() {
+export default function Page() {
   return (
     <main className="flex max-w-3xl flex-col gap-5">
       <div className="flex flex-col gap-2">

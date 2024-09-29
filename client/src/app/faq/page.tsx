@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import BlueLink from "@components/link";
 
 function Question({
   question,
@@ -7,6 +8,13 @@ function Question({
   question: string;
   children: ReactNode;
 }) {
+  /**
+   * Creates an id from the question.
+   *
+   * Example:
+   * `"How are boss profits calculated?"` -> `"how-are-boss-profits-calculated"`
+   * @returns {string} - The id of the question
+   */
   function createId() {
     const q = question.replace(/[^a-zA-Z ]/g, "");
     return q.toLowerCase().replace(/ /g, "-");
@@ -20,9 +28,9 @@ function Question({
   );
 }
 
-export default function HomePage() {
+export default function Page() {
   return (
-    <main className="flex max-w-3xl flex-col gap-5">
+    <main className="flex max-w-3xl flex-col gap-10">
       <Question question="How are boss profits calculated?">
         <p>
           The &quot;value&quot; of a boss is the average profit per kill. It is
@@ -30,6 +38,19 @@ export default function HomePage() {
         </p>
         <p>Item Value = Price * Droprate</p>
         <p>Boss Value = Sum of all Item Values - Entry Cost</p>
+      </Question>
+      <Question question="Where do the drop rates come from?">
+        <p>
+          I use the drop rates listed on the{" "}
+          <BlueLink href="https://www.poewiki.net/" text="wiki"></BlueLink>.
+          These might not be 100% accurate but they are the best I could find.
+          If you think they are wrong, feel free to open an issue on{" "}
+          <BlueLink
+            href="https://github.com/sjohan99/poe-profit-calc/issues"
+            text="Github"
+          ></BlueLink>
+          !
+        </p>
       </Question>
       <Question question="How are gem profits calculated?">
         <span>
