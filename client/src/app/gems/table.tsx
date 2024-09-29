@@ -191,6 +191,27 @@ export default function Table({ gems }: GemData) {
     );
   }
 
+  function SortArrow({
+    fields,
+  }: {
+    fields: Array<keyof Omit<Gem, "name" | "gem_type" | "img">>;
+  }) {
+    if (!fields.includes(sorting.field)) {
+      return (
+        <div className="flex flex-col text-xs opacity-25">
+          <div>▲</div>
+          <div>▼</div>
+        </div>
+      );
+    }
+    return (
+      <div className="flex flex-col text-xs">
+        <div className={sorting.order === "asc" ? "" : "opacity-50"}>▲</div>
+        <div className={sorting.order === "asc" ? "opacity-50" : ""}>▼</div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col gap-y-2">
       <p className="text-lg text-secondary-2">Options:</p>
@@ -241,8 +262,11 @@ export default function Table({ gems }: GemData) {
             }
             className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
           >
-            Level profit
+            <p className="truncate" title="Level Profit">
+              Level Profit
+            </p>
             <ChaosOrb />
+            <SortArrow fields={["level_profit", "xp_adjusted_level_profit"]} />
           </div>
           <div
             onClick={() =>
@@ -254,8 +278,11 @@ export default function Table({ gems }: GemData) {
             }
             className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
           >
-            Level + Corrupt
+            <p className="truncate" title="Level + Corrupt">
+              Level + Corrupt
+            </p>
             <ChaosOrb />
+            <SortArrow fields={["level_c_profit", "xp_adjusted_c_profit"]} />
           </div>
           <div
             onClick={() =>
@@ -267,8 +294,13 @@ export default function Table({ gems }: GemData) {
             }
             className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
           >
-            Level + Quality + Corrupt
+            <p className="truncate" title="Level + Quality + Corrupt">
+              Level + Quality + Corrupt
+            </p>
             <ChaosOrb />
+            <SortArrow
+              fields={["level_q_c_profit", "xp_adjusted_q_c_profit"]}
+            />
           </div>
         </div>
         {sortedGems.slice(0, pageSize).map((gem) => (
