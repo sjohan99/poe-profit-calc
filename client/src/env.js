@@ -8,6 +8,8 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    RATE_LIMIT_TOKEN_REFILL_RATE_MS: z.number({ coerce: true }),
+    RATE_LIMIT_TOKEN_BUCKET_CAPACITY: z.number({ coerce: true }),
   },
 
   /**
@@ -27,10 +29,13 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    RATE_LIMIT_TOKEN_REFILL_RATE_MS:
+      process.env.RATE_LIMIT_TOKEN_REFILL_RATE_MS,
+    RATE_LIMIT_TOKEN_BUCKET_CAPACITY:
+      process.env.RATE_LIMIT_TOKEN_BUCKET_CAPACITY,
     NEXT_PUBLIC_API_HOST: process.env.NEXT_PUBLIC_API_HOST,
     NEXT_PUBLIC_CACHE_FETCH_SECONDS:
       process.env.NEXT_PUBLIC_CACHE_FETCH_SECONDS,
-    // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
