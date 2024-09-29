@@ -1,5 +1,6 @@
 from collections import defaultdict
 from dataclasses import dataclass, field
+from poe_profit_calc.gemlevelling.gemxp import GEM_MAX_LEVEL_EXPERIENCE
 from enum import Enum
 import logging
 from typing import Tuple, Union
@@ -66,13 +67,7 @@ class GemType(Enum):
     TRANSFIGURED = "transfigured"
 
 
-EXPERIENCE_RATIOS = {
-    GemType.NORMAL: 1,
-    GemType.VAAL: 1,
-    GemType.AWAKENED: 342_004_647 / 1_889_340_172,
-    GemType.EXCEPTIONAL: 342_004_647 / 1_666_045_137,
-    GemType.TRANSFIGURED: 1,
-}
+NORMAL_GEM_XP = 340_000_000
 
 
 class Gem(msgspec.Struct, frozen=True, cache_hash=True):
@@ -91,7 +86,10 @@ class Gem(msgspec.Struct, frozen=True, cache_hash=True):
         max_level, max_experience = get_max_level_xp(self.name)
         msgspec.structs.force_setattr(self, "max_experience", max_experience)
         msgspec.structs.force_setattr(self, "max_level", max_level)
-        msgspec.structs.force_setattr(self, "value_per_xp", self.chaosValue / self.max_experience)
+        if self.max_experience != 0:  # Avoid division by zero, gems without max xp e.g. Portal
+            msgspec.structs.force_setattr(
+                self, "value_per_xp", self.chaosValue / self.max_experience
+            )
         gem_type = GemType.NORMAL
         if self.name in EXCEPTIONAL_GEMS:
             gem_type = GemType.EXCEPTIONAL
@@ -112,11 +110,16 @@ class GemData(msgspec.Struct):
 
 
 def get_max_level_xp(gem: str) -> Tuple[int, int]:
+    xp = GEM_MAX_LEVEL_EXPERIENCE.get(
+        gem.replace("'", ""), 2_000_000_000
+    )  # 2b safe default (approx woke gem xp)
+    if xp == 2_000_000_000 and gem not in IGNORE_GEMS:
+        logging.warning(f"Could not find max xp for {gem}, setting xp to 2 billion")
     if gem in EXCEPTIONAL_GEMS:
-        return 3, 1_666_045_137
+        return 3, xp
     if gem.startswith("Awakened"):
-        return 5, 1_889_340_172
-    return 20, 342_004_647
+        return 5, xp
+    return 20, xp
 
 
 def parse(json_b: bytes) -> set[Gem]:
@@ -161,7 +164,7 @@ class GemProfit:
     xp_adjusted_q_c_profit: float | None = field(init=False)
 
     def __post_init__(self):
-        ratio = EXPERIENCE_RATIOS[self.gem.type]
+        ratio = NORMAL_GEM_XP / self.gem.max_experience
         self.xp_adjusted_level_profit = self.level_profit * ratio
         self.xp_adjusted_c_profit = self.level_c_profit * ratio if self.level_c_profit else None
         self.xp_adjusted_q_c_profit = (
