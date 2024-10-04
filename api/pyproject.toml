@@ -22,6 +22,11 @@ optional = true
 
 [tool.poetry.group.bin.dependencies]
 beautifulsoup4 = "^4.12.3"
+opencv-python = "^4.10.0.84"
+numpy = "^2.1.1"
+mss = "^9.0.2"
+matplotlib = "^3.9.2"
+
 
 [build-system]
 requires = ["poetry-core"]
