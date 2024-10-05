@@ -21,7 +21,7 @@ const chakraPetch = Chakra_Petch({
 
 export const metadata = {
   title: "Path of Exile Profit Calculator",
-  icons: [{ rel: "icon", url: "/icon.ico" }],
+  icons: [{ rel: "favicon", url: "/favicon.ico" }],
 };
 
 function TopNav() {

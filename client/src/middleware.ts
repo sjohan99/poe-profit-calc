@@ -8,7 +8,6 @@ const rateLimiter = new TokenBucketRateLimiter({
   maxTokens: env.RATE_LIMIT_TOKEN_BUCKET_CAPACITY,
 });
 
-// This function can be marked `async` if using `await` inside
 export function middleware(request: NextRequest) {
   const ip = request.ip ?? request.headers.get("X-Forwarded-For") ?? "unknown";
   const isRateLimited = rateLimiter.limit(ip);
@@ -22,8 +21,22 @@ export function middleware(request: NextRequest) {
   }
 }
 
-// See "Matching Paths" below to learn more
 export const config = {
-  matcher:
-    "/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
+  /*
+   * Match all request paths except for the ones starting with:
+   * - _next/static (static files)
+   * - _next/image (image optimization files)
+   * - favicon.ico, sitemap.xml, robots.txt (metadata files)
+   * - Prefetch requests
+   */
+  matcher: [
+    {
+      source:
+        "/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
+      missing: [
+        { type: "header", key: "next-router-prefetch" },
+        { type: "header", key: "purpose", value: "prefetch" },
+      ],
+    },
+  ],
 };
