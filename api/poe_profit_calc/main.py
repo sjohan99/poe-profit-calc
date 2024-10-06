@@ -1,8 +1,9 @@
 import logging
 from cachetools import cached, TTLCache
 from poe_profit_calc.items import Item
-from poe_profit_calc.bosses import *
+from poe_profit_calc.bossing.bosses import *
 from poe_profit_calc.gemlevelling.gems import create_profitability_report, parse
+from poe_profit_calc.sources import PoeNinjaSource
 from fastapi import HTTPException
 
 from poe_profit_calc.setup.setup import App

@@ -7,7 +7,7 @@ from poe_profit_calc.prices import Pricer
 from poe_profit_calc.setup.logger import LoggingFormatter
 from poe_profit_calc.setup.ratelimiting import RateLimiter
 from poe_profit_calc.setup.settings import get_settings
-from poe_profit_calc.sourcemappings import ENDPOINT_MAPPING, FILE_PATH_MAPPING
+from poe_profit_calc.sources import ENDPOINT_MAPPING, FILE_PATH_MAPPING
 
 
 class App:

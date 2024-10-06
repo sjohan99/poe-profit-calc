@@ -1,7 +1,6 @@
 from enum import Enum
 import json
 import pathlib
-from typing import Union
 import requests
 from cachetools import TTLCache, LRUCache, cached
 
@@ -51,4 +50,4 @@ class FileFetcher:
             ) from e
 
 
-Fetcher = Union[HttpFetcher, FileFetcher]
+Fetcher = HttpFetcher | FileFetcher
