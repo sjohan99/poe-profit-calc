@@ -1,4 +1,5 @@
-*
+/data/img-rec/**/*.json
+/data/img-rec/*.json
 
 !.gitignore
 !*.py
