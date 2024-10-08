@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from poe_profit_calc.gemlevelling.gemxp import GEM_MAX_LEVEL_EXPERIENCE
 from enum import Enum
 import logging
-from typing import Tuple, Union
+from typing import Tuple
 import msgspec
 
 IGNORE_GEMS = {
@@ -172,19 +172,19 @@ class GemProfit:
         )
 
 
-def create_profitability_report(gems: set[Gem]) -> dict[str, GemProfit]:
+def create_profitability_report(gems: set[Gem]) -> list[GemProfit]:
     gems = omit_double_corrupted_and_ignored_gems(gems)
     gem_groups = group_gems(gems)
-    report_data = {}
+    report_data = []
     for k, v in gem_groups.items():
         if profitability := calculate_profitability(k, v):
-            report_data[k] = profitability
+            report_data.append(profitability)
         else:
             logging.warning(f"Could not calculate profitability for {k}")
     return report_data
 
 
-def calculate_profitability(gem_name: str, gem_group: set[Gem]) -> Union[GemProfit, None]:
+def calculate_profitability(gem_name: str, gem_group: set[Gem]) -> GemProfit | None:
     max_level, _ = get_max_level_xp(gem_name)
     max_plus = max_level + 1
     g_1_0q_v = None

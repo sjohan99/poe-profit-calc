@@ -13,6 +13,4 @@ export type Gem = {
   img: string | null;
 };
 
-export type GemData = {
-  gems: Gem[];
-};
+export type GemData = Gem[];

@@ -73,7 +73,13 @@ function CheckBox({ checked, onChange, id, label }: CheckBoxProps) {
   );
 }
 
-export default function Table({ gems }: GemData) {
+type TableProps = {
+  gems: GemData;
+};
+
+export default function Table({ gems }: TableProps): JSX.Element {
+  console.log(gems);
+
   const [pageSize, setPageSize] = useState(15);
   const [sorting, setSorting] = useState<Sorting>({
     field: "level_profit",

@@ -1,7 +1,8 @@
 import logging
 from time import time
-from poe_profit_calc.items import ITEM_NAMES, Item, PoeNinjaSource
+from poe_profit_calc.items import Item
 from poe_profit_calc.fetcher import Fetcher, FetchError, Format
+from poe_profit_calc.sources import PoeNinjaSource
 
 
 class Pricer:
@@ -58,11 +59,13 @@ def group_by_source(
 
 
 def extract_prices(data, items: set[Item]) -> None:
+    item_names = {item.name for item in items}
     unprocessed_items = items.copy()
     for item_data in data.get("lines", {}):
         if not unprocessed_items:
             break
-        if item_data.get("name", item_data.get("currencyTypeName")) not in ITEM_NAMES:
+        # Do not try to match items that we are not interested in for efficiency
+        if item_data.get("name", item_data.get("currencyTypeName")) not in item_names:
             continue
         to_remove = set()
         for item in unprocessed_items:

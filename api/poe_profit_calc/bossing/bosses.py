@@ -1,4 +1,6 @@
-from poe_profit_calc.items import *
+from dataclasses import dataclass
+from poe_profit_calc.items import Item
+from poe_profit_calc.bossing.bossitems import *
 
 
 @dataclass
