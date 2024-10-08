@@ -172,13 +172,13 @@ class GemProfit:
         )
 
 
-def create_profitability_report(gems: set[Gem]) -> dict[str, GemProfit]:
+def create_profitability_report(gems: set[Gem]) -> list[GemProfit]:
     gems = omit_double_corrupted_and_ignored_gems(gems)
     gem_groups = group_gems(gems)
-    report_data = {}
+    report_data = []
     for k, v in gem_groups.items():
         if profitability := calculate_profitability(k, v):
-            report_data[k] = profitability
+            report_data.append(profitability)
         else:
             logging.warning(f"Could not calculate profitability for {k}")
     return report_data

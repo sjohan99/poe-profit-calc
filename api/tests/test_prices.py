@@ -2,7 +2,7 @@ import json
 import pathlib
 import pytest
 from poe_profit_calc.prices import extract_prices, group_by_source
-from poe_profit_calc.items import *
+from poe_profit_calc.bossing.bossitems import *
 
 
 class TestParseQuestions:

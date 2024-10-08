@@ -12,13 +12,9 @@ type Boss = {
   img: string | null;
 };
 
-type Summary = {
-  bosses: Boss[];
-};
-
 export default async function Summary() {
-  let bossInfo = await fetchData<Summary>("summary");
-  bossInfo ??= { bosses: [] };
+  let bossInfo = await fetchData<Boss[]>("bosses/summary");
+  bossInfo ??= [];
 
   function Row({ boss }: { boss: Boss }) {
     return (
@@ -61,7 +57,7 @@ export default async function Summary() {
         <div className="flex flex-row gap-2 text-2xl font-bold">
           Profit per kill <ChaosOrb />
         </div>
-        {bossInfo.bosses.map((boss) => (
+        {bossInfo.map((boss) => (
           <Row boss={boss} key={boss.name}></Row>
         ))}
       </div>

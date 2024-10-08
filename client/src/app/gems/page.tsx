@@ -4,11 +4,11 @@ import Table from "./table";
 
 export default async function Page() {
   let gemData = await fetchData<GemData>("gems/summary");
-  gemData ??= { gems: [] };
+  gemData ??= [];
 
   return (
     <>
-      <Table {...gemData}></Table>
+      <Table gems={gemData}></Table>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { fetchData } from "@services/fetcher";
 import { type BossInfo } from "../types";
 
 export default async function Page({ params }: { params: { id: string } }) {
-  let bossInfo = await fetchData<BossInfo[]>(`boss`);
+  let bossInfo = await fetchData<BossInfo[]>("bosses/all");
   bossInfo ??= [];
   const boss = bossInfo.find((b) => b.id === params.id);
 

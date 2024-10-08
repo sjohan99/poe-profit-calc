@@ -14,7 +14,7 @@ export async function fetchData<T>(
     env.NEXT_PUBLIC_CACHE_FETCH_SECONDS,
   );
   cache_opts = { revalidate: cache_seconds };
-  const res = await fetch(`${API_BASE_URL}/data/${endpoint}`, {
+  const res = await fetch(`${API_BASE_URL}/${endpoint}`, {
     next: cache_opts,
   });
   if (!res.ok) {
