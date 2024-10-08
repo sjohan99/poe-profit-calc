@@ -78,8 +78,6 @@ type TableProps = {
 };
 
 export default function Table({ gems }: TableProps): JSX.Element {
-  console.log(gems);
-
   const [pageSize, setPageSize] = useState(15);
   const [sorting, setSorting] = useState<Sorting>({
     field: "level_profit",
