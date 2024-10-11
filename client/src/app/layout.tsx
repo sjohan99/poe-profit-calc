@@ -44,6 +44,9 @@ function TopNav() {
           <Link href="/gems" className="hover:underline">
             Gems
           </Link>
+          <Link href="/harvest" className="hover:underline">
+            Harvest
+          </Link>
           <Link href="/faq" className="hover:underline">
             FAQ
           </Link>
