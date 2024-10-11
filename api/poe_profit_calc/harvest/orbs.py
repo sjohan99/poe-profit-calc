@@ -1,5 +1,7 @@
 import msgspec
 
+PRIMAL_LIFEFORCE_PER_ORB_REROLL = 30
+
 orb_weights = {
     "Abyssal Delirium Orb": 35,
     "Armoursmith's Delirium Orb": 736,
@@ -20,7 +22,7 @@ orb_weights = {
     "Whispering Delirium Orb": 93,
 }
 
-total_weight = sum(orb_weights.values())
+total_orb_weight = sum(orb_weights.values())
 
 
 class Orb(msgspec.Struct):
@@ -61,7 +63,7 @@ def calculate_profits(orbs: set[Orb], primal_lifeforce_cost: float) -> dict[Orb,
     orb_profits = {}
     for orb in orbs:
         other_orbs = orbs - {orb}
-        other_orbs_weight = total_weight - orb.reroll_weight
+        other_orbs_weight = total_orb_weight - orb.reroll_weight
         expected_new_value = sum(
             [(orb2.reroll_weight / other_orbs_weight) * orb2.chaosValue for orb2 in other_orbs]
         )
