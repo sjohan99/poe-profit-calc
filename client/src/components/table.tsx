@@ -19,9 +19,9 @@ export function TableHeaders(props: {
   const { children, column_sizes } = props;
 
   return (
-    <div className={`grid grid-cols-${sum(column_sizes)} gap-x-3`}>
+    <div className={`grid grid-cols-${sum(column_sizes)} gap-x-3 -sm:gap-x-1`}>
       {React.Children.map(children, (child, index) => (
-        <div key={index} className={columnSize(index, column_sizes)}>
+        <div key={index} className={`${columnSize(index, column_sizes)}`}>
           {child}
         </div>
       ))}
@@ -33,7 +33,7 @@ export function TableHeader(props: { children: React.ReactNode }) {
   const { children } = props;
 
   return (
-    <div className="flex flex-row items-center gap-2 text-xl font-bold">
+    <div className="responsive-text-medium flex flex-row items-center gap-2 truncate text-xl font-bold">
       {children}
     </div>
   );
@@ -47,7 +47,10 @@ export function TableRow(props: {
   const childrenArray = React.Children.toArray(children);
 
   return childrenArray.map((child, index) => (
-    <div key={index} className={columnSize(index, column_sizes)}>
+    <div
+      key={index}
+      className={`${columnSize(index, column_sizes)} responsive-text-small flex h-full items-center truncate`}
+    >
       {child}
     </div>
   ));
@@ -59,7 +62,9 @@ export function TableRows(props: {
 }) {
   const { children, column_sizes } = props;
   return (
-    <div className={`grid grid-cols-${sum(column_sizes)} gap-x-3 gap-y-2`}>
+    <div
+      className={`grid grid-cols-${sum(column_sizes)} content-stretch gap-x-3 gap-y-2 -sm:gap-x-1`}
+    >
       {children}
     </div>
   );

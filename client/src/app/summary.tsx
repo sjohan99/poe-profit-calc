@@ -3,6 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Tooltip } from "@components/tooltip";
 import ChaosOrb from "@components/currency";
+import {
+  Table,
+  TableHeader,
+  TableHeaders,
+  TableRow,
+  TableRows,
+} from "@components/table";
 
 type Boss = {
   name: string;
@@ -18,8 +25,8 @@ export default async function Summary() {
 
   function Row({ boss }: { boss: Boss }) {
     return (
-      <>
-        <div className="col-span-2 flex flex-row items-center gap-2">
+      <TableRow column_sizes={[2, 1]}>
+        <div className="flex flex-row items-center gap-2 truncate">
           {boss.img ? (
             <Image
               src={boss.img}
@@ -46,21 +53,25 @@ export default async function Summary() {
           )}
         </div>
         <div>{boss.value.toFixed(2)}</div>
-      </>
+      </TableRow>
     );
   }
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-2">
-        <div className="col-span-2 text-2xl font-bold">Boss</div>
-        <div className="flex flex-row gap-2 text-2xl font-bold">
-          Profit per kill <ChaosOrb />
-        </div>
-        {bossInfo.map((boss) => (
-          <Row boss={boss} key={boss.name}></Row>
-        ))}
-      </div>
+      <Table>
+        <TableHeaders column_sizes={[2, 1]}>
+          <TableHeader>Boss</TableHeader>
+          <TableHeader>
+            Profit per kill <ChaosOrb />
+          </TableHeader>
+        </TableHeaders>
+        <TableRows column_sizes={[2, 1]}>
+          {bossInfo.map((boss) => (
+            <Row boss={boss} key={boss.id}></Row>
+          ))}
+        </TableRows>
+      </Table>
     </>
   );
 }
