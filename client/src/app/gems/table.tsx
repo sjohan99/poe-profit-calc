@@ -6,9 +6,18 @@ import Image from "next/image";
 import ChaosOrb from "@components/currency";
 import { QuestionTooltip } from "@components/tooltip";
 import BlueLink from "@components/link";
+import {
+  Table,
+  TableHeader,
+  TableHeaders,
+  TableRow,
+  TableRows,
+} from "@components/table";
+
+type SortableField = keyof Omit<Gem, "name" | "gem_type" | "img">;
 
 type Sorting = {
-  field: keyof Omit<Gem, "name" | "gem_type" | "img">;
+  field: SortableField;
   order: "asc" | "desc";
   showAdjusted: boolean;
   showAwakened: boolean;
@@ -77,7 +86,7 @@ type TableProps = {
   gems: GemData;
 };
 
-export default function Table({ gems }: TableProps): JSX.Element {
+export default function Tablex({ gems }: TableProps): JSX.Element {
   const [pageSize, setPageSize] = useState(15);
   const [sorting, setSorting] = useState<Sorting>({
     field: "level_profit",
@@ -91,7 +100,7 @@ export default function Table({ gems }: TableProps): JSX.Element {
     return sortGems(filterGems(gems, sorting), sorting);
   }, [gems, sorting]);
 
-  function sortBy(field: keyof Omit<Gem, "name" | "gem_type" | "img">) {
+  function sortBy(field: SortableField) {
     if (sorting.field === field) {
       setSorting({
         ...sorting,
@@ -104,6 +113,31 @@ export default function Table({ gems }: TableProps): JSX.Element {
         order: "desc",
       });
     }
+  }
+
+  function SortableHeader({
+    baseSorting,
+    adjustedSorting,
+    text,
+  }: {
+    baseSorting: SortableField;
+    adjustedSorting: SortableField;
+    text: string;
+  }) {
+    return (
+      <div
+        onClick={() =>
+          sortBy(sorting.showAdjusted ? adjustedSorting : baseSorting)
+        }
+        className="-md:text-md flex cursor-pointer flex-row gap-2 truncate text-xl font-bold -lg:text-lg -sm:text-sm"
+      >
+        <p className="truncate" title={text}>
+          {text}
+        </p>
+        <ChaosOrb className="-sm:hidden" />
+        <SortArrow fields={[baseSorting, adjustedSorting]} />
+      </div>
+    );
   }
 
   function toggleAwakened() {
@@ -150,9 +184,18 @@ export default function Table({ gems }: TableProps): JSX.Element {
 
   function Row(props: { gem: Gem }): JSX.Element {
     const { gem } = props;
+    const level_profit = sorting.showAdjusted
+      ? gem.xp_adjusted_level_profit
+      : gem.level_profit;
+    const level_c_profit = sorting.showAdjusted
+      ? gem.xp_adjusted_c_profit
+      : gem.level_c_profit;
+    const level_q_c_profit = sorting.showAdjusted
+      ? gem.xp_adjusted_q_c_profit
+      : gem.level_q_c_profit;
     return (
-      <div className="grid grid-cols-5 gap-x-3">
-        <div className="col-span-2 flex flex-row items-center gap-2">
+      <TableRow column_sizes={[2, 1, 1, 1]}>
+        <div className="flex flex-row items-center gap-2 truncate">
           {gem.img ? (
             <Image
               src={gem.img}
@@ -166,50 +209,24 @@ export default function Table({ gems }: TableProps): JSX.Element {
             {gem.name}
           </p>
         </div>
-        {sorting.showAdjusted ? (
-          <RowAdjustedProfit gem={gem} />
-        ) : (
-          <RowPureProfit gem={gem} />
-        )}
-      </div>
+        <div>{renderField(level_profit)}</div>
+        <div>{renderField(level_c_profit)}</div>
+        <div>{renderField(level_q_c_profit)}</div>
+      </TableRow>
     );
   }
 
-  function RowPureProfit({ gem }: { gem: Gem }) {
-    return (
-      <>
-        <div>{renderField(gem.level_profit)}</div>
-        <div>{renderField(gem.level_c_profit)}</div>
-        <div>{renderField(gem.level_q_c_profit)}</div>
-      </>
-    );
-  }
-
-  function RowAdjustedProfit({ gem }: { gem: Gem }) {
-    return (
-      <>
-        <div>{renderField(gem.xp_adjusted_level_profit)}</div>
-        <div>{renderField(gem.xp_adjusted_c_profit)}</div>
-        <div>{renderField(gem.xp_adjusted_q_c_profit)}</div>
-      </>
-    );
-  }
-
-  function SortArrow({
-    fields,
-  }: {
-    fields: Array<keyof Omit<Gem, "name" | "gem_type" | "img">>;
-  }) {
+  function SortArrow({ fields }: { fields: Array<SortableField> }) {
     if (!fields.includes(sorting.field)) {
       return (
-        <div className="flex flex-col text-xs opacity-25">
+        <div className="flex flex-col text-xs opacity-25 -sm:hidden">
           <div>▲</div>
           <div>▼</div>
         </div>
       );
     }
     return (
-      <div className="flex flex-col text-xs">
+      <div className="flex flex-col text-xs -sm:hidden">
         <div className={sorting.order === "asc" ? "" : "opacity-50"}>▲</div>
         <div className={sorting.order === "asc" ? "opacity-50" : ""}>▼</div>
       </div>
@@ -250,73 +267,48 @@ export default function Table({ gems }: TableProps): JSX.Element {
           label="Show Transfigured Gems"
         />
       </div>
-      <div className="grid grid-cols-1 gap-2">
-        <div className="grid grid-cols-5 gap-x-3">
-          <div className="col-span-2 flex flex-row items-baseline gap-2 text-xl font-bold">
-            Gem
-            <p className="text-sm text-secondary-2">{`(${pageSize} / ${sortedGems.length})`}</p>
-          </div>
-          <div
-            onClick={() =>
-              sortBy(
-                sorting.showAdjusted
-                  ? "xp_adjusted_level_profit"
-                  : "level_profit",
-              )
-            }
-            className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
-          >
-            <p className="truncate" title="Level Profit">
-              Level Profit
+      <Table>
+        <TableHeaders column_sizes={[2, 1, 1, 1]}>
+          <TableHeader>
+            <p>
+              Gem{" "}
+              <span className="text-sm text-secondary-2">{`(${pageSize} / ${sortedGems.length})`}</span>
             </p>
-            <ChaosOrb />
-            <SortArrow fields={["level_profit", "xp_adjusted_level_profit"]} />
-          </div>
-          <div
-            onClick={() =>
-              sortBy(
-                sorting.showAdjusted
-                  ? "xp_adjusted_c_profit"
-                  : "level_c_profit",
-              )
-            }
-            className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
-          >
-            <p className="truncate" title="Level + Corrupt">
-              Level + Corrupt
-            </p>
-            <ChaosOrb />
-            <SortArrow fields={["level_c_profit", "xp_adjusted_c_profit"]} />
-          </div>
-          <div
-            onClick={() =>
-              sortBy(
-                sorting.showAdjusted
-                  ? "xp_adjusted_q_c_profit"
-                  : "level_q_c_profit",
-              )
-            }
-            className="flex cursor-pointer flex-row gap-2 text-xl font-bold"
-          >
-            <p className="truncate" title="Level + Quality + Corrupt">
-              Level + Quality + Corrupt
-            </p>
-            <ChaosOrb />
-            <SortArrow
-              fields={["level_q_c_profit", "xp_adjusted_q_c_profit"]}
-            />
-          </div>
-        </div>
-        {sortedGems.slice(0, pageSize).map((gem) => (
-          <Row gem={gem} key={gem.name} />
-        ))}
-      </div>
-      <button
-        className="h-10 rounded border border-secondary-1 hover:border-2 hover:border-secondary-2"
-        onClick={() => setPageSize(pageSize + 15)}
-      >
-        Show more
-      </button>
+          </TableHeader>
+          <TableHeader>
+            <SortableHeader
+              baseSorting="level_profit"
+              adjustedSorting="xp_adjusted_level_profit"
+              text="Level Profit"
+            ></SortableHeader>
+          </TableHeader>
+          <TableHeader>
+            <SortableHeader
+              baseSorting="level_c_profit"
+              adjustedSorting="xp_adjusted_c_profit"
+              text="Level + Corrupt"
+            ></SortableHeader>
+          </TableHeader>
+          <TableHeader>
+            <SortableHeader
+              text="Level + Quality + Corrupt"
+              baseSorting="level_q_c_profit"
+              adjustedSorting="xp_adjusted_q_c_profit"
+            ></SortableHeader>
+          </TableHeader>
+        </TableHeaders>
+        <TableRows column_sizes={[2, 1, 1, 1]}>
+          {sortedGems.slice(0, pageSize).map((gem) => (
+            <Row gem={gem} key={gem.name} />
+          ))}
+        </TableRows>
+        <button
+          className="h-10 rounded border border-secondary-1 hover:border-2 hover:border-secondary-2"
+          onClick={() => setPageSize(pageSize + 15)}
+        >
+          Show more
+        </button>
+      </Table>
     </div>
   );
 }
