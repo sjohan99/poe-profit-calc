@@ -36,7 +36,7 @@ export default function PageTitle() {
   const title = findTitle(pathName);
 
   return (
-    <CenterContent no_pad_children={true}>
+    <CenterContent>
       <h1 className="text-3xl font-bold">{title}</h1>
     </CenterContent>
   );

@@ -26,8 +26,8 @@ export const metadata = {
 
 function TopNav() {
   return (
-    <div className="flex h-20 w-full justify-center border-b-2 border-secondary-1 bg-accent-1 -lg:px-4">
-      <div className="min-w-20 flex-none -lg:min-w-0"></div>
+    <div className="flex h-20 w-full justify-center border-b-2 border-secondary-1 bg-accent-1 -2xl:px-3">
+      <div className="flex-none -lg:min-w-0"></div>
       <nav className="flex max-w-screen-2xl grow items-center justify-between text-2xl font-semibold">
         <Link
           href="/"
@@ -49,7 +49,7 @@ function TopNav() {
           </Link>
         </div>
       </nav>
-      <div className="min-w-20 flex-none -lg:min-w-0"></div>
+      <div className="flex-none -lg:min-w-0"></div>
     </div>
   );
 }
@@ -70,7 +70,7 @@ export default function RootLayout({
           </CenterContent>
         </div>
         <div>
-          <CenterContent no_pad_children={true}>
+          <CenterContent>
             <div className="border-t border-accent-1 pb-3"></div>
             <Footer></Footer>
           </CenterContent>

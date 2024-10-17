@@ -41,14 +41,16 @@ export default async function Summary() {
           </Link>
           {boss.reliable ? null : (
             <Tooltip>
-              <p>Boss contains items with unreliable prices.</p>
-              <Link
-                href={"/faq"}
-                className="text-link hover:underline"
-                target="_blank"
-              >
-                Why?
-              </Link>
+              <p>
+                Boss contains items with unreliable prices.{" "}
+                <Link
+                  href={"/faq"}
+                  className="text-link hover:underline"
+                  target="_blank"
+                >
+                  Why?
+                </Link>
+              </p>
             </Tooltip>
           )}
         </div>
@@ -63,7 +65,7 @@ export default async function Summary() {
         <TableHeaders column_sizes={[2, 1]}>
           <TableHeader>Boss</TableHeader>
           <TableHeader>
-            Profit per kill <ChaosOrb />
+            Profit per kill <ChaosOrb className="-sm:hidden" />
           </TableHeader>
         </TableHeaders>
         <TableRows column_sizes={[2, 1]}>

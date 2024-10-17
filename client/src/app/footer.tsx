@@ -26,7 +26,7 @@ export default function Footer() {
           About
         </Link>
       </div>
-      <div></div>
+      <div className="-sm:hidden"></div>
     </footer>
   );
 }

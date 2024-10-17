@@ -31,7 +31,7 @@ h3 {
 }
 
 .responsive-text-small {
-  @apply text-sm sm:text-base xl:text-lg;
+  @apply text-sm sm:text-base;
 }
 
 .responsive-text-medium {
