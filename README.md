@@ -1,15 +1,15 @@
-# PoE Profit Calculator
+# poe-profits
 
 PoE Profit Calculator is a Path of Exile tool which helps you calculate the profitability of:
 
 - bossing
 - levelling gems
 
-Visit the website [here!](https://mugg.dev/)
+Visit the website [here!](https://poe-profits.com/)
 
 ## Issues and feature requests
 
-If you have any issues or feature requests, please [open an issue](https://github.com/sjohan99/poe-profit-calc/issues).
+If you have any issues or feature requests, please [open an issue](https://github.com/sjohan99/poe-profits/issues/new).
 
 ## Development
 
