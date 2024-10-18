@@ -3,8 +3,7 @@ import { fetchData } from "@services/fetcher";
 import GemTable from "./table";
 
 export default async function Page() {
-  let gemData = await fetchData<GemData>("gems/summary");
-  gemData ??= [];
+  const gemData = await fetchData<GemData>("gems/summary");
 
   return (
     <>

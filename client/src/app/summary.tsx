@@ -20,8 +20,7 @@ type Boss = {
 };
 
 export default async function Summary() {
-  let bossInfo = await fetchData<Boss[]>("bosses/summary");
-  bossInfo ??= [];
+  const bossInfo = await fetchData<Boss[]>("bosses/summary");
 
   function Row({ boss }: { boss: Boss }) {
     return (
