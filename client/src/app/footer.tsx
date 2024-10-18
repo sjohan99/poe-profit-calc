@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="flex flex-row justify-between">
       <div className="flex flex-col gap-2">
         <a
-          href="https://github.com/sjohan99/poe-profit-calc"
+          href="https://github.com/sjohan99/poe-profits"
           className="flex items-center gap-2 hover:underline"
           target="_blank"
         >

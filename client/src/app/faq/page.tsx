@@ -46,7 +46,7 @@ export default function Page() {
           These might not be 100% accurate but they are the best I could find.
           If you think they are wrong, feel free to open an issue on{" "}
           <BlueLink
-            href="https://github.com/sjohan99/poe-profit-calc/issues"
+            href="https://github.com/sjohan99/poe-profits/issues"
             text="Github"
           ></BlueLink>
           !

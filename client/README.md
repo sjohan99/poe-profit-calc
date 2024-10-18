@@ -2,7 +2,7 @@
 
 ### Prerequisites
 
-A local development environment with the server side code running is required. The server side code can be found [here](https://github.com/sjohan99/poe-profit-calc/api).
+A local development environment with the server side code running is required. The server side code can be found [here](https://github.com/sjohan99/poe-profits/api).
 
 ### Environment Variables
 

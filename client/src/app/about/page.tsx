@@ -38,7 +38,7 @@ export default function Page() {
           If there are any issues or you have any suggestions, feel free to open
           an issue on{" "}
           <BlueLink
-            href="https://github.com/sjohan99/poe-profit-calc/issues"
+            href="https://github.com/sjohan99/poe-profits/issues"
             text="Github"
           ></BlueLink>
           .
