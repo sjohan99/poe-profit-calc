@@ -12,7 +12,7 @@ function sum(arr: number[]): number {
   return arr.reduce((acc, size) => acc + size, 0);
 }
 
-export async function TableHeaders(props: {
+export function TableHeaders(props: {
   children: React.ReactNode;
   column_sizes: number[];
 }) {
@@ -32,7 +32,7 @@ export async function TableHeaders(props: {
   );
 }
 
-export async function TableHeader(props: { children: React.ReactNode }) {
+export function TableHeader(props: { children: React.ReactNode }) {
   const { children } = props;
 
   return (
@@ -42,7 +42,7 @@ export async function TableHeader(props: { children: React.ReactNode }) {
   );
 }
 
-export async function TableRow(props: {
+export function TableRow(props: {
   children: React.ReactNode;
   column_sizes: number[];
 }) {
@@ -59,7 +59,7 @@ export async function TableRow(props: {
   ));
 }
 
-export async function TableRows(props: {
+export function TableRows(props: {
   children: React.ReactNode;
   column_sizes: number[];
 }) {
@@ -73,7 +73,7 @@ export async function TableRows(props: {
   );
 }
 
-export async function Table(props: { children: React.ReactNode }) {
+export function Table(props: { children: React.ReactNode }) {
   const { children } = props;
 
   return <div className="grid grid-cols-1 gap-2">{children}</div>;

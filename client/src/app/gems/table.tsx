@@ -86,7 +86,7 @@ type TableProps = {
   gems: GemData;
 };
 
-export default function Tablex({ gems }: TableProps): JSX.Element {
+export default function GemTable({ gems }: TableProps): JSX.Element {
   const [pageSize, setPageSize] = useState(15);
   const [sorting, setSorting] = useState<Sorting>({
     field: "level_profit",
