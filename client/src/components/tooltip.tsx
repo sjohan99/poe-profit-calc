@@ -7,7 +7,7 @@ type TooltipProps = {
 export function Tooltip({ children }: TooltipProps): JSX.Element {
   return (
     <div className="has-tooltip flex items-center">
-      <div className="tooltip ml-7 flex flex-row gap-2 rounded bg-accent-1 p-1 shadow-lg">
+      <div className="tooltip ml-7 flex flex-row gap-2 text-wrap rounded bg-accent-1 p-1 shadow-lg">
         {children}
       </div>
       <svg

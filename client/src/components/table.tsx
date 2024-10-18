@@ -19,9 +19,12 @@ export async function TableHeaders(props: {
   const { children, column_sizes } = props;
 
   return (
-    <div className={`grid grid-cols-${sum(column_sizes)} gap-x-3`}>
+    <div className={`grid grid-cols-${sum(column_sizes)} gap-x-3 -sm:gap-x-2`}>
       {React.Children.map(children, (child, index) => (
-        <div key={index} className={columnSize(index, column_sizes)}>
+        <div
+          key={index}
+          className={`${columnSize(index, column_sizes)} flex items-center ${index !== 0 ? "-sm:justify-end" : ""}`}
+        >
           {child}
         </div>
       ))}
@@ -33,7 +36,7 @@ export async function TableHeader(props: { children: React.ReactNode }) {
   const { children } = props;
 
   return (
-    <div className="flex flex-row gap-2 truncate text-xl font-bold">
+    <div className="responsive-text-medium flex flex-row items-center gap-2 truncate text-xl font-bold">
       {children}
     </div>
   );
@@ -47,7 +50,10 @@ export async function TableRow(props: {
   const childrenArray = React.Children.toArray(children);
 
   return childrenArray.map((child, index) => (
-    <div key={index} className={columnSize(index, column_sizes)}>
+    <div
+      key={index}
+      className={`${columnSize(index, column_sizes)} responsive-text-small flex h-full items-center truncate ${index !== 0 ? "-sm:justify-end" : ""}`}
+    >
       {child}
     </div>
   ));
@@ -59,7 +65,9 @@ export async function TableRows(props: {
 }) {
   const { children, column_sizes } = props;
   return (
-    <div className={`grid grid-cols-${sum(column_sizes)} gap-x-3 gap-y-2`}>
+    <div
+      className={`grid grid-cols-${sum(column_sizes)} gap-x-3 gap-y-2 -sm:gap-x-2`}
+    >
       {children}
     </div>
   );

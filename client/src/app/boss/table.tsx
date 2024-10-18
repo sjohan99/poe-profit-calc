@@ -6,6 +6,13 @@ import { QuestionTooltip, Tooltip } from "@components/tooltip";
 import Link from "next/link";
 import Image from "next/image";
 import ChaosOrb from "@components/currency";
+import {
+  Table,
+  TableHeader,
+  TableHeaders,
+  TableRow,
+  TableRows,
+} from "~/components/table";
 
 type SingularItemData = {
   name: string;
@@ -86,7 +93,7 @@ function createItemName(item: SingularItemData): string {
     : item.name;
 }
 
-export default function Table(props: BossInfo) {
+export default function BossTable(props: BossInfo) {
   const [itemData, setItemData] = useState<ItemData>(parseItems(props));
 
   function handlePriceChange(
@@ -104,8 +111,8 @@ export default function Table(props: BossInfo) {
 
   function itemRow(data: SingularItemData, index: number): JSX.Element {
     return (
-      <div key={data.name} className="grid grid-cols-6 gap-x-3">
-        <div className="col-span-2 flex flex-row items-center gap-2">
+      <TableRow column_sizes={[2, 1, 1, 1, 1]}>
+        <div className="flex flex-row items-center gap-2 truncate">
           {data.img ? (
             <Image
               src={data.img}
@@ -150,47 +157,54 @@ export default function Table(props: BossInfo) {
           type="text"
           pattern=""
           value={data.price.toFixed(0)}
-          className="rounded border border-accent-2 border-opacity-10 bg-transparent pl-1"
+          className="h-full w-full rounded border border-accent-2 border-opacity-10 bg-transparent pl-1"
           onChange={(event) => handlePriceChange(event, index)}
         />
-        <div>
-          {data.droprate ? `${(data.droprate * 100).toFixed(2)}%` : "N/A"}
-        </div>
-        <div>{data.value.toFixed(2)}</div>
-        <div>
+        <p>{data.droprate ? `${(data.droprate * 100).toFixed(2)}%` : "N/A"}</p>
+        <p>{data.value.toFixed(2)}</p>
+        <p>
           {data.type == "drop"
             ? `${((100 * data.value) / itemData.profit).toFixed(1)}%`
             : "N/A"}
-        </div>
-      </div>
+        </p>
+      </TableRow>
     );
   }
 
   return (
-    <>
-      <div className="grid grid-cols-1 gap-2">
-        <div className="grid grid-cols-6 gap-x-3">
-          <div className="col-span-2 text-xl font-bold">Item</div>
-          <div className="flex flex-row gap-2 truncate text-xl font-bold">
-            Price <ChaosOrb />{" "}
+    <Table>
+      <TableHeaders column_sizes={[2, 1, 1, 1, 1]}>
+        <TableHeader>
+          <p className="truncate">Item</p>
+        </TableHeader>
+        <TableHeader>
+          <p className="truncate">Price</p>
+          <ChaosOrb className="-sm:hidden" />{" "}
+          <div className="-md:hidden">
             <QuestionTooltip>
               <p>This field is editable!</p>
             </QuestionTooltip>
           </div>
-          <div className="truncate text-xl font-bold">Drop Rate</div>
-          <div className="flex flex-row gap-2 truncate text-xl font-bold">
-            Value <ChaosOrb />
-          </div>
-          <div className="truncate text-xl font-bold">Profit share</div>
-        </div>
+        </TableHeader>
+        <TableHeader>
+          <p className="truncate">Drop Rate</p>
+        </TableHeader>
+        <TableHeader>
+          <p className="truncate">Value</p>
+          <ChaosOrb className="-sm:hidden" />
+        </TableHeader>
+        <TableHeader>
+          <p className="truncate">Profit Share</p>
+        </TableHeader>
+      </TableHeaders>
+      <TableRows column_sizes={[2, 1, 1, 1, 1]}>
         {itemData.items.map((item, i) => itemRow(item, i))}
-      </div>
-
-      <div className="mb-2 border-b pt-2"></div>
-      <div className="grid grid-cols-6 gap-x-3">
+      </TableRows>
+      <div className="mb-2 min-w-full border-b pt-2"></div>
+      <TableRows column_sizes={[4, 1, 1]}>
         <div className="col-span-4 font-bold">Total per kill</div>
         <div className="font-bold">{itemData.total.toFixed(2)}</div>
-      </div>
-    </>
+      </TableRows>
+    </Table>
   );
 }
