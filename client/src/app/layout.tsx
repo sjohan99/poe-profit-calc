@@ -1,11 +1,11 @@
 import "~/styles/globals.css";
-import Link from "next/link";
 import { Roboto_Slab, Chakra_Petch } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CenterContent } from "~/components/center-content";
 import PageTitle from "@components/page-title";
 import Footer from "./footer";
+import TopNav from "./navbar";
 
 const robotoSlab = Roboto_Slab({
   weight: "400",
@@ -24,36 +24,6 @@ export const metadata = {
   icons: [{ rel: "favicon", url: "/favicon.ico" }],
 };
 
-function TopNav() {
-  return (
-    <div className="flex h-20 w-full justify-center border-b-2 border-secondary-1 bg-accent-1 -2xl:px-3">
-      <div className="flex-none -lg:min-w-0"></div>
-      <nav className="flex max-w-screen-2xl grow items-center justify-between text-2xl font-semibold">
-        <Link
-          href="/"
-          className={
-            chakraPetch.className + " text-3xl font-bold italic text-white"
-          }
-        >
-          PoE Profit Calculator
-        </Link>
-        <div className="flex gap-x-10">
-          <Link href="/" className="hover:underline">
-            Bosses
-          </Link>
-          <Link href="/gems" className="hover:underline">
-            Gems
-          </Link>
-          <Link href="/faq" className="hover:underline">
-            FAQ
-          </Link>
-        </div>
-      </nav>
-      <div className="flex-none -lg:min-w-0"></div>
-    </div>
-  );
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -63,11 +33,9 @@ export default function RootLayout({
     <html lang="en" className={`${robotoSlab.className}`}>
       <body className="flex min-h-screen flex-col justify-between">
         <div className="min-h-screen">
-          <TopNav />
+          <TopNav logoFont={chakraPetch} />
           <PageTitle />
-          <CenterContent className="my-2" background="bg-primary">
-            {children}
-          </CenterContent>
+          <CenterContent background="bg-primary">{children}</CenterContent>
         </div>
         <div>
           <CenterContent>
